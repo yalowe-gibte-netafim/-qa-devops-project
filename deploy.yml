@@ -1,0 +1,52 @@
+trigger:
+- main
+
+variables:
+  azureSubscription: 'Netafim-ServiceConnection'
+  webAppName: 'my-webapp-prod'
+
+stages:
+
+# Build Stage
+- stage: Build
+  displayName: Build
+  jobs:
+  - job: Build
+    pool:
+      vmImage: ubuntu-latest
+
+    steps:
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: publish
+        publishWebProjects: true
+        arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        pathToPublish: '$(Build.ArtifactStagingDirectory)'
+        artifactName: drop
+
+# Deploy Stage
+- stage: DeployProd
+  displayName: Deploy to Production
+  dependsOn: Build
+
+  jobs:
+  - deployment: DeployWebApp
+    displayName: Deploy WebApp
+    environment: Production
+
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+
+          - download: current
+            artifact: drop
+
+          - task: AzureWebApp@1
+            inputs:
+              azureSubscription: $(azureSubscription)
+              appName: $(webAppName)
+              package: '$(Pipeline.Workspace)/drop/**/*.zip'
