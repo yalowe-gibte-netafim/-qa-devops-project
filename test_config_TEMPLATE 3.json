@@ -1,0 +1,74 @@
+﻿[
+  {
+    "testname": "TEST_1",
+    "mode": 1,
+    "unit": "time",
+    "grace_Time": "00:01:30",
+    "pulse_tolerance_pct": 5,
+    "rate": 1.0,
+    "irrigationScheduleType": "IntervalDays",
+    "run_days":null,
+    "intervalDays": 1,
+    "currentIntervalDay": 1,
+    "start_times": ["11:00:00", "11:10:00"],
+
+    "shifts_structure": [
+      { "duration": "00:01:00", "valves": [1, 2, 3, 4],    "expected_liters": null },
+      { "duration": "00:01:00", "valves": [1, 2, 3, 5], "expected_liters": null },
+      { "duration": "00:01:00", "valves": [1, 3, 4, 5, 7],    "expected_liters": null }
+    ],
+
+    "fertilization": {
+      "active": false,
+      "channels": [
+        {
+          "channel": 4,
+          "watermeter_id": 4,
+          "active": true,
+          "mode": "bulck",
+          "unit": "quantity",
+          "expected_liters": 200,
+          "duration": null,
+          "on_seconds": null,
+          "off_seconds": null
+        }
+      ]
+    }
+  },
+  {
+    "testname": "TEST_2",
+    "mode": 1,
+    "unit": "quantity",
+    "grace_Time": "00:01:30",
+    "pulse_tolerance_pct": 50,
+    "rate": 1,
+    "irrigationScheduleType": "WeekDays",
+    "run_days": [1, 2, 3, 4, 5, 6, 7],
+    "intervalDays": null,
+    "currentIntervalDay": null,
+     "start_times": ["11:15:00"],
+
+    "shifts_structure": [
+      { "duration": "00:01:00", "valves": [1, 2, 3, 4],    "expected_liters": 1000 },
+      { "duration": "00:01:00", "valves": [1, 6, 7, 5], "expected_liters": 1000 }
+      
+    ],
+
+    "fertilization": {
+      "active": false,
+      "channels": [
+        {
+          "channel": 4,
+          "watermeter_id": 4,
+          "active": true,
+          "mode": "bulck",
+          "unit": "quantity",
+          "expected_liters": 200,
+          "duration": null,
+          "on_seconds": null,
+          "off_seconds": null
+        }
+      ]
+    }
+  }
+]
