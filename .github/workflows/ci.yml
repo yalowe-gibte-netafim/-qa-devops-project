@@ -3,6 +3,8 @@ name: Python CI
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main, feature/qa-devops-setup ]
 
 jobs:
   test:
@@ -24,4 +26,3 @@ jobs:
 
     - name: Run tests
       run: pytest -v --junitxml=test-results.xml
-      
