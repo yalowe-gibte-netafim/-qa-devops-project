@@ -26,7 +26,9 @@ from automation.config.settings import (
     BAUD_RATES, LINE_ENDINGS, DEFAULT_BAUD_INDEX, DEFAULT_LINE_END_INDEX,
     PINOUT_DATA, WM_COUNT, WM_COLORS, WM_OFFSETS,
 )
+from automation.models.models import SmartSimulationInput
 from automation.pages.base_page import BasePage
+from automation.services.smart_simulation_service import calculate_smart_simulation
 from automation.utils.logger import UILogger
 
 if TYPE_CHECKING:
@@ -47,6 +49,7 @@ class MainControllerPage(BasePage):
 
         self._build_connection_frame(left_frame)
         self._build_commands_frame(left_frame)
+        self._build_smart_simulation_frame(left_frame)
         self._build_terminal_frame(left_frame)
         self._build_pinout_frame(right_frame)
         self._build_wm_graph_frame(right_frame)
@@ -129,6 +132,197 @@ class MainControllerPage(BasePage):
         widget.delete("1.0", tk.END)
         widget.config(state="disabled")
 
+    # ── Smart simulation mode ────────────────────────────────────────────────
+
+    def _build_smart_simulation_frame(self, parent: ttk.Frame) -> None:
+        frame = ttk.LabelFrame(parent, text="Smart Simulation Mode")
+        frame.pack(fill=tk.X, padx=5, pady=5)
+
+        self.sim_meter_type_var = tk.StringVar(value="WM")
+        self.sim_flow_value_var = tk.StringVar(value="")
+        self.sim_flow_unit_var = tk.StringVar(value="L/h")
+        self.sim_area_var = tk.StringVar(value="0")
+        self.sim_lpulse_var = tk.StringVar(value="")
+        self.sim_pulse_time_ms_var = tk.StringVar(value="")
+        self.sim_target_volume_var = tk.StringVar(value="")
+        self.sim_runtime_min_var = tk.StringVar(value="")
+
+        ttk.Label(frame, text="Meter Type:").grid(row=0, column=0, sticky="w", padx=4, pady=2)
+        meter_combo = ttk.Combobox(frame, width=8, state="readonly", values=("WM", "DM"), textvariable=self.sim_meter_type_var)
+        meter_combo.grid(row=0, column=1, sticky="w", padx=4, pady=2)
+
+        ttk.Label(frame, text="Flow value:").grid(row=0, column=2, sticky="w", padx=4, pady=2)
+        ttk.Entry(frame, width=10, textvariable=self.sim_flow_value_var).grid(row=0, column=3, sticky="w", padx=4, pady=2)
+
+        ttk.Label(frame, text="Flow unit:").grid(row=0, column=4, sticky="w", padx=4, pady=2)
+        flow_unit_combo = ttk.Combobox(
+            frame,
+            width=8,
+            state="readonly",
+            values=("L/h", "m3/h", "mm/h"),
+            textvariable=self.sim_flow_unit_var,
+        )
+        flow_unit_combo.grid(row=0, column=5, sticky="w", padx=4, pady=2)
+
+        ttk.Label(frame, text="Area (m2):").grid(row=1, column=0, sticky="w", padx=4, pady=2)
+        self.sim_area_entry = ttk.Entry(frame, width=10, textvariable=self.sim_area_var)
+        self.sim_area_entry.grid(row=1, column=1, sticky="w", padx=4, pady=2)
+
+        ttk.Label(frame, text="Liters per pulse:").grid(row=1, column=2, sticky="w", padx=4, pady=2)
+        ttk.Entry(frame, width=10, textvariable=self.sim_lpulse_var).grid(row=1, column=3, sticky="w", padx=4, pady=2)
+
+        ttk.Label(frame, text="Pulse time (ms):").grid(row=1, column=4, sticky="w", padx=4, pady=2)
+        ttk.Entry(frame, width=10, textvariable=self.sim_pulse_time_ms_var).grid(row=1, column=5, sticky="w", padx=4, pady=2)
+
+        ttk.Label(frame, text="Target volume (L):").grid(row=2, column=0, sticky="w", padx=4, pady=2)
+        ttk.Entry(frame, width=10, textvariable=self.sim_target_volume_var).grid(row=2, column=1, sticky="w", padx=4, pady=2)
+
+        ttk.Label(frame, text="Runtime (minutes):").grid(row=2, column=2, sticky="w", padx=4, pady=2)
+        ttk.Entry(frame, width=10, textvariable=self.sim_runtime_min_var).grid(row=2, column=3, sticky="w", padx=4, pady=2)
+
+        self.sim_status_label = ttk.Label(frame, text="STATUS: N/A", foreground="#666666", font=("Segoe UI", 9, "bold"))
+        self.sim_status_label.grid(row=3, column=0, columnspan=6, sticky="w", padx=4, pady=(2, 4))
+
+        self.sim_output = tk.Text(frame, height=15, width=86, state="disabled", bg="#fafafa")
+        self.sim_output.grid(row=4, column=0, columnspan=6, sticky="ew", padx=4, pady=2)
+
+        frame.grid_columnconfigure(5, weight=1)
+
+        for var in (
+            self.sim_meter_type_var,
+            self.sim_flow_value_var,
+            self.sim_flow_unit_var,
+            self.sim_area_var,
+            self.sim_lpulse_var,
+            self.sim_pulse_time_ms_var,
+            self.sim_target_volume_var,
+            self.sim_runtime_min_var,
+        ):
+            var.trace_add("write", lambda *_: self._on_simulation_input_changed())
+
+        meter_combo.bind("<<ComboboxSelected>>", lambda *_: self._on_simulation_input_changed())
+        flow_unit_combo.bind("<<ComboboxSelected>>", lambda *_: self._on_simulation_input_changed())
+
+        self._on_simulation_input_changed()
+
+    def _to_optional_float(self, raw: str, label: str) -> tuple[float | None, str | None]:
+        val = raw.strip()
+        if not val:
+            return None, None
+        try:
+            return float(val), None
+        except ValueError:
+            return None, f"{label} must be a valid number."
+
+    def _to_float_or_default(self, raw: str, default: float = 0.0) -> tuple[float, str | None]:
+        val = raw.strip()
+        if not val:
+            return default, None
+        try:
+            return float(val), None
+        except ValueError:
+            return default, ""
+
+    @staticmethod
+    def _fmt_num(value: float | None, digits: int = 3) -> str:
+        if value is None:
+            return "N/A"
+        return f"{value:.{digits}f}"
+
+    def _on_simulation_input_changed(self) -> None:
+        flow_unit = self.sim_flow_unit_var.get().strip()
+        if flow_unit == "mm/h":
+            self.sim_area_entry.config(state="normal")
+        else:
+            self.sim_area_entry.config(state="disabled")
+
+        validation_errors: list[str] = []
+
+        flow_value, flow_parse_err = self._to_float_or_default(self.sim_flow_value_var.get(), 0.0)
+        if flow_parse_err == "":
+            validation_errors.append("Flow value must be a valid number.")
+
+        area_m2, area_parse_err = self._to_float_or_default(self.sim_area_var.get(), 0.0)
+        if area_parse_err == "":
+            validation_errors.append("Area (m2) must be a valid number.")
+
+        liters_per_pulse, lpulse_parse_err = self._to_float_or_default(self.sim_lpulse_var.get(), 0.0)
+        if lpulse_parse_err == "":
+            validation_errors.append("Liters per pulse must be a valid number.")
+
+        pulse_time_ms, pulse_err = self._to_optional_float(self.sim_pulse_time_ms_var.get(), "Pulse time (ms)")
+        target_volume, target_err = self._to_optional_float(self.sim_target_volume_var.get(), "Target volume (L)")
+        runtime_min, runtime_err = self._to_optional_float(self.sim_runtime_min_var.get(), "Runtime (minutes)")
+        for err in (pulse_err, target_err, runtime_err):
+            if err:
+                validation_errors.append(err)
+
+        payload = SmartSimulationInput(
+            meter_type=self.sim_meter_type_var.get().strip() or "WM",
+            flow_value=flow_value,
+            flow_unit=flow_unit or "L/h",
+            area_m2=area_m2,
+            liters_per_pulse=liters_per_pulse,
+            pulse_time_ms=pulse_time_ms,
+            target_volume_l=target_volume,
+            runtime_min=runtime_min,
+        )
+
+        result = calculate_smart_simulation(payload)
+        result.errors = validation_errors + result.errors
+
+        lines: list[str] = []
+
+        if result.errors:
+            lines.append("VALIDATION")
+            lines.append("-----------------------------")
+            for err in result.errors:
+                lines.append(f"- {err}")
+            lines.append("")
+
+        lines.append("RESULTS")
+        lines.append("-----------------------------")
+        lines.append(f"Meter Type: {payload.meter_type}")
+        lines.append(f"Flow (L/h): {self._fmt_num(result.flow_lph, 3)}")
+        lines.append(
+            f"Pulse Time: {self._fmt_num(result.pulse_time_ms, 2)} ms "
+            f"({self._fmt_num(result.pulse_time_sec, 3)} sec)"
+        )
+        lines.append(f"Pulses per Minute: {self._fmt_num(result.pulses_per_min, 3)}")
+        if payload.target_volume_l is not None:
+            lines.append(f"Pulses Required: {self._fmt_num(result.required_pulses, 3)}")
+
+        lines.append("")
+        lines.append("TARGET ANALYSIS")
+        lines.append("-----------------------------")
+        lines.append(f"Target Volume: {self._fmt_num(payload.target_volume_l, 3)}")
+        lines.append(f"Runtime: {self._fmt_num(payload.runtime_min, 3)}")
+        lines.append(f"Recommended Flow: {self._fmt_num(result.required_flow_lph, 3)}")
+        lines.append(
+            f"Recommended Pulse Time: {self._fmt_num(result.recommended_pulse_time_ms, 2)} ms"
+        )
+
+        lines.append("")
+        lines.append("STATUS")
+        lines.append("-----------------------------")
+        lines.append(result.status)
+
+        lines.append("")
+        lines.append("Cycle Recommendation")
+        lines.append("-----------------------------")
+        lines.append(f"Stable: {self._fmt_num(result.stable_cycle_ms, 2)} ms")
+        lines.append(f"Fast: {self._fmt_num(result.fast_cycle_ms, 2)} ms")
+
+        self.sim_status_label.config(
+            text=f"STATUS: {result.status}",
+            foreground=result.status_color,
+        )
+
+        self.sim_output.config(state="normal")
+        self.sim_output.delete("1.0", tk.END)
+        self.sim_output.insert(tk.END, "\n".join(lines))
+        self.sim_output.config(state="disabled")
+
     # ── Pinout mapping ────────────────────────────────────────────────────────
 
     def _build_pinout_frame(self, parent: ttk.Frame) -> None:
@@ -139,12 +333,33 @@ class MainControllerPage(BasePage):
         for col, width in zip(columns, (80, 60, 120)):
             tree.heading(col, text=col)
             tree.column(col, width=width)
+        tree.tag_configure("valve_open", background="#90EE90", foreground="#000000")
         scroll = ttk.Scrollbar(frame, orient=tk.VERTICAL, command=tree.yview)
         tree.configure(yscrollcommand=scroll.set)
         tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        self._pinout_tree = tree
+        self._valve_items: dict[int, str] = {}  # valve_id -> treeview item id
         for item in PINOUT_DATA:
-            tree.insert("", tk.END, values=item)
+            iid = tree.insert("", tk.END, values=item)
+            func_name = item[0]
+            m = re.match(r"Valve (\d+)", func_name)
+            if m:
+                self._valve_items[int(m.group(1))] = iid
+
+    # ── Valve status indicators ───────────────────────────────────────────────
+
+    def mark_valve_open(self, v_id: int) -> None:
+        """Highlight the valve row in the pinout table to indicate it is open."""
+        iid = self._valve_items.get(v_id)
+        if iid:
+            self._pinout_tree.item(iid, tags=("valve_open",))
+
+    def mark_valve_closed(self, v_id: int) -> None:
+        """Remove the highlight from the valve row when it closes."""
+        iid = self._valve_items.get(v_id)
+        if iid:
+            self._pinout_tree.item(iid, tags=())
 
     # ── WM Pulse Monitor ──────────────────────────────────────────────────────
 

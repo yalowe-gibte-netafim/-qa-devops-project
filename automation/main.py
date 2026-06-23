@@ -177,19 +177,24 @@ class FlexTesterApp:
     def _on_port1_line(self, line: str) -> None:
         """Callback fired by SerialService on each received line (background thread)."""
         # Detect valve/wm events and control WM pulse service
-        if m := _VALVE_OPEN_RE.search(line):
+        for m in _VALVE_OPEN_RE.finditer(line):
+            valve_id = int(m.group(1))
+            if 1 <= valve_id <= 5:
+                self.root.after(0, self.wm_pulse_service.start, valve_id)
+            self.root.after(0, self._page1.mark_valve_open, valve_id)
+
+        for m in _VALVE_CLOSE_RE.finditer(line):
+            valve_id = int(m.group(1))
+            if 1 <= valve_id <= 5:
+                self.root.after(0, self.wm_pulse_service.stop, valve_id)
+            self.root.after(0, self._page1.mark_valve_closed, valve_id)
+
+        for m in _WM_START_RE.finditer(line):
             wm_id = int(m.group(1))
             if 1 <= wm_id <= 5:
                 self.root.after(0, self.wm_pulse_service.start, wm_id)
-        elif m := _VALVE_CLOSE_RE.search(line):
-            wm_id = int(m.group(1))
-            if 1 <= wm_id <= 5:
-                self.root.after(0, self.wm_pulse_service.stop, wm_id)
-        elif m := _WM_START_RE.search(line):
-            wm_id = int(m.group(1))
-            if 1 <= wm_id <= 5:
-                self.root.after(0, self.wm_pulse_service.start, wm_id)
-        elif m := _WM_STOP_RE.search(line):
+
+        for m in _WM_STOP_RE.finditer(line):
             wm_id = int(m.group(1))
             if 1 <= wm_id <= 5:
                 self.root.after(0, self.wm_pulse_service.stop, wm_id)

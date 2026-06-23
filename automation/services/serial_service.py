@@ -90,9 +90,27 @@ class SerialService:
                 if self._port.in_waiting > 0:
                     raw = self._port.read(self._port.in_waiting)
                     self._buffer += raw.decode("utf-8", errors="ignore")
-                    while "\n" in self._buffer:
-                        line, self._buffer = self._buffer.split("\n", 1)
-                        line = line.rstrip("\r")
+                    while True:
+                        nl_idx = self._buffer.find("\n")
+                        cr_idx = self._buffer.find("\r")
+                        if nl_idx == -1 and cr_idx == -1:
+                            break
+
+                        if nl_idx == -1:
+                            end_idx = cr_idx
+                        elif cr_idx == -1:
+                            end_idx = nl_idx
+                        else:
+                            end_idx = min(nl_idx, cr_idx)
+
+                        line = self._buffer[:end_idx]
+                        next_start = end_idx + 1
+                        if next_start < len(self._buffer):
+                            pair = self._buffer[end_idx:end_idx + 2]
+                            if pair in ("\r\n", "\n\r"):
+                                next_start = end_idx + 2
+
+                        self._buffer = self._buffer[next_start:]
                         if line:
                             self._on_line_received(line)
                 time.sleep(0.01)
