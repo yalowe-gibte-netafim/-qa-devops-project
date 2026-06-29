@@ -1,0 +1,6 @@
+--- Log Started: Wed Jun 24 14:59:49 2026 ---
+[15:00:19] Connected to COM10
+[15:00:21] > start wm 1 1000
+
+[15:00:21] start wm 1 1000
+[15:00:21] wm 1 started

@@ -1,0 +1,113 @@
+--- Log Started: Wed Jun 24 14:36:04 2026 ---
+[14:36:11] Connected to COM10
+[14:36:20] > trigger wm 1 3600
+
+[14:36:20] trigger wm 1 3600
+[14:36:20] wm 1 triggered
+[14:36:20] wm 1 started working at 01:08:18 | wm1=0 wm2=0 wm3=3 wm4=0 wm5=0
+[14:36:20] > trigger wm 2 1000
+
+[14:36:20] trigger wm 2 1000
+[14:36:20] wm 2 triggered
+[14:36:26] > trigger wm 1 36000
+
+[14:36:26] trigger wm 1 36000
+[14:36:26] wm 1 triggered
+[14:36:26] wm 1 started working at 01:08:24 | wm1=0 wm2=0 wm3=3 wm4=0 wm5=0
+[14:36:26] > trigger wm 2 1000
+
+[14:36:26] trigger wm 2 1000
+[14:36:26] wm 2 triggered
+[14:36:44] valve 3 close at 01:08:43 | wm1=1 wm2=0 wm3=4 wm4=0 wm5=0
+[14:36:44] wm 3 stopped working at 01:08:43 | wm1=1 wm2=0 wm3=4 wm4=0 wm5=0
+[14:36:46] valve 7 close at 01:08:44 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[14:36:46] valve 6 close at 01:08:45 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[14:36:56] valve 6 open at 01:08:54 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[14:36:56] valve 3 open at 01:08:54 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[14:36:56] wm 3 started working at 01:08:54 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[14:36:58] valve 7 open at 01:08:56 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[14:38:33] > stop wm 1
+
+[14:38:33] stop wm 1
+[14:38:33] wm 1 stopped
+[14:38:33] > stop wm 2
+
+[14:38:33] stop wm 2
+[14:38:33] wm 2 stopped
+[14:38:34] > stop wm 3
+
+[14:38:34] stop wm 3
+[14:38:34] wm 3 stopped
+[14:39:22] valve 3 close at 01:11:20 | wm1=4 wm2=0 wm3=2 wm4=0 wm5=0
+[14:39:22] valve 7 close at 01:11:21 | wm1=4 wm2=0 wm3=2 wm4=0 wm5=0
+[14:39:24] valve 6 close at 01:11:22 | wm1=4 wm2=0 wm3=2 wm4=0 wm5=0
+[14:39:32] valve 1 close at 01:11:30 | wm1=4 wm2=0 wm3=2 wm4=0 wm5=0
+[14:40:29] > stop wm 1
+
+[14:40:29] stop wm 1
+[14:40:29] wm 1 stopped
+[14:40:29] > stop wm 1
+
+[14:40:29] stop wm 1
+[14:40:29] wm 1 stopped
+[14:40:29] > stop wm 2
+
+[14:40:29] stop wm 2
+[14:40:29] wm 2 stopped
+[14:40:29] > stop wm 2
+
+[14:40:30] stop wm 2
+[14:40:30] wm 2 stopped
+[14:40:30] > stop wm 3
+
+[14:40:30] stop wm 3
+[14:40:30] wm 3 stopped
+[14:40:30] > stop wm 3
+
+[14:40:30] stop wm 3
+[14:40:30] wm 3 stopped
+[14:40:34] > trigger wm 1 3600
+
+[14:40:34] trigger wm 1 3600
+[14:40:34] wm 1 triggered
+[14:40:34] > trigger wm 2 1000
+
+[14:40:34] trigger wm 2 1000
+[14:40:34] wm 2 triggered
+[14:40:35] > trigger wm 3 1000
+
+[14:40:35] trigger wm 3 1000
+[14:40:35] wm 3 triggered
+[14:40:40] valve 6 open at 01:12:39 | wm1=4 wm2=0 wm3=2 wm4=0 wm5=0
+[14:40:41] valve 3 open at 01:12:40 | wm1=4 wm2=0 wm3=2 wm4=0 wm5=0
+[14:40:41] wm 3 started working at 01:12:40 | wm1=4 wm2=0 wm3=0 wm4=0 wm5=0
+[14:40:43] valve 1 open at 01:12:42 | wm1=4 wm2=0 wm3=107 wm4=0 wm5=0
+[14:40:43] wm 1 started working at 01:12:42 | wm1=0 wm2=0 wm3=107 wm4=0 wm5=0
+[14:40:44] valve 7 open at 01:12:43 | wm1=50 wm2=0 wm3=157 wm4=0 wm5=0
+[14:41:26] valve 3 close at 01:13:25 | wm1=2166 wm2=0 wm3=2273 wm4=0 wm5=0
+[14:41:26] wm 3 stopped working at 01:13:25 | wm1=2166 wm2=0 wm3=2273 wm4=0 wm5=0
+[14:41:28] valve 6 close at 01:13:27 | wm1=2265 wm2=0 wm3=0 wm4=0 wm5=0
+[14:43:03] > stop wm 1
+
+[14:43:03] stop wm 1
+[14:43:03] wm 1 stopped
+[14:43:03] > stop wm 2
+
+[14:43:03] stop wm 2
+[14:43:03] wm 2 stopped
+[14:43:03] > stop wm 4
+
+[14:43:03] stop wm 4
+[14:43:03] wm 4 stopped
+[14:43:04] > stop wm 3
+
+[14:43:04] stop wm 3
+[14:43:04] wm 3 stopped
+[14:43:05] > trigger wm 1 36
+
+[14:43:05] trigger wm 1 36
+[14:43:05] wm 1 triggered
+[14:43:05] wm 1 started working at 01:15:04 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[14:43:12] valve 7 close at 01:15:11 | wm1=206 wm2=0 wm3=0 wm4=0 wm5=0
+[14:43:22] valve 1 close at 01:15:21 | wm1=485 wm2=0 wm3=0 wm4=0 wm5=0
+[14:43:22] wm 1 stopped working at 01:15:21 | wm1=485 wm2=0 wm3=0 wm4=0 wm5=0

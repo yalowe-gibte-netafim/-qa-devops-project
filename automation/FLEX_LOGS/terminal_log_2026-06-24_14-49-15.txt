@@ -1,0 +1,38 @@
+--- Log Started: Wed Jun 24 14:49:15 2026 ---
+[14:49:59] Connected to COM10
+[14:50:00] > start wm 1 36000
+
+[14:50:00] start wm 1 36000
+[14:50:00] wm 1 started
+[14:50:15] valve 7 close at 01:22:15 | wm1=4 wm2=1 wm3=0 wm4=0 wm5=0
+[14:50:22] valve 1 close at 01:22:22 | wm1=4 wm2=1 wm3=0 wm4=0 wm5=0
+[14:51:23] valve 6 open at 01:23:23 | wm1=6 wm2=1 wm3=0 wm4=0 wm5=0
+[14:51:24] valve 3 open at 01:23:24 | wm1=6 wm2=1 wm3=0 wm4=0 wm5=0
+[14:51:24] wm 3 started working at 01:23:24 | wm1=6 wm2=1 wm3=0 wm4=0 wm5=0
+[14:51:26] valve 1 open at 01:23:26 | wm1=6 wm2=1 wm3=2 wm4=0 wm5=0
+[14:51:27] valve 7 open at 01:23:27 | wm1=6 wm2=1 wm3=3 wm4=0 wm5=0
+[14:53:17] valve 3 close at 01:25:18 | wm1=9 wm2=1 wm3=113 wm4=0 wm5=0
+[14:53:17] wm 3 stopped working at 01:25:18 | wm1=9 wm2=1 wm3=113 wm4=0 wm5=0
+[14:53:18] valve 7 close at 01:25:19 | wm1=9 wm2=1 wm3=0 wm4=0 wm5=0
+[14:53:19] valve 6 close at 01:25:20 | wm1=9 wm2=1 wm3=0 wm4=0 wm5=0
+[14:53:28] valve 1 close at 01:25:29 | wm1=9 wm2=1 wm3=0 wm4=0 wm5=0
+[14:59:23] > start wm 1 36000
+
+[14:59:23] start wm 1 36000
+[14:59:23] wm 1 started
+[14:59:42] > start wm 1 36000
+
+[14:59:42] start wm 1 36000
+[14:59:42] wm 1 started
+[14:59:42] > start wm 1 36000
+
+[14:59:42] start wm 1 36000
+[14:59:42] wm 1 started
+[14:59:42] > start wm 1 36000
+
+[14:59:42] start wm 1 36000
+[14:59:42] wm 1 started
+[14:59:43] > start wm 1 36000
+
+[14:59:43] start wm 1 36000
+[14:59:43] wm 1 started

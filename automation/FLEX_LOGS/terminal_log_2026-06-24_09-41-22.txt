@@ -1,0 +1,13 @@
+--- Log Started: Wed Jun 24 09:41:22 2026 ---
+[09:41:33] Connected to COM10
+[09:43:58] valve 1 open at 00:20:44 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:43:58] valve 7 open at 00:20:45 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:45:58] valve 7 close at 00:22:45 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:46:05] valve 1 close at 00:22:52 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:49:40] valve 1 open at 00:26:27 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:49:41] valve 7 open at 00:26:28 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:52:04] valve 7 close at 00:28:52 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:52:11] valve 1 close at 00:28:59 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:09:43] 
+Error reading: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+

@@ -1,0 +1,48 @@
+--- Log Started: Sun Jun 28 09:46:10 2026 ---
+[09:46:15] Connected to COM10
+[09:46:27] > trigger wm 2 1200
+
+[09:46:27] trigger wm 2 1200
+[09:46:27] wm 2 triggered
+[09:46:28] > trigger wm 1 3600
+
+[09:46:28] trigger wm 1 3600
+[09:46:28] wm 1 triggered
+[09:46:28] wm 1 started working at 00:12:40 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:46:28] > trigger wm 3 1200
+
+[09:46:28] trigger wm 3 1200
+[09:46:28] wm 3 triggered
+[09:46:29] > trigger wm 4 1200
+
+[09:46:29] trigger wm 4 1200
+[09:46:29] wm 4 triggered
+[09:46:30] > trigger wm 5 1200
+
+[09:46:30] trigger wm 5 1200
+[09:46:30] wm 5 triggered
+[09:46:56] valve 6 open at 00:13:09 | wm1=7 wm2=0 wm3=0 wm4=0 wm5=0
+[09:46:57] valve 2 open at 00:13:09 | wm1=8 wm2=0 wm3=0 wm4=0 wm5=0
+[09:46:57] wm 2 started working at 00:13:09 | wm1=8 wm2=0 wm3=0 wm4=0 wm5=0
+[09:46:57] valve 3 open at 00:13:10 | wm1=8 wm2=0 wm3=0 wm4=0 wm5=0
+[09:46:58] wm 3 started working at 00:13:10 | wm1=8 wm2=0 wm3=0 wm4=0 wm5=0
+[09:46:58] valve 4 open at 00:13:11 | wm1=8 wm2=1 wm3=0 wm4=0 wm5=0
+[09:46:58] wm 4 started working at 00:13:11 | wm1=8 wm2=1 wm3=0 wm4=0 wm5=0
+[09:48:50] valve 2 close at 00:15:03 | wm1=39 wm2=94 wm3=93 wm4=93 wm5=0
+[09:48:50] wm 2 stopped working at 00:15:03 | wm1=39 wm2=94 wm3=93 wm4=93 wm5=0
+[09:48:51] valve 3 close at 00:15:03 | wm1=39 wm2=0 wm3=94 wm4=93 wm5=0
+[09:48:51] wm 3 stopped working at 00:15:03 | wm1=39 wm2=0 wm3=94 wm4=93 wm5=0
+[09:48:51] valve 4 close at 00:15:04 | wm1=39 wm2=0 wm3=0 wm4=94 wm5=0
+[09:48:51] wm 4 stopped working at 00:15:04 | wm1=39 wm2=0 wm3=0 wm4=94 wm5=0
+[09:48:58] valve 6 close at 00:15:11 | wm1=41 wm2=0 wm3=0 wm4=0 wm5=0
+[09:56:02] valve 7 close at 00:22:16 | wm1=159 wm2=0 wm3=0 wm4=0 wm5=0
+[09:56:04] valve 1 close at 00:22:18 | wm1=160 wm2=0 wm3=0 wm4=0 wm5=0
+[09:56:04] wm 1 stopped working at 00:22:18 | wm1=160 wm2=0 wm3=0 wm4=0 wm5=0
+[09:56:04] valve 8 close at 00:22:18 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:13:08] valve 6 open at 00:39:25 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:13:09] valve 3 open at 00:39:26 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:13:09] wm 3 started working at 00:39:26 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:13:10] valve 1 open at 00:39:27 | wm1=0 wm2=0 wm3=1 wm4=0 wm5=0
+[10:13:10] wm 1 started working at 00:39:27 | wm1=0 wm2=0 wm3=1 wm4=0 wm5=0
+[10:13:12] valve 7 open at 00:39:29 | wm1=0 wm2=0 wm3=3 wm4=0 wm5=0
+[10:13:13] valve 8 open at 00:39:30 | wm1=1 wm2=0 wm3=3 wm4=0 wm5=0

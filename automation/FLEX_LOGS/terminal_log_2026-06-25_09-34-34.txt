@@ -1,0 +1,2073 @@
+--- Log Started: Thu Jun 25 09:34:34 2026 ---
+[09:37:00] Connected to COM10
+[09:37:05] > trigger wm 1 3600
+
+[09:37:05] trigger wm 1 3600
+[09:37:05] wm 1 triggered
+[09:37:05] > trigger wm 2 1200
+
+[09:37:05] trigger wm 2 1200
+[09:37:05] wm 2 triggered
+[09:37:05] > trigger wm 3 1200
+
+[09:37:05] trigger wm 3 1200
+[09:37:05] wm 3 triggered
+[09:37:14] valve 6 open at 00:21:57 | wm1=612 wm2=0 wm3=0 wm4=0 wm5=0
+[09:37:15] valve 2 open at 00:21:57 | wm1=612 wm2=0 wm3=0 wm4=0 wm5=0
+[09:37:15] wm 2 started working at 00:21:57 | wm1=612 wm2=0 wm3=0 wm4=0 wm5=0
+[09:37:16] valve 1 open at 00:21:58 | wm1=612 wm2=0 wm3=0 wm4=0 wm5=0
+[09:37:16] wm 1 started working at 00:21:58 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:37:18] valve 7 open at 00:22:00 | wm1=1 wm2=2 wm3=0 wm4=0 wm5=0
+[09:37:19] valve 9 open at 00:22:01 | wm1=1 wm2=3 wm3=0 wm4=0 wm5=0
+[09:47:14] valve 2 close at 00:31:58 | wm1=167 wm2=501 wm3=0 wm4=0 wm5=0
+[09:47:14] wm 2 stopped working at 00:31:58 | wm1=167 wm2=501 wm3=0 wm4=0 wm5=0
+[09:47:22] valve 6 close at 00:32:06 | wm1=169 wm2=0 wm3=0 wm4=0 wm5=0
+[09:47:25] valve 7 close at 00:32:09 | wm1=170 wm2=0 wm3=0 wm4=0 wm5=0
+[09:47:27] valve 1 close at 00:32:11 | wm1=170 wm2=0 wm3=0 wm4=0 wm5=0
+[09:47:27] wm 1 stopped working at 00:32:11 | wm1=170 wm2=0 wm3=0 wm4=0 wm5=0
+[09:47:27] valve 9 close at 00:32:11 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:52:46] valve 6 open at 00:37:31 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:52:47] valve 2 open at 00:37:32 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:52:47] wm 2 started working at 00:37:32 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:52:48] valve 1 open at 00:37:33 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:52:48] wm 1 started working at 00:37:33 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:52:50] valve 7 open at 00:37:35 | wm1=1 wm2=2 wm3=0 wm4=0 wm5=0
+[09:52:51] valve 9 open at 00:37:36 | wm1=1 wm2=3 wm3=0 wm4=0 wm5=0
+[10:12:47] valve 2 close at 00:57:35 | wm1=334 wm2=1002 wm3=0 wm4=0 wm5=0
+[10:12:47] wm 2 stopped working at 00:57:35 | wm1=334 wm2=1002 wm3=0 wm4=0 wm5=0
+[10:12:55] valve 6 close at 00:57:43 | wm1=336 wm2=0 wm3=0 wm4=0 wm5=0
+[10:18:02] valve 7 close at 01:02:50 | wm1=422 wm2=0 wm3=0 wm4=0 wm5=0
+[10:18:04] valve 1 close at 01:02:52 | wm1=422 wm2=0 wm3=0 wm4=0 wm5=0
+[10:18:04] wm 1 stopped working at 01:02:52 | wm1=422 wm2=0 wm3=0 wm4=0 wm5=0
+[10:18:05] valve 9 close at 01:02:53 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:18:12] > trigger wm 2 1250
+
+[10:18:12] trigger wm 2 1250
+[10:18:12] wm 2 triggered
+[10:18:32] > stop wm 3
+
+[10:18:32] stop wm 3
+[10:18:32] wm 3 stopped
+[10:18:32] > stop wm 2
+
+[10:18:32] stop wm 2
+[10:18:32] wm 2 stopped
+[10:18:33] > stop wm 1
+
+[10:18:33] stop wm 1
+[10:18:33] wm 1 stopped
+[10:18:35] > trigger wm 2 1250
+
+[10:18:35] trigger wm 2 1250
+[10:18:35] wm 2 triggered
+[10:18:35] > trigger wm 1 3600
+
+[10:18:35] trigger wm 1 3600
+[10:18:35] wm 1 triggered
+[10:18:36] > trigger wm 3 1250
+
+[10:18:36] trigger wm 3 1250
+[10:18:36] wm 3 triggered
+[10:22:24] valve 6 open at 01:07:13 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:22:24] valve 2 open at 01:07:13 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:22:24] wm 2 started working at 01:07:13 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:22:25] valve 1 open at 01:07:14 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[10:22:25] wm 1 started working at 01:07:14 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[10:22:27] valve 7 open at 01:07:16 | wm1=1 wm2=2 wm3=0 wm4=0 wm5=0
+[10:22:28] valve 9 open at 01:07:17 | wm1=1 wm2=3 wm3=0 wm4=0 wm5=0
+[10:26:02] > stop wm 2
+
+[10:26:02] stop wm 2
+[10:26:02] wm 2 stopped
+[10:26:02] > trigger wm 2 1450
+
+[10:26:02] trigger wm 2 1450
+[10:26:02] wm 2 triggered
+[10:26:02] wm 2 started working at 01:10:52 | wm1=61 wm2=0 wm3=0 wm4=0 wm5=0
+[10:26:39] valve 2 close at 01:11:29 | wm1=71 wm2=26 wm3=0 wm4=0 wm5=0
+[10:26:39] wm 2 stopped working at 01:11:29 | wm1=71 wm2=26 wm3=0 wm4=0 wm5=0
+[10:26:47] valve 6 close at 01:11:37 | wm1=73 wm2=0 wm3=0 wm4=0 wm5=0
+[10:27:29] valve 7 close at 01:12:19 | wm1=85 wm2=0 wm3=0 wm4=0 wm5=0
+[10:27:31] valve 1 close at 01:12:21 | wm1=86 wm2=0 wm3=0 wm4=0 wm5=0
+[10:27:31] wm 1 stopped working at 01:12:21 | wm1=86 wm2=0 wm3=0 wm4=0 wm5=0
+[10:27:32] valve 9 close at 01:12:22 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:32:31] valve 6 open at 01:17:21 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:32:32] valve 2 open at 01:17:22 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:32:32] wm 2 started working at 01:17:22 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[10:32:33] valve 1 open at 01:17:23 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[10:32:33] wm 1 started working at 01:17:23 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[10:32:35] valve 7 open at 01:17:25 | wm1=0 wm2=2 wm3=0 wm4=0 wm5=0
+[10:32:36] valve 9 open at 01:17:26 | wm1=1 wm2=3 wm3=0 wm4=0 wm5=0
+[10:34:43] > stop wm 2
+
+[10:34:43] stop wm 2
+[10:34:43] wm 2 stopped
+[10:34:44] > trigger wm 2 1950
+
+[10:34:44] trigger wm 2 1950
+[10:34:44] wm 2 triggered
+[10:34:44] wm 2 started working at 01:19:34 | wm1=36 wm2=0 wm3=0 wm4=0 wm5=0
+[10:36:36] > stop wm 2
+
+[10:36:36] stop wm 2
+[10:36:36] wm 2 stopped
+[10:36:36] > trigger wm 2 3000
+
+[10:36:36] trigger wm 2 3000
+[10:36:36] wm 2 triggered
+[10:36:36] wm 2 started working at 01:21:27 | wm1=68 wm2=0 wm3=0 wm4=0 wm5=0
+[10:37:09] > stop wm 2
+
+[10:37:10] stop wm 2
+[10:37:10] wm 2 stopped
+[10:37:10] > trigger wm 2 500
+
+[10:37:10] trigger wm 2 500
+[10:37:10] wm 2 triggered
+[10:37:10] wm 2 started working at 01:22:01 | wm1=77 wm2=0 wm3=0 wm4=0 wm5=0
+[10:41:02] > stop wm 2
+
+[10:41:02] stop wm 2
+[10:41:02] wm 2 stopped
+[10:42:59] > trigger wm 2 1200
+
+[10:42:59] trigger wm 2 1200
+[10:42:59] wm 2 triggered
+[10:42:59] wm 2 started working at 01:27:51 | wm1=174 wm2=0 wm3=0 wm4=0 wm5=0
+[10:48:26] > stop wm 1
+
+[10:48:27] stop wm 1
+[10:48:27] wm 1 stopped
+[10:48:27] > stop wm 2
+
+[10:48:27] stop wm 2
+[10:48:27] wm 2 stopped
+[10:48:27] > stop wm 3
+
+[10:48:27] stop wm 3
+[10:48:27] wm 3 stopped
+[10:48:32] valve 2 close at 01:33:24 | wm1=265 wm2=274 wm3=0 wm4=0 wm5=0
+[10:48:36] valve 7 close at 01:33:29 | wm1=265 wm2=274 wm3=0 wm4=0 wm5=0
+[10:48:38] valve 1 close at 01:33:31 | wm1=265 wm2=274 wm3=0 wm4=0 wm5=0
+[10:48:39] valve 9 close at 01:33:31 | wm1=265 wm2=274 wm3=0 wm4=0 wm5=0
+[10:48:40] valve 6 close at 01:33:33 | wm1=265 wm2=274 wm3=0 wm4=0 wm5=0
+[10:51:49] > trigger wm 1 3600
+
+[10:51:49] trigger wm 1 3600
+[10:51:49] wm 1 triggered
+[10:51:49] > trigger wm 2 1200
+
+[10:51:49] trigger wm 2 1200
+[10:51:49] wm 2 triggered
+[10:51:50] > trigger wm 3 1950
+
+[10:51:50] trigger wm 3 1950
+[10:51:50] wm 3 triggered
+[10:51:59] > stop wm 3
+
+[10:51:59] stop wm 3
+[10:51:59] wm 3 stopped
+[10:51:59] > stop wm 4
+
+[10:51:59] stop wm 4
+[10:51:59] wm 4 stopped
+[10:52:00] > stop wm 5
+
+[10:52:00] stop wm 5
+[10:52:00] wm 5 stopped
+[10:52:08] valve 6 open at 01:37:01 | wm1=265 wm2=274 wm3=0 wm4=0 wm5=0
+[10:52:09] valve 2 open at 01:37:02 | wm1=265 wm2=274 wm3=0 wm4=0 wm5=0
+[10:52:09] wm 2 started working at 01:37:02 | wm1=265 wm2=0 wm3=0 wm4=0 wm5=0
+[10:52:10] valve 1 open at 01:37:03 | wm1=265 wm2=1 wm3=0 wm4=0 wm5=0
+[10:52:10] wm 1 started working at 01:37:03 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[10:52:12] valve 7 open at 01:37:05 | wm1=1 wm2=2 wm3=0 wm4=0 wm5=0
+[10:52:13] valve 9 open at 01:37:06 | wm1=1 wm2=3 wm3=0 wm4=0 wm5=0
+[10:53:41] > stop wm 2
+
+[10:53:41] stop wm 2
+[10:53:41] wm 2 stopped
+[11:22:09] valve 2 close at 02:07:06 | wm1=501 wm2=77 wm3=0 wm4=0 wm5=0
+[11:22:13] valve 7 close at 02:07:10 | wm1=502 wm2=77 wm3=0 wm4=0 wm5=0
+[11:22:15] valve 1 close at 02:07:12 | wm1=503 wm2=77 wm3=0 wm4=0 wm5=0
+[11:22:15] wm 1 stopped working at 02:07:12 | wm1=503 wm2=77 wm3=0 wm4=0 wm5=0
+[11:22:16] valve 9 close at 02:07:13 | wm1=0 wm2=77 wm3=0 wm4=0 wm5=0
+[11:22:17] valve 6 close at 02:07:14 | wm1=0 wm2=77 wm3=0 wm4=0 wm5=0
+[11:23:25] > trigger wm 1 3600
+
+[11:23:25] trigger wm 1 3600
+[11:23:25] wm 1 triggered
+[11:23:25] > trigger wm 2 1200
+
+[11:23:25] trigger wm 2 1200
+[11:23:25] wm 2 triggered
+[11:23:34] valve 6 open at 02:08:32 | wm1=0 wm2=77 wm3=0 wm4=0 wm5=0
+[11:23:35] valve 2 open at 02:08:32 | wm1=0 wm2=77 wm3=0 wm4=0 wm5=0
+[11:23:35] wm 2 started working at 02:08:32 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[11:23:36] valve 1 open at 02:08:33 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[11:23:36] wm 1 started working at 02:08:33 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[11:23:38] valve 7 open at 02:08:35 | wm1=1 wm2=3 wm3=0 wm4=0 wm5=0
+[11:23:39] valve 9 open at 02:08:36 | wm1=1 wm2=3 wm3=0 wm4=0 wm5=0
+[11:24:00] > stop wm 2
+
+[11:24:00] stop wm 2
+[11:24:00] wm 2 stopped
+[11:24:00] > trigger wm 2 3000
+
+[11:24:00] trigger wm 2 3000
+[11:24:00] wm 2 triggered
+[11:24:00] wm 2 started working at 02:08:58 | wm1=7 wm2=0 wm3=0 wm4=0 wm5=0
+[11:24:38] > stop wm 2
+
+[11:24:38] stop wm 2
+[11:24:38] wm 2 stopped
+[11:24:39] > trigger wm 2 3000
+
+[11:24:39] trigger wm 2 3000
+[11:24:39] wm 2 triggered
+[11:24:39] wm 2 started working at 02:09:37 | wm1=18 wm2=0 wm3=0 wm4=0 wm5=0
+[11:26:39] > trigger wm 2 5000
+
+[11:26:39] trigger wm 2 5000
+[11:26:39] wm 2 triggered
+[11:26:39] wm 2 started working at 02:11:37 | wm1=51 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:46] > trigger wm 2 7000
+
+[11:27:46] trigger wm 2 7000
+[11:27:46] wm 2 triggered
+[11:27:46] wm 2 started working at 02:12:44 | wm1=70 wm2=0 wm3=0 wm4=0 wm5=0
+[11:29:42] > trigger wm 2 15000
+
+[11:29:42] trigger wm 2 15000
+[11:29:42] wm 2 triggered
+[11:29:42] wm 2 started working at 02:14:40 | wm1=102 wm2=0 wm3=0 wm4=0 wm5=0
+[11:32:56] > trigger wm 2 10000
+
+[11:32:56] trigger wm 2 10000
+[11:32:56] wm 2 triggered
+[11:32:56] wm 2 started working at 02:17:55 | wm1=156 wm2=0 wm3=0 wm4=0 wm5=0
+[11:34:52] > stop wm 2
+
+[11:34:52] stop wm 2
+[11:34:52] wm 2 stopped
+[11:34:53] > trigger wm 2 1200
+
+[11:34:53] trigger wm 2 1200
+[11:34:53] wm 2 triggered
+[11:34:53] wm 2 started working at 02:19:52 | wm1=189 wm2=0 wm3=0 wm4=0 wm5=0
+[11:35:25] > stop wm 2
+
+[11:35:26] stop wm 2
+[11:35:26] wm 2 stopped
+[11:35:26] > trigger wm 2 5000
+
+[11:35:26] trigger wm 2 5000
+[11:35:26] wm 2 triggered
+[11:35:26] wm 2 started working at 02:20:25 | wm1=198 wm2=0 wm3=0 wm4=0 wm5=0
+[11:36:05] > stop wm 2
+
+[11:36:05] stop wm 2
+[11:36:05] wm 2 stopped
+[11:36:06] > trigger wm 2 12000
+
+[11:36:06] trigger wm 2 12000
+[11:36:06] wm 2 triggered
+[11:36:06] wm 2 started working at 02:21:05 | wm1=209 wm2=0 wm3=0 wm4=0 wm5=0
+[11:37:34] > stop wm 2
+
+[11:37:34] stop wm 2
+[11:37:34] wm 2 stopped
+[11:37:35] > trigger wm 2 1200
+
+[11:37:35] trigger wm 2 1200
+[11:37:35] wm 2 triggered
+[11:37:35] wm 2 started working at 02:22:34 | wm1=234 wm2=0 wm3=0 wm4=0 wm5=0
+[11:38:03] > stop wm 2
+
+[11:38:03] stop wm 2
+[11:38:03] wm 2 stopped
+[11:38:04] > trigger wm 2 2200
+
+[11:38:04] trigger wm 2 2200
+[11:38:04] wm 2 triggered
+[11:38:04] wm 2 started working at 02:23:03 | wm1=242 wm2=0 wm3=0 wm4=0 wm5=0
+[11:41:46] > stop wm 2
+
+[11:41:46] stop wm 2
+[11:41:46] wm 2 stopped
+[11:41:47] > trigger wm 2 3200
+
+[11:41:47] trigger wm 2 3200
+[11:41:47] wm 2 triggered
+[11:41:47] wm 2 started working at 02:26:47 | wm1=304 wm2=0 wm3=0 wm4=0 wm5=0
+[11:42:17] > stop wm 2
+
+[11:42:17] stop wm 2
+[11:42:17] wm 2 stopped
+[11:42:18] > trigger wm 2 3200
+
+[11:42:18] trigger wm 2 3200
+[11:42:18] wm 2 triggered
+[11:42:18] wm 2 started working at 02:27:18 | wm1=312 wm2=0 wm3=0 wm4=0 wm5=0
+[11:42:47] > stop wm 2
+
+[11:42:47] stop wm 2
+[11:42:47] wm 2 stopped
+[11:42:49] > trigger wm 2 3200
+
+[11:42:49] trigger wm 2 3200
+[11:42:49] wm 2 triggered
+[11:42:49] wm 2 started working at 02:27:49 | wm1=321 wm2=0 wm3=0 wm4=0 wm5=0
+[11:44:02] > stop wm 2
+
+[11:44:02] stop wm 2
+[11:44:02] wm 2 stopped
+[11:44:04] > start wm 2 3600
+
+[11:44:04] start wm 2 3600
+[11:44:04] wm 2 started
+[11:44:24] > stop wm 2
+
+[11:44:24] stop wm 2
+[11:44:24] wm 2 stopped
+[11:44:31] > trigger wm 2 3600
+
+[11:44:31] trigger wm 2 3600
+[11:44:31] wm 2 triggered
+[11:44:31] wm 2 started working at 02:29:32 | wm1=350 wm2=0 wm3=0 wm4=0 wm5=0
+[11:45:50] valve 2 close at 02:30:51 | wm1=372 wm2=22 wm3=0 wm4=0 wm5=0
+[11:45:50] wm 2 stopped working at 02:30:51 | wm1=372 wm2=22 wm3=0 wm4=0 wm5=0
+[11:45:54] valve 7 close at 02:30:55 | wm1=373 wm2=0 wm3=0 wm4=0 wm5=0
+[11:45:56] > trigger wm 2 3600
+
+[11:45:56] trigger wm 2 3600
+[11:45:56] wm 2 triggered
+[11:45:56] valve 1 close at 02:30:57 | wm1=373 wm2=0 wm3=0 wm4=0 wm5=0
+[11:45:56] wm 1 stopped working at 02:30:57 | wm1=373 wm2=0 wm3=0 wm4=0 wm5=0
+[11:45:57] valve 9 close at 02:30:58 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[11:45:58] valve 6 close at 02:30:59 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[11:46:27] > trigger wm 1 3600
+
+[11:46:27] trigger wm 1 3600
+[11:46:27] wm 1 triggered
+[11:46:27] > trigger wm 2 3600
+
+[11:46:27] trigger wm 2 3600
+[11:46:27] wm 2 triggered
+[12:28:08] > trigger wm 1 3600
+
+[12:28:08] trigger wm 1 3600
+[12:28:08] wm 1 triggered
+[12:28:08] > trigger wm 2 3600
+
+[12:28:08] trigger wm 2 3600
+[12:28:08] wm 2 triggered
+[12:28:28] valve 6 open at 03:13:35 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:28:28] valve 2 open at 03:13:35 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:28:28] wm 2 started working at 03:13:35 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:28:29] valve 1 open at 03:13:36 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:28:29] wm 1 started working at 03:13:36 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:28:31] valve 7 open at 03:13:38 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[12:28:33] valve 9 open at 03:13:39 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[12:29:17] valve 2 close at 03:14:24 | wm1=14 wm2=14 wm3=0 wm4=0 wm5=0
+[12:29:17] wm 2 stopped working at 03:14:24 | wm1=14 wm2=14 wm3=0 wm4=0 wm5=0
+[12:29:21] valve 7 close at 03:14:28 | wm1=15 wm2=0 wm3=0 wm4=0 wm5=0
+[12:29:23] valve 1 close at 03:14:30 | wm1=15 wm2=0 wm3=0 wm4=0 wm5=0
+[12:29:23] wm 1 stopped working at 03:14:30 | wm1=15 wm2=0 wm3=0 wm4=0 wm5=0
+[12:29:24] valve 9 close at 03:14:31 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:29:25] valve 6 close at 03:14:32 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:30:01] valve 6 open at 03:15:08 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:30:02] valve 2 open at 03:15:09 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:30:02] wm 2 started working at 03:15:09 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:30:03] valve 1 open at 03:15:10 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:30:03] wm 1 started working at 03:15:10 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:30:05] valve 7 open at 03:15:12 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[12:30:06] valve 9 open at 03:15:13 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[12:32:25] > stop wm 2
+
+[12:32:25] stop wm 2
+[12:32:25] wm 2 stopped
+[12:32:25] > trigger wm 2 400
+
+[12:32:25] trigger wm 2 400
+[12:32:25] wm 2 triggered
+[12:32:25] wm 2 started working at 03:17:33 | wm1=40 wm2=0 wm3=0 wm4=0 wm5=0
+[12:32:29] > stop wm 2
+
+[12:32:29] stop wm 2
+[12:32:29] wm 2 stopped
+[12:32:30] > trigger wm 2 4000
+
+[12:32:30] trigger wm 2 4000
+[12:32:30] wm 2 triggered
+[12:32:30] wm 2 started working at 03:17:37 | wm1=41 wm2=0 wm3=0 wm4=0 wm5=0
+[12:36:12] valve 2 close at 03:21:20 | wm1=103 wm2=56 wm3=0 wm4=0 wm5=0
+[12:36:12] wm 2 stopped working at 03:21:20 | wm1=103 wm2=56 wm3=0 wm4=0 wm5=0
+[12:36:16] valve 7 close at 03:21:24 | wm1=104 wm2=0 wm3=0 wm4=0 wm5=0
+[12:36:18] valve 1 close at 03:21:26 | wm1=105 wm2=0 wm3=0 wm4=0 wm5=0
+[12:36:19] wm 1 stopped working at 03:21:26 | wm1=105 wm2=0 wm3=0 wm4=0 wm5=0
+[12:36:19] valve 9 close at 03:21:27 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:36:20] valve 6 close at 03:21:28 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:44:21] > stop wm 1
+
+[12:44:21] stop wm 1
+[12:44:21] wm 1 stopped
+[12:44:21] > stop wm 2
+
+[12:44:21] stop wm 2
+[12:44:21] wm 2 stopped
+[12:44:22] > stop wm 3
+
+[12:44:22] stop wm 3
+[12:44:22] wm 3 stopped
+[12:44:22] > trigger wm 1 3600
+
+[12:44:22] trigger wm 1 3600
+[12:44:22] wm 1 triggered
+[12:44:23] > trigger wm 2 4000
+
+[12:44:23] trigger wm 2 4000
+[12:44:23] wm 2 triggered
+[12:44:28] valve 6 open at 03:29:37 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:44:29] valve 2 open at 03:29:38 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:44:29] wm 2 started working at 03:29:38 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:44:30] valve 1 open at 03:29:39 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:44:30] wm 1 started working at 03:29:39 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:44:32] valve 7 open at 03:29:41 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[12:44:33] valve 9 open at 03:29:42 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[12:45:48] > stop wm 2
+
+[12:45:48] stop wm 2
+[12:45:48] wm 2 stopped
+[12:45:48] > trigger wm 2 7000
+
+[12:45:48] trigger wm 2 7000
+[12:45:48] wm 2 triggered
+[12:45:48] wm 2 started working at 03:30:57 | wm1=22 wm2=0 wm3=0 wm4=0 wm5=0
+[12:49:44] > stop wm 2
+
+[12:49:44] stop wm 2
+[12:49:44] wm 2 stopped
+[12:49:44] > trigger wm 2 15000
+
+[12:49:44] trigger wm 2 15000
+[12:49:44] wm 2 triggered
+[12:49:44] wm 2 started working at 03:34:54 | wm1=87 wm2=0 wm3=0 wm4=0 wm5=0
+[12:51:32] valve 2 close at 03:36:42 | wm1=117 wm2=7 wm3=0 wm4=0 wm5=0
+[12:51:32] wm 2 stopped working at 03:36:42 | wm1=117 wm2=7 wm3=0 wm4=0 wm5=0
+[12:51:36] valve 7 close at 03:36:46 | wm1=118 wm2=0 wm3=0 wm4=0 wm5=0
+[12:51:38] valve 1 close at 03:36:48 | wm1=119 wm2=0 wm3=0 wm4=0 wm5=0
+[12:51:38] wm 1 stopped working at 03:36:48 | wm1=119 wm2=0 wm3=0 wm4=0 wm5=0
+[12:51:39] valve 9 close at 03:36:49 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:51:40] valve 6 close at 03:36:50 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:53:41] valve 6 open at 03:38:51 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:53:41] valve 2 open at 03:38:51 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:53:41] wm 2 started working at 03:38:51 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:53:42] valve 1 open at 03:38:52 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:53:42] wm 1 started working at 03:38:52 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[12:53:44] valve 7 open at 03:38:55 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[12:53:45] valve 9 open at 03:38:56 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[13:01:53] > stop wm 2
+
+[13:01:53] stop wm 2
+[13:01:53] wm 2 stopped
+[13:01:54] > trigger wm 2 8000
+
+[13:01:54] trigger wm 2 8000
+[13:01:54] wm 2 triggered
+[13:01:54] wm 2 started working at 03:47:05 | wm1=137 wm2=0 wm3=0 wm4=0 wm5=0
+[13:03:28] > stop wm 2
+
+[13:03:29] stop wm 2
+[13:03:29] wm 2 stopped
+[13:03:29] > trigger wm 2 1200
+
+[13:03:29] trigger wm 2 1200
+[13:03:29] wm 2 triggered
+[13:03:29] wm 2 started working at 03:48:40 | wm1=163 wm2=0 wm3=0 wm4=0 wm5=0
+[13:05:46] valve 2 close at 03:50:57 | wm1=201 wm2=6846 wm3=0 wm4=0 wm5=0
+[13:05:46] wm 2 stopped working at 03:50:57 | wm1=201 wm2=6846 wm3=0 wm4=0 wm5=0
+[13:05:50] valve 7 close at 03:51:01 | wm1=202 wm2=0 wm3=0 wm4=0 wm5=0
+[13:05:52] valve 1 close at 03:51:03 | wm1=203 wm2=0 wm3=0 wm4=0 wm5=0
+[13:05:52] wm 1 stopped working at 03:51:03 | wm1=203 wm2=0 wm3=0 wm4=0 wm5=0
+[13:05:53] valve 9 close at 03:51:04 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:05:54] valve 6 close at 03:51:05 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:06:51] valve 6 open at 03:52:03 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:06:52] valve 2 open at 03:52:03 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:06:52] wm 2 started working at 03:52:03 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:06:53] valve 1 open at 03:52:05 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:06:53] wm 1 started working at 03:52:05 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:06:55] valve 7 open at 03:52:07 | wm1=1 wm2=2 wm3=0 wm4=0 wm5=0
+[13:06:56] valve 9 open at 03:52:08 | wm1=1 wm2=3 wm3=0 wm4=0 wm5=0
+[13:08:27] > stop wm 2
+
+[13:08:27] stop wm 2
+[13:08:27] wm 2 stopped
+[13:08:28] > trigger wm 2 1100
+
+[13:08:28] trigger wm 2 1100
+[13:08:28] wm 2 triggered
+[13:08:28] wm 2 started working at 03:53:40 | wm1=27 wm2=0 wm3=0 wm4=0 wm5=0
+[13:10:32] > stop wm 2
+
+[13:10:32] stop wm 2
+[13:10:32] wm 2 stopped
+[13:10:32] > trigger wm 2 1000
+
+[13:10:32] trigger wm 2 1000
+[13:10:32] wm 2 triggered
+[13:10:32] wm 2 started working at 03:55:44 | wm1=61 wm2=0 wm3=0 wm4=0 wm5=0
+[13:12:17] > trigger wm 2 800
+
+[13:12:17] trigger wm 2 800
+[13:12:17] wm 2 triggered
+[13:12:17] wm 2 started working at 03:57:29 | wm1=90 wm2=0 wm3=0 wm4=0 wm5=0
+[13:25:13] > stop wm 2
+
+[13:25:13] stop wm 2
+[13:25:13] wm 2 stopped
+[13:26:00] > trigger wm 2 800
+
+[13:26:00] trigger wm 2 800
+[13:26:00] wm 2 triggered
+[13:26:00] wm 2 started working at 04:11:13 | wm1=319 wm2=0 wm3=0 wm4=0 wm5=0
+[13:26:09] > stop wm 2
+
+[13:26:09] stop wm 2
+[13:26:09] wm 2 stopped
+[13:26:10] > trigger wm 2 3600
+
+[13:26:10] trigger wm 2 3600
+[13:26:10] wm 2 triggered
+[13:26:10] wm 2 started working at 04:11:24 | wm1=322 wm2=0 wm3=0 wm4=0 wm5=0
+[13:26:18] > stop wm 2
+
+[13:26:18] stop wm 2
+[13:26:18] wm 2 stopped
+[13:26:19] > trigger wm 2 800
+
+[13:26:19] trigger wm 2 800
+[13:26:19] wm 2 triggered
+[13:26:19] wm 2 started working at 04:11:33 | wm1=325 wm2=0 wm3=0 wm4=0 wm5=0
+[13:31:52] valve 2 close at 04:17:07 | wm1=417 wm2=16686 wm3=0 wm4=0 wm5=0
+[13:31:52] wm 2 stopped working at 04:17:07 | wm1=417 wm2=16686 wm3=0 wm4=0 wm5=0
+[13:32:00] valve 6 close at 04:17:15 | wm1=419 wm2=0 wm3=0 wm4=0 wm5=0
+[13:33:16] > stop wm 2
+
+[13:33:16] stop wm 2
+[13:33:16] wm 2 stopped
+[13:33:17] > stop wm 1
+
+[13:33:17] stop wm 1
+[13:33:17] wm 1 stopped
+[13:33:18] > trigger wm 1 3600
+
+[13:33:18] trigger wm 1 3600
+[13:33:18] wm 1 triggered
+[13:33:18] wm 1 started working at 04:18:32 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:33:18] > trigger wm 2 3600
+
+[13:33:18] trigger wm 2 3600
+[13:33:18] wm 2 triggered
+[13:33:37] valve 7 close at 04:18:52 | wm1=5 wm2=0 wm3=0 wm4=0 wm5=0
+[13:33:39] valve 1 close at 04:18:54 | wm1=6 wm2=0 wm3=0 wm4=0 wm5=0
+[13:33:39] wm 1 stopped working at 04:18:54 | wm1=6 wm2=0 wm3=0 wm4=0 wm5=0
+[13:33:40] valve 9 close at 04:18:55 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:34:11] valve 6 open at 04:19:26 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:34:12] valve 2 open at 04:19:27 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:34:12] wm 2 started working at 04:19:27 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:34:13] valve 1 open at 04:19:28 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:34:13] wm 1 started working at 04:19:28 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:34:15] valve 7 open at 04:19:30 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:34:16] valve 9 open at 04:19:31 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[13:35:54] > trigger wm 2 6600
+
+[13:35:54] trigger wm 2 6600
+[13:35:54] wm 2 triggered
+[13:35:54] wm 2 started working at 04:21:09 | wm1=28 wm2=0 wm3=0 wm4=0 wm5=0
+[13:43:37] valve 2 close at 04:28:52 | wm1=157 wm2=70 wm3=0 wm4=0 wm5=0
+[13:43:37] wm 2 stopped working at 04:28:52 | wm1=157 wm2=70 wm3=0 wm4=0 wm5=0
+[13:43:41] valve 7 close at 04:28:57 | wm1=158 wm2=0 wm3=0 wm4=0 wm5=0
+[13:43:43] valve 1 close at 04:28:59 | wm1=158 wm2=0 wm3=0 wm4=0 wm5=0
+[13:43:43] wm 1 stopped working at 04:28:59 | wm1=158 wm2=0 wm3=0 wm4=0 wm5=0
+[13:43:43] valve 9 close at 04:28:59 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:43:44] valve 6 close at 04:29:00 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:44:44] valve 6 open at 04:30:00 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:44:44] valve 2 open at 04:30:00 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:44:45] wm 2 started working at 04:30:00 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:44:45] valve 1 open at 04:30:02 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[13:44:46] wm 1 started working at 04:30:02 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[13:44:47] valve 7 open at 04:30:04 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[13:44:49] valve 9 open at 04:30:05 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[13:45:30] > stop wm 2
+
+[13:45:30] stop wm 2
+[13:45:30] wm 2 stopped
+[13:45:32] > trigger wm 2 1200
+
+[13:45:32] trigger wm 2 1200
+[13:45:32] wm 2 triggered
+[13:45:32] wm 2 started working at 04:30:49 | wm1=13 wm2=0 wm3=0 wm4=0 wm5=0
+[13:45:44] > stop wm 2
+
+[13:45:44] stop wm 2
+[13:45:44] wm 2 stopped
+[13:45:44] > trigger wm 2 1000
+
+[13:45:44] trigger wm 2 1000
+[13:45:44] wm 2 triggered
+[13:45:44] wm 2 started working at 04:31:01 | wm1=17 wm2=0 wm3=0 wm4=0 wm5=0
+[13:45:54] valve 2 close at 04:31:10 | wm1=19 wm2=9 wm3=0 wm4=0 wm5=0
+[13:45:54] wm 2 stopped working at 04:31:10 | wm1=19 wm2=9 wm3=0 wm4=0 wm5=0
+[13:45:58] valve 7 close at 04:31:14 | wm1=21 wm2=0 wm3=0 wm4=0 wm5=0
+[13:46:00] valve 1 close at 04:31:16 | wm1=21 wm2=0 wm3=0 wm4=0 wm5=0
+[13:46:00] wm 1 stopped working at 04:31:16 | wm1=21 wm2=0 wm3=0 wm4=0 wm5=0
+[13:46:00] valve 9 close at 04:31:17 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:46:02] valve 6 close at 04:31:18 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:46:15] > stop wm 2
+
+[13:46:15] stop wm 2
+[13:46:15] wm 2 stopped
+[13:46:15] > trigger wm 2 3600
+
+[13:46:15] trigger wm 2 3600
+[13:46:15] wm 2 triggered
+[13:46:27] valve 6 open at 04:31:44 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:46:28] valve 2 open at 04:31:44 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:46:28] wm 2 started working at 04:31:44 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[13:46:29] valve 1 open at 04:31:45 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[13:46:29] wm 1 started working at 04:31:45 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[13:46:31] valve 7 open at 04:31:47 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[13:46:32] valve 9 open at 04:31:48 | wm1=1 wm2=2 wm3=0 wm4=0 wm5=0
+[14:13:29] valve 2 close at 04:56:48 | wm1=417 wm2=418 wm3=0 wm4=0 wm5=0
+[14:13:29] wm 2 stopped working at 04:56:48 | wm1=417 wm2=418 wm3=0 wm4=0 wm5=0
+[14:13:30] valve 6 close at 04:56:56 | wm1=420 wm2=0 wm3=0 wm4=0 wm5=0
+[14:16:33] valve 7 close at 05:01:53 | wm1=502 wm2=0 wm3=0 wm4=0 wm5=0
+[14:16:35] valve 1 close at 05:01:55 | wm1=503 wm2=0 wm3=0 wm4=0 wm5=0
+[14:16:35] wm 1 stopped working at 05:01:55 | wm1=503 wm2=0 wm3=0 wm4=0 wm5=0
+[14:16:35] valve 9 close at 05:01:55 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[14:29:05] > trigger wm 2 3000
+
+[14:29:05] trigger wm 2 3000
+[14:29:05] wm 2 triggered
+[14:29:06] > trigger wm 1 3600
+
+[14:29:06] trigger wm 1 3600
+[14:29:06] wm 1 triggered
+[14:29:17] valve 6 open at 05:14:39 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[14:29:18] valve 2 open at 05:14:39 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[14:29:18] wm 2 started working at 05:14:39 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[14:29:19] valve 1 open at 05:14:41 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[14:29:19] wm 1 started working at 05:14:41 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[14:29:21] valve 7 open at 05:14:43 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[14:29:22] valve 9 open at 05:14:44 | wm1=1 wm2=1 wm3=0 wm4=0 wm5=0
+[14:46:13] > start wm 3 1950
+
+[14:46:13] start wm 3 1950
+[14:46:13] wm 3 started
+[14:54:18] valve 2 close at 05:39:43 | wm1=417 wm2=501 wm3=249 wm4=0 wm5=0
+[14:54:18] wm 2 stopped working at 05:39:43 | wm1=417 wm2=501 wm3=249 wm4=0 wm5=0
+[14:54:26] valve 6 close at 05:39:51 | wm1=419 wm2=0 wm3=253 wm4=0 wm5=0
+[14:59:22] valve 7 close at 05:44:48 | wm1=502 wm2=0 wm3=405 wm4=0 wm5=0
+[14:59:25] valve 1 close at 05:44:50 | wm1=502 wm2=0 wm3=406 wm4=0 wm5=0
+[14:59:25] wm 1 stopped working at 05:44:50 | wm1=502 wm2=0 wm3=406 wm4=0 wm5=0
+[14:59:25] valve 9 close at 05:44:51 | wm1=0 wm2=0 wm3=407 wm4=0 wm5=0
+[15:07:09] valve 6 open at 05:52:36 | wm1=0 wm2=0 wm3=645 wm4=0 wm5=0
+[15:07:10] valve 2 open at 05:52:37 | wm1=0 wm2=0 wm3=645 wm4=0 wm5=0
+[15:07:10] wm 2 started working at 05:52:37 | wm1=0 wm2=0 wm3=645 wm4=0 wm5=0
+[15:07:11] valve 1 open at 05:52:38 | wm1=0 wm2=0 wm3=646 wm4=0 wm5=0
+[15:07:11] wm 1 started working at 05:52:38 | wm1=0 wm2=0 wm3=646 wm4=0 wm5=0
+[15:07:13] valve 7 open at 05:52:40 | wm1=1 wm2=1 wm3=647 wm4=0 wm5=0
+[15:07:14] valve 9 open at 05:52:41 | wm1=1 wm2=2 wm3=648 wm4=0 wm5=0
+[15:09:55] valve 2 close at 05:55:22 | wm1=46 wm2=55 wm3=730 wm4=0 wm5=0
+[15:09:55] wm 2 stopped working at 05:55:22 | wm1=46 wm2=55 wm3=730 wm4=0 wm5=0
+[15:09:58] valve 7 close at 05:55:25 | wm1=47 wm2=0 wm3=732 wm4=0 wm5=0
+[15:10:00] valve 1 close at 05:55:27 | wm1=47 wm2=0 wm3=733 wm4=0 wm5=0
+[15:10:00] wm 1 stopped working at 05:55:27 | wm1=47 wm2=0 wm3=733 wm4=0 wm5=0
+[15:10:01] valve 9 close at 05:55:28 | wm1=0 wm2=0 wm3=733 wm4=0 wm5=0
+[15:10:03] valve 6 close at 05:55:30 | wm1=0 wm2=0 wm3=735 wm4=0 wm5=0
+[15:11:25] valve 6 open at 05:56:53 | wm1=0 wm2=0 wm3=777 wm4=0 wm5=0
+[15:11:26] valve 2 open at 05:56:53 | wm1=0 wm2=0 wm3=777 wm4=0 wm5=0
+[15:11:26] wm 2 started working at 05:56:53 | wm1=0 wm2=0 wm3=777 wm4=0 wm5=0
+[15:11:27] valve 1 open at 05:56:55 | wm1=0 wm2=1 wm3=778 wm4=0 wm5=0
+[15:11:27] wm 1 started working at 05:56:55 | wm1=0 wm2=1 wm3=778 wm4=0 wm5=0
+[15:11:29] valve 7 open at 05:56:57 | wm1=1 wm2=1 wm3=779 wm4=0 wm5=0
+[15:11:30] valve 9 open at 05:56:58 | wm1=1 wm2=2 wm3=779 wm4=0 wm5=0
+[15:28:48] valve 2 close at 06:14:18 | wm1=290 wm2=348 wm3=1313 wm4=0 wm5=0
+[15:28:48] wm 2 stopped working at 06:14:18 | wm1=290 wm2=348 wm3=1313 wm4=0 wm5=0
+[15:28:52] valve 7 close at 06:14:22 | wm1=291 wm2=0 wm3=1315 wm4=0 wm5=0
+[15:28:54] valve 1 close at 06:14:24 | wm1=292 wm2=0 wm3=1316 wm4=0 wm5=0
+[15:28:54] wm 1 stopped working at 06:14:24 | wm1=292 wm2=0 wm3=1316 wm4=0 wm5=0
+[15:28:55] valve 9 close at 06:14:25 | wm1=0 wm2=0 wm3=1316 wm4=0 wm5=0
+[15:28:56] valve 6 close at 06:14:26 | wm1=0 wm2=0 wm3=1317 wm4=0 wm5=0
+[16:06:39] > stop wm 3
+
+[16:06:39] stop wm 3
+[16:06:39] wm 3 stopped
+[16:06:49] > stop wm 2
+
+[16:06:49] stop wm 2
+[16:06:49] wm 2 stopped
+[16:06:50] > trigger wm 2 1000
+
+[16:06:50] trigger wm 2 1000
+[16:06:50] wm 2 triggered
+[16:06:52] > trigger wm 1 3600
+
+[16:06:52] trigger wm 1 3600
+[16:06:52] wm 1 triggered
+[16:06:52] > trigger wm 2 1000
+
+[16:06:53] trigger wm 2 1000
+[16:06:53] wm 2 triggered
+[16:07:21] valve 6 open at 06:52:56 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:07:21] valve 2 open at 06:52:56 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:07:21] wm 2 started working at 06:52:56 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:07:22] valve 1 open at 06:52:57 | wm1=0 wm2=1 wm3=2480 wm4=0 wm5=0
+[16:07:22] wm 1 started working at 06:52:57 | wm1=0 wm2=1 wm3=2480 wm4=0 wm5=0
+[16:07:24] valve 7 open at 06:52:59 | wm1=1 wm2=3 wm3=2480 wm4=0 wm5=0
+[16:07:25] valve 9 open at 06:53:01 | wm1=1 wm2=5 wm3=2480 wm4=0 wm5=0
+[16:09:17] > stop wm 2
+
+[16:09:17] stop wm 2
+[16:09:17] wm 2 stopped
+[16:09:18] > trigger wm 2 8000
+
+[16:09:18] trigger wm 2 8000
+[16:09:18] wm 2 triggered
+[16:09:18] wm 2 started working at 06:54:53 | wm1=32 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:19:11] > trigger wm 2 800
+
+[16:19:11] trigger wm 2 800
+[16:19:11] wm 2 triggered
+[16:19:11] wm 2 started working at 07:04:47 | wm1=197 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:20:44] valve 2 close at 07:06:21 | wm1=223 wm2=4684 wm3=2480 wm4=0 wm5=0
+[16:20:44] wm 2 stopped working at 07:06:21 | wm1=223 wm2=4684 wm3=2480 wm4=0 wm5=0
+[16:20:48] valve 7 close at 07:06:25 | wm1=224 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:20:50] valve 1 close at 07:06:27 | wm1=225 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:20:51] wm 1 stopped working at 07:06:27 | wm1=225 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:20:51] valve 9 close at 07:06:28 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:20:52] valve 6 close at 07:06:29 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:53:50] valve 1 open at 07:39:31 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:53:50] wm 1 started working at 07:39:31 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:53:51] valve 7 open at 07:39:33 | wm1=1 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:53:53] valve 9 open at 07:39:34 | wm1=1 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:54:21] valve 7 close at 07:40:02 | wm1=9 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:54:23] valve 1 close at 07:40:04 | wm1=9 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:54:23] wm 1 stopped working at 07:40:04 | wm1=9 wm2=0 wm3=2480 wm4=0 wm5=0
+[16:54:23] valve 9 close at 07:40:05 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:37] valve 1 open at 10:10:06 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:41] wm 1 started working at 10:10:06 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:43] valve 7 open at 10:10:08 | wm1=1 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:43] valve 9 open at 10:10:09 | wm1=1 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:45] valve 6 open at 10:11:04 | wm1=16 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:51] valve 2 open at 10:11:05 | wm1=17 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:51] wm 2 started working at 10:11:05 | wm1=17 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:52] valve 2 close at 10:24:52 | wm1=246 wm2=1033 wm3=2480 wm4=0 wm5=0
+[19:46:52] wm 2 stopped working at 10:24:52 | wm1=246 wm2=1033 wm3=2480 wm4=0 wm5=0
+[19:46:53] valve 7 close at 10:24:56 | wm1=248 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:53] valve 1 close at 10:24:58 | wm1=248 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:54] wm 1 stopped working at 10:24:58 | wm1=248 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:56] valve 9 close at 10:24:59 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[19:46:57] valve 6 close at 10:25:00 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+--- Date Changed: Fri Jun 26 07:57:03 2026 ---
+[07:57:03] > stop wm 1
+
+[07:57:03] stop wm 1
+[07:57:03] wm 1 stopped
+[07:57:04] > stop wm 2
+
+[07:57:04] stop wm 2
+[07:57:04] wm 2 stopped
+[07:57:04] > stop wm 3
+
+[07:57:04] stop wm 3
+[07:57:04] wm 3 stopped
+[07:57:05] > stop wm 4
+
+[07:57:05] stop wm 4
+[07:57:05] wm 4 stopped
+[07:57:05] > trigger wm 1 3600
+
+[07:57:05] trigger wm 1 3600
+[07:57:05] wm 1 triggered
+[07:57:06] > trigger wm 2 1200
+
+[07:57:06] trigger wm 2 1200
+[07:57:06] wm 2 triggered
+[07:57:06] > trigger wm 3 1200
+
+[07:57:06] trigger wm 3 1200
+[07:57:06] wm 3 triggered
+[07:57:07] > trigger wm 4 1200
+
+[07:57:07] trigger wm 4 1200
+[07:57:07] wm 4 triggered
+[07:59:19] valve 1 open at 22:47:12 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[07:59:19] wm 1 started working at 22:47:12 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[07:59:21] valve 7 open at 22:47:14 | wm1=1 wm2=0 wm3=2480 wm4=0 wm5=0
+[07:59:22] valve 8 open at 22:47:15 | wm1=1 wm2=0 wm3=2480 wm4=0 wm5=0
+[08:02:24] valve 7 close at 22:50:18 | wm1=52 wm2=0 wm3=2480 wm4=0 wm5=0
+[08:02:26] valve 1 close at 22:50:20 | wm1=52 wm2=0 wm3=2480 wm4=0 wm5=0
+[08:02:27] wm 1 stopped working at 22:50:20 | wm1=52 wm2=0 wm3=2480 wm4=0 wm5=0
+[08:02:27] valve 8 close at 22:50:21 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[08:02:31] > trigger wm 1 3600
+
+[08:02:31] trigger wm 1 3600
+[08:02:31] wm 1 triggered
+[08:02:31] > trigger wm 2 1200
+
+[08:02:31] trigger wm 2 1200
+[08:02:31] wm 2 triggered
+[08:02:32] > trigger wm 3 1200
+
+[08:02:32] trigger wm 3 1200
+[08:02:32] wm 3 triggered
+[08:02:33] > trigger wm 4 1200
+
+[08:02:33] trigger wm 4 1200
+[08:02:33] wm 4 triggered
+[08:04:05] valve 6 open at 22:51:59 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[08:04:06] valve 2 open at 22:52:00 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[08:04:06] wm 2 started working at 22:52:00 | wm1=0 wm2=0 wm3=2480 wm4=0 wm5=0
+[08:04:07] valve 3 open at 22:52:00 | wm1=0 wm2=1 wm3=2480 wm4=0 wm5=0
+[08:04:07] wm 3 started working at 22:52:00 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[08:04:07] valve 14 open at 22:52:01 | wm1=0 wm2=2 wm3=0 wm4=0 wm5=0
+[08:04:08] valve 5 open at 22:52:02 | wm1=0 wm2=2 wm3=1 wm4=0 wm5=0
+[08:04:08] valve 1 open at 22:52:02 | wm1=0 wm2=3 wm3=1 wm4=0 wm5=0
+[08:04:09] wm 1 started working at 22:52:02 | wm1=0 wm2=3 wm3=1 wm4=0 wm5=0
+[08:04:09] valve 7 open at 22:52:03 | wm1=1 wm2=3 wm3=2 wm4=0 wm5=0
+[08:04:10] valve 8 open at 22:52:04 | wm1=1 wm2=4 wm3=3 wm4=0 wm5=0
+[08:04:16] valve 14 close at 22:52:09 | wm1=2 wm2=8 wm3=7 wm4=0 wm5=0
+[08:04:16] valve 5 close at 22:52:10 | wm1=3 wm2=9 wm3=8 wm4=0 wm5=0
+[08:04:37] valve 14 open at 22:52:31 | wm1=9 wm2=27 wm3=26 wm4=0 wm5=0
+[08:04:48] valve 14 close at 22:52:42 | wm1=11 wm2=35 wm3=34 wm4=0 wm5=0
+[08:05:10] valve 14 open at 22:53:04 | wm1=17 wm2=54 wm3=53 wm4=0 wm5=0
+[08:05:20] valve 14 close at 22:53:14 | wm1=20 wm2=62 wm3=61 wm4=0 wm5=0
+[08:05:42] valve 14 open at 22:53:36 | wm1=26 wm2=80 wm3=79 wm4=0 wm5=0
+[08:05:52] valve 14 close at 22:53:46 | wm1=29 wm2=89 wm3=88 wm4=0 wm5=0
+[08:06:14] valve 14 open at 22:54:08 | wm1=35 wm2=107 wm3=106 wm4=0 wm5=0
+[08:06:24] valve 14 close at 22:54:18 | wm1=38 wm2=116 wm3=115 wm4=0 wm5=0
+[08:06:46] valve 14 open at 22:54:40 | wm1=44 wm2=134 wm3=133 wm4=0 wm5=0
+[08:06:56] valve 14 close at 22:54:50 | wm1=47 wm2=142 wm3=141 wm4=0 wm5=0
+[08:07:18] valve 14 open at 22:55:12 | wm1=53 wm2=161 wm3=160 wm4=0 wm5=0
+[08:07:28] valve 14 close at 22:55:22 | wm1=56 wm2=169 wm3=168 wm4=0 wm5=0
+[08:07:50] valve 14 open at 22:55:44 | wm1=62 wm2=188 wm3=187 wm4=0 wm5=0
+[08:08:00] valve 14 close at 22:55:54 | wm1=65 wm2=196 wm3=195 wm4=0 wm5=0
+[08:08:22] valve 14 open at 22:56:17 | wm1=71 wm2=214 wm3=213 wm4=0 wm5=0
+[08:08:32] valve 14 close at 22:56:27 | wm1=74 wm2=223 wm3=222 wm4=0 wm5=0
+[08:08:48] > trigger wm 5 1000
+
+[08:08:48] trigger wm 5 1000
+[08:08:48] wm 5 triggered
+[08:08:51] > trigger wm 4 1200
+
+[08:08:52] trigger wm 4 1200
+[08:08:52] wm 4 triggered
+[08:08:54] valve 14 open at 22:56:49 | wm1=80 wm2=241 wm3=240 wm4=0 wm5=0
+[08:09:04] valve 14 close at 22:56:59 | wm1=83 wm2=250 wm3=249 wm4=0 wm5=0
+[08:09:26] valve 14 open at 22:57:21 | wm1=89 wm2=268 wm3=267 wm4=0 wm5=0
+[08:09:36] valve 14 close at 22:57:31 | wm1=92 wm2=276 wm3=275 wm4=0 wm5=0
+[08:09:58] valve 14 open at 22:57:53 | wm1=98 wm2=295 wm3=294 wm4=0 wm5=0
+[08:10:08] valve 14 close at 22:58:03 | wm1=101 wm2=303 wm3=302 wm4=0 wm5=0
+[08:10:30] valve 14 open at 22:58:25 | wm1=107 wm2=322 wm3=321 wm4=0 wm5=0
+[08:10:40] valve 14 close at 22:58:35 | wm1=110 wm2=330 wm3=329 wm4=0 wm5=0
+[08:11:02] valve 14 open at 22:58:57 | wm1=116 wm2=348 wm3=347 wm4=0 wm5=0
+[08:11:12] valve 14 close at 22:59:07 | wm1=119 wm2=357 wm3=356 wm4=0 wm5=0
+[08:11:34] valve 14 open at 22:59:29 | wm1=125 wm2=375 wm3=374 wm4=0 wm5=0
+[08:11:44] valve 14 close at 22:59:39 | wm1=127 wm2=384 wm3=383 wm4=0 wm5=0
+[08:12:01] > trigger wm 5 1200
+
+[08:12:01] trigger wm 5 1200
+[08:12:01] wm 5 triggered
+[08:12:06] valve 14 open at 23:00:02 | wm1=134 wm2=402 wm3=401 wm4=0 wm5=0
+[08:12:16] valve 14 close at 23:00:12 | wm1=136 wm2=410 wm3=409 wm4=0 wm5=0
+[08:12:38] valve 14 open at 23:00:34 | wm1=143 wm2=429 wm3=428 wm4=0 wm5=0
+[08:12:44] > start wm 5 1200
+
+[08:12:44] start wm 5 1200
+[08:12:44] wm 5 started
+[08:12:49] valve 14 close at 23:00:44 | wm1=145 wm2=437 wm3=436 wm4=0 wm5=4
+[08:13:11] > start wm 4 1200
+
+[08:13:11] start wm 4 1200
+[08:13:11] valve 14 open at 23:01:06 | wm1=151 wm2=456 wm3=455 wm4=0 wm5=22
+[08:13:11] wm 4 started
+[08:13:21] valve 14 close at 23:01:16 | wm1=154 wm2=464 wm3=463 wm4=8 wm5=31
+[08:13:43] valve 14 open at 23:01:38 | wm1=160 wm2=482 wm3=481 wm4=26 wm5=49
+[08:13:53] valve 14 close at 23:01:48 | wm1=163 wm2=491 wm3=490 wm4=35 wm5=57
+[08:14:15] valve 14 open at 23:02:10 | wm1=169 wm2=509 wm3=508 wm4=53 wm5=76
+[08:14:25] valve 14 close at 23:02:20 | wm1=172 wm2=518 wm3=517 wm4=61 wm5=84
+[08:14:47] valve 14 open at 23:02:42 | wm1=178 wm2=536 wm3=535 wm4=80 wm5=103
+[08:14:57] valve 14 close at 23:02:52 | wm1=181 wm2=544 wm3=543 wm4=88 wm5=111
+[08:15:19] valve 14 open at 23:03:15 | wm1=187 wm2=563 wm3=562 wm4=107 wm5=129
+[08:15:29] valve 14 close at 23:03:25 | wm1=190 wm2=571 wm3=570 wm4=115 wm5=138
+[08:15:51] valve 14 open at 23:03:47 | wm1=196 wm2=590 wm3=588 wm4=133 wm5=156
+[08:16:01] valve 14 close at 23:03:57 | wm1=199 wm2=598 wm3=597 wm4=142 wm5=164
+[08:16:23] valve 14 open at 23:04:19 | wm1=205 wm2=616 wm3=615 wm4=160 wm5=183
+[08:16:33] valve 14 close at 23:04:29 | wm1=208 wm2=625 wm3=624 wm4=169 wm5=191
+[08:16:55] valve 14 open at 23:04:51 | wm1=214 wm2=643 wm3=642 wm4=187 wm5=210
+[08:17:05] valve 14 close at 23:05:01 | wm1=217 wm2=651 wm3=650 wm4=195 wm5=218
+[08:17:27] valve 14 open at 23:05:23 | wm1=223 wm2=670 wm3=669 wm4=214 wm5=237
+[08:17:37] valve 14 close at 23:05:33 | wm1=226 wm2=678 wm3=677 wm4=222 wm5=245
+[08:17:59] valve 14 open at 23:05:55 | wm1=232 wm2=697 wm3=696 wm4=241 wm5=263
+[08:18:05] valve 2 close at 23:06:01 | wm1=234 wm2=702 wm3=701 wm4=246 wm5=268
+[08:18:05] wm 2 stopped working at 23:06:01 | wm1=234 wm2=702 wm3=701 wm4=246 wm5=268
+[08:18:06] valve 3 close at 23:06:02 | wm1=234 wm2=0 wm3=701 wm4=246 wm5=269
+[08:18:06] wm 3 stopped working at 23:06:02 | wm1=234 wm2=0 wm3=701 wm4=246 wm5=269
+[08:18:07] valve 14 close at 23:06:03 | wm1=234 wm2=0 wm3=0 wm4=247 wm5=270
+[08:18:10] valve 7 close at 23:06:06 | wm1=235 wm2=0 wm3=0 wm4=249 wm5=272
+[08:18:12] valve 8 close at 23:06:08 | wm1=235 wm2=0 wm3=0 wm4=251 wm5=274
+[08:18:12] valve 1 close at 23:06:08 | wm1=235 wm2=0 wm3=0 wm4=251 wm5=274
+[08:18:12] wm 1 stopped working at 23:06:08 | wm1=235 wm2=0 wm3=0 wm4=251 wm5=274
+[08:18:13] valve 6 close at 23:06:09 | wm1=0 wm2=0 wm3=0 wm4=252 wm5=275
+[08:18:28] valve 5 open at 23:06:24 | wm1=0 wm2=0 wm3=0 wm4=264 wm5=287
+[08:18:33] valve 5 close at 23:06:29 | wm1=0 wm2=0 wm3=0 wm4=269 wm5=291
+[08:18:43] valve 5 open at 23:06:39 | wm1=0 wm2=0 wm3=0 wm4=277 wm5=300
+[08:18:48] valve 5 close at 23:06:44 | wm1=0 wm2=0 wm3=0 wm4=281 wm5=304
+[08:19:18] valve 14 open at 23:07:14 | wm1=0 wm2=0 wm3=0 wm4=306 wm5=329
+[08:19:23] valve 14 close at 23:07:19 | wm1=0 wm2=0 wm3=0 wm4=310 wm5=333
+[08:19:33] valve 5 open at 23:07:29 | wm1=0 wm2=0 wm3=0 wm4=319 wm5=341
+[08:19:38] valve 5 close at 23:07:34 | wm1=0 wm2=0 wm3=0 wm4=323 wm5=346
+[08:22:53] valve 4 open at 23:10:50 | wm1=0 wm2=0 wm3=0 wm4=486 wm5=509
+[08:22:58] valve 4 close at 23:10:55 | wm1=0 wm2=0 wm3=0 wm4=490 wm5=513
+[08:23:03] valve 5 open at 23:11:00 | wm1=0 wm2=0 wm3=0 wm4=494 wm5=517
+[08:23:08] valve 5 close at 23:11:05 | wm1=0 wm2=0 wm3=0 wm4=499 wm5=521
+[08:25:03] valve 5 open at 23:13:00 | wm1=0 wm2=0 wm3=0 wm4=595 wm5=617
+[08:25:08] valve 5 close at 23:13:05 | wm1=0 wm2=0 wm3=0 wm4=599 wm5=622
+[08:25:39] valve 5 open at 23:13:36 | wm1=0 wm2=0 wm3=0 wm4=625 wm5=647
+[08:25:44] valve 5 close at 23:13:42 | wm1=0 wm2=0 wm3=0 wm4=629 wm5=652
+[08:25:51] > trigger wm 1 3600
+
+[08:25:51] trigger wm 1 3600
+[08:25:51] wm 1 triggered
+[08:25:52] > trigger wm 2 1200
+
+[08:25:52] trigger wm 2 1200
+[08:25:52] wm 2 triggered
+[08:25:53] > trigger wm 3 1200
+
+[08:25:53] trigger wm 3 1200
+[08:25:53] wm 3 triggered
+[08:25:53] > trigger wm 4 1200
+
+[08:25:53] trigger wm 4 1200
+[08:25:53] wm 4 triggered
+[08:25:54] > trigger wm 5 1200
+
+[08:25:54] trigger wm 5 1200
+[08:25:54] wm 5 triggered
+[08:26:10] valve 6 open at 23:14:08 | wm1=0 wm2=0 wm3=0 wm4=637 wm5=660
+[08:26:11] valve 2 open at 23:14:08 | wm1=0 wm2=0 wm3=0 wm4=637 wm5=660
+[08:26:11] wm 2 started working at 23:14:08 | wm1=0 wm2=0 wm3=0 wm4=637 wm5=660
+[08:26:12] valve 3 open at 23:14:09 | wm1=0 wm2=0 wm3=0 wm4=637 wm5=660
+[08:26:12] wm 3 started working at 23:14:09 | wm1=0 wm2=0 wm3=0 wm4=637 wm5=660
+[08:26:12] valve 4 open at 23:14:10 | wm1=0 wm2=1 wm3=1 wm4=637 wm5=660
+[08:26:12] wm 4 started working at 23:14:10 | wm1=0 wm2=1 wm3=1 wm4=0 wm5=660
+[08:26:13] valve 5 open at 23:14:10 | wm1=0 wm2=1 wm3=2 wm4=0 wm5=660
+[08:26:13] wm 5 started working at 23:14:10 | wm1=0 wm2=1 wm3=2 wm4=0 wm5=0
+[08:26:18] valve 1 open at 23:14:16 | wm1=0 wm2=6 wm3=6 wm4=5 wm5=4
+[08:26:18] wm 1 started working at 23:14:16 | wm1=0 wm2=6 wm3=6 wm4=5 wm5=4
+[08:26:19] valve 8 open at 23:14:16 | wm1=1 wm2=6 wm3=6 wm4=5 wm5=5
+[08:26:20] valve 4 close at 23:14:17 | wm1=1 wm2=7 wm3=8 wm4=6 wm5=6
+[08:26:20] wm 4 stopped working at 23:14:17 | wm1=1 wm2=7 wm3=8 wm4=6 wm5=6
+[08:26:21] valve 5 close at 23:14:18 | wm1=1 wm2=8 wm3=8 wm4=0 wm5=6
+[08:26:21] wm 5 stopped working at 23:14:18 | wm1=1 wm2=8 wm3=8 wm4=0 wm5=6
+[08:26:42] valve 4 open at 23:14:40 | wm1=7 wm2=26 wm3=26 wm4=0 wm5=0
+[08:26:42] wm 4 started working at 23:14:40 | wm1=7 wm2=26 wm3=26 wm4=0 wm5=0
+[08:26:52] valve 5 open at 23:14:50 | wm1=10 wm2=34 wm3=34 wm4=9 wm5=0
+[08:26:52] wm 5 started working at 23:14:50 | wm1=10 wm2=34 wm3=34 wm4=9 wm5=0
+[08:26:53] valve 4 close at 23:14:50 | wm1=10 wm2=35 wm3=35 wm4=9 wm5=1
+[08:26:53] wm 4 stopped working at 23:14:50 | wm1=10 wm2=35 wm3=35 wm4=9 wm5=1
+[08:27:02] valve 5 close at 23:15:00 | wm1=13 wm2=43 wm3=43 wm4=0 wm5=9
+[08:27:02] wm 5 stopped working at 23:15:00 | wm1=13 wm2=43 wm3=43 wm4=0 wm5=9
+[08:27:14] valve 4 open at 23:15:12 | wm1=16 wm2=53 wm3=53 wm4=0 wm5=0
+[08:27:14] wm 4 started working at 23:15:12 | wm1=16 wm2=53 wm3=53 wm4=0 wm5=0
+[08:27:24] valve 4 close at 23:15:22 | wm1=19 wm2=61 wm3=61 wm4=9 wm5=0
+[08:27:24] wm 4 stopped working at 23:15:22 | wm1=19 wm2=61 wm3=61 wm4=9 wm5=0
+[08:27:35] valve 5 open at 23:15:32 | wm1=22 wm2=69 wm3=70 wm4=0 wm5=0
+[08:27:35] wm 5 started working at 23:15:32 | wm1=22 wm2=69 wm3=70 wm4=0 wm5=0
+[08:27:45] valve 5 close at 23:15:42 | wm1=25 wm2=78 wm3=78 wm4=0 wm5=8
+[08:27:45] wm 5 stopped working at 23:15:42 | wm1=25 wm2=78 wm3=78 wm4=0 wm5=8
+[08:27:47] valve 4 open at 23:15:44 | wm1=25 wm2=79 wm3=80 wm4=0 wm5=0
+[08:27:47] wm 4 started working at 23:15:44 | wm1=25 wm2=79 wm3=80 wm4=0 wm5=0
+[08:27:57] valve 4 close at 23:15:54 | wm1=28 wm2=88 wm3=88 wm4=8 wm5=0
+[08:27:57] wm 4 stopped working at 23:15:54 | wm1=28 wm2=88 wm3=88 wm4=8 wm5=0
+[08:28:17] valve 5 open at 23:16:14 | wm1=33 wm2=105 wm3=105 wm4=0 wm5=0
+[08:28:17] wm 5 started working at 23:16:14 | wm1=33 wm2=105 wm3=105 wm4=0 wm5=0
+[08:28:19] valve 4 open at 23:16:16 | wm1=34 wm2=106 wm3=106 wm4=0 wm5=2
+[08:28:19] wm 4 started working at 23:16:16 | wm1=34 wm2=106 wm3=106 wm4=0 wm5=2
+[08:28:27] valve 5 close at 23:16:24 | wm1=36 wm2=113 wm3=113 wm4=7 wm5=9
+[08:28:27] wm 5 stopped working at 23:16:24 | wm1=36 wm2=113 wm3=113 wm4=7 wm5=9
+[08:28:29] valve 4 close at 23:16:26 | wm1=37 wm2=115 wm3=115 wm4=8 wm5=0
+[08:28:29] wm 4 stopped working at 23:16:26 | wm1=37 wm2=115 wm3=115 wm4=8 wm5=0
+[08:28:51] valve 4 open at 23:16:48 | wm1=43 wm2=133 wm3=133 wm4=0 wm5=0
+[08:28:51] wm 4 started working at 23:16:48 | wm1=43 wm2=133 wm3=133 wm4=0 wm5=0
+[08:28:59] valve 5 open at 23:16:57 | wm1=45 wm2=140 wm3=140 wm4=7 wm5=0
+[08:28:59] wm 5 started working at 23:16:57 | wm1=45 wm2=140 wm3=140 wm4=7 wm5=0
+[08:29:01] valve 4 close at 23:16:58 | wm1=46 wm2=141 wm3=142 wm4=9 wm5=1
+[08:29:01] wm 4 stopped working at 23:16:58 | wm1=46 wm2=141 wm3=142 wm4=9 wm5=1
+[08:29:09] valve 5 close at 23:17:07 | wm1=48 wm2=148 wm3=148 wm4=0 wm5=8
+[08:29:09] wm 5 stopped working at 23:17:07 | wm1=48 wm2=148 wm3=149 wm4=0 wm5=8
+[08:29:23] valve 4 open at 23:17:21 | wm1=52 wm2=160 wm3=160 wm4=0 wm5=0
+[08:29:23] wm 4 started working at 23:17:21 | wm1=52 wm2=160 wm3=160 wm4=0 wm5=0
+[08:29:33] valve 4 close at 23:17:31 | wm1=55 wm2=168 wm3=168 wm4=8 wm5=0
+[08:29:33] wm 4 stopped working at 23:17:31 | wm1=55 wm2=168 wm3=168 wm4=8 wm5=0
+[08:29:41] valve 5 open at 23:17:39 | wm1=57 wm2=175 wm3=175 wm4=0 wm5=0
+[08:29:41] wm 5 started working at 23:17:39 | wm1=57 wm2=175 wm3=175 wm4=0 wm5=0
+[08:29:51] valve 5 close at 23:17:49 | wm1=60 wm2=184 wm3=184 wm4=0 wm5=8
+[08:29:51] wm 5 stopped working at 23:17:49 | wm1=60 wm2=184 wm3=184 wm4=0 wm5=8
+[08:29:55] valve 4 open at 23:17:53 | wm1=61 wm2=187 wm3=187 wm4=0 wm5=0
+[08:29:55] wm 4 started working at 23:17:53 | wm1=61 wm2=187 wm3=187 wm4=0 wm5=0
+[08:30:05] valve 4 close at 23:18:03 | wm1=64 wm2=195 wm3=195 wm4=8 wm5=0
+[08:30:05] wm 4 stopped working at 23:18:03 | wm1=64 wm2=195 wm3=195 wm4=8 wm5=0
+[08:30:23] valve 5 open at 23:18:21 | wm1=69 wm2=210 wm3=211 wm4=0 wm5=0
+[08:30:23] wm 5 started working at 23:18:21 | wm1=69 wm2=210 wm3=211 wm4=0 wm5=0
+[08:30:27] valve 4 open at 23:18:25 | wm1=70 wm2=214 wm3=214 wm4=0 wm5=3
+[08:30:27] wm 4 started working at 23:18:25 | wm1=70 wm2=214 wm3=214 wm4=0 wm5=3
+[08:30:30] valve 2 close at 23:18:28 | wm1=71 wm2=216 wm3=216 wm4=3 wm5=6
+[08:30:30] wm 2 stopped working at 23:18:28 | wm1=71 wm2=216 wm3=216 wm4=3 wm5=6
+[08:30:31] valve 3 close at 23:18:29 | wm1=71 wm2=0 wm3=217 wm4=4 wm5=7
+[08:30:31] wm 3 stopped working at 23:18:29 | wm1=71 wm2=0 wm3=217 wm4=4 wm5=7
+[08:30:32] valve 4 close at 23:18:30 | wm1=71 wm2=0 wm3=0 wm4=5 wm5=8
+[08:30:32] wm 4 stopped working at 23:18:30 | wm1=71 wm2=0 wm3=0 wm4=5 wm5=8
+[08:30:33] valve 5 close at 23:18:31 | wm1=71 wm2=0 wm3=0 wm4=0 wm5=8
+[08:30:33] wm 5 stopped working at 23:18:31 | wm1=71 wm2=0 wm3=0 wm4=0 wm5=8
+[08:30:37] valve 1 close at 23:18:35 | wm1=72 wm2=0 wm3=0 wm4=0 wm5=0
+[08:30:37] wm 1 stopped working at 23:18:35 | wm1=72 wm2=0 wm3=0 wm4=0 wm5=0
+[08:30:37] valve 8 close at 23:18:35 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[08:30:38] valve 6 close at 23:18:36 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[08:31:07] valve 1 open at 23:19:05 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[08:31:07] wm 1 started working at 23:19:05 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[08:31:09] valve 7 open at 23:19:07 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[08:31:10] valve 8 open at 23:19:08 | wm1=1 wm2=0 wm3=0 wm4=0 wm5=0
+[08:32:05] valve 6 open at 23:20:03 | wm1=17 wm2=0 wm3=0 wm4=0 wm5=0
+[08:32:06] valve 2 open at 23:20:04 | wm1=17 wm2=0 wm3=0 wm4=0 wm5=0
+[08:32:06] wm 2 started working at 23:20:04 | wm1=17 wm2=0 wm3=0 wm4=0 wm5=0
+[08:32:06] valve 3 open at 23:20:05 | wm1=17 wm2=1 wm3=0 wm4=0 wm5=0
+[08:32:06] wm 3 started working at 23:20:05 | wm1=17 wm2=1 wm3=0 wm4=0 wm5=0
+[08:32:07] valve 4 open at 23:20:05 | wm1=17 wm2=1 wm3=1 wm4=0 wm5=0
+[08:32:07] wm 4 started working at 23:20:05 | wm1=17 wm2=1 wm3=1 wm4=0 wm5=0
+[08:32:08] valve 5 open at 23:20:06 | wm1=17 wm2=2 wm3=1 wm4=0 wm5=0
+[08:32:08] wm 5 started working at 23:20:06 | wm1=17 wm2=2 wm3=1 wm4=0 wm5=0
+[08:32:15] valve 4 close at 23:20:13 | wm1=20 wm2=8 wm3=8 wm4=7 wm5=7
+[08:32:15] wm 4 stopped working at 23:20:13 | wm1=20 wm2=8 wm3=8 wm4=7 wm5=7
+[08:32:16] valve 5 close at 23:20:14 | wm1=20 wm2=9 wm3=8 wm4=0 wm5=7
+[08:32:16] wm 5 stopped working at 23:20:14 | wm1=20 wm2=9 wm3=8 wm4=0 wm5=7
+[08:32:36] valve 4 open at 23:20:35 | wm1=25 wm2=26 wm3=25 wm4=0 wm5=0
+[08:32:36] wm 4 started working at 23:20:35 | wm1=25 wm2=26 wm3=25 wm4=0 wm5=0
+[08:32:46] valve 5 open at 23:20:45 | wm1=28 wm2=34 wm3=34 wm4=8 wm5=0
+[08:32:46] wm 5 started working at 23:20:45 | wm1=28 wm2=34 wm3=34 wm4=8 wm5=0
+[08:32:47] valve 4 close at 23:20:45 | wm1=28 wm2=35 wm3=34 wm4=8 wm5=1
+[08:32:47] wm 4 stopped working at 23:20:45 | wm1=28 wm2=35 wm3=34 wm4=8 wm5=1
+[08:32:56] valve 5 close at 23:20:55 | wm1=31 wm2=43 wm3=42 wm4=0 wm5=9
+[08:32:57] wm 5 stopped working at 23:20:55 | wm1=31 wm2=43 wm3=42 wm4=0 wm5=9
+[08:33:08] valve 4 open at 23:21:06 | wm1=34 wm2=52 wm3=51 wm4=0 wm5=0
+[08:33:08] wm 4 started working at 23:21:06 | wm1=34 wm2=52 wm3=51 wm4=0 wm5=0
+[08:33:18] valve 4 close at 23:21:16 | wm1=37 wm2=60 wm3=60 wm4=9 wm5=0
+[08:33:18] wm 4 stopped working at 23:21:16 | wm1=37 wm2=60 wm3=60 wm4=9 wm5=0
+[08:33:28] valve 5 open at 23:21:26 | wm1=40 wm2=69 wm3=68 wm4=0 wm5=0
+[08:33:28] wm 5 started working at 23:21:26 | wm1=40 wm2=69 wm3=68 wm4=0 wm5=0
+[08:33:38] valve 5 close at 23:21:36 | wm1=42 wm2=77 wm3=76 wm4=0 wm5=8
+[08:33:38] wm 5 stopped working at 23:21:36 | wm1=42 wm2=77 wm3=76 wm4=0 wm5=8
+[08:33:39] valve 4 open at 23:21:37 | wm1=43 wm2=78 wm3=77 wm4=0 wm5=0
+[08:33:39] wm 4 started working at 23:21:37 | wm1=43 wm2=78 wm3=77 wm4=0 wm5=0
+[08:33:49] valve 4 close at 23:21:47 | wm1=46 wm2=86 wm3=86 wm4=8 wm5=0
+[08:33:49] wm 4 stopped working at 23:21:47 | wm1=46 wm2=86 wm3=86 wm4=8 wm5=0
+[08:34:09] valve 5 open at 23:22:07 | wm1=51 wm2=103 wm3=102 wm4=0 wm5=0
+[08:34:09] wm 5 started working at 23:22:07 | wm1=51 wm2=103 wm3=102 wm4=0 wm5=0
+[08:34:10] valve 4 open at 23:22:08 | wm1=51 wm2=104 wm3=103 wm4=0 wm5=1
+[08:34:10] wm 4 started working at 23:22:08 | wm1=51 wm2=104 wm3=103 wm4=0 wm5=1
+[08:34:19] valve 5 close at 23:22:17 | wm1=54 wm2=111 wm3=111 wm4=8 wm5=8
+[08:34:19] wm 5 stopped working at 23:22:17 | wm1=54 wm2=111 wm3=111 wm4=8 wm5=8
+[08:34:20] valve 4 close at 23:22:18 | wm1=54 wm2=112 wm3=112 wm4=9 wm5=0
+[08:34:20] wm 4 stopped working at 23:22:18 | wm1=54 wm2=112 wm3=112 wm4=9 wm5=0
+[08:34:41] valve 4 open at 23:22:39 | wm1=60 wm2=130 wm3=129 wm4=0 wm5=0
+[08:34:41] wm 4 started working at 23:22:39 | wm1=60 wm2=130 wm3=129 wm4=0 wm5=0
+[08:34:50] valve 5 open at 23:22:48 | wm1=63 wm2=137 wm3=137 wm4=7 wm5=0
+[08:34:50] wm 5 started working at 23:22:48 | wm1=63 wm2=137 wm3=137 wm4=7 wm5=0
+[08:34:51] valve 4 close at 23:22:49 | wm1=63 wm2=138 wm3=138 wm4=8 wm5=1
+[08:34:51] wm 4 stopped working at 23:22:49 | wm1=63 wm2=138 wm3=138 wm4=8 wm5=1
+[08:35:00] valve 5 close at 23:22:59 | wm1=65 wm2=146 wm3=145 wm4=0 wm5=9
+[08:35:00] wm 5 stopped working at 23:22:59 | wm1=65 wm2=146 wm3=145 wm4=0 wm5=9
+[08:35:12] valve 4 open at 23:23:10 | wm1=69 wm2=156 wm3=155 wm4=0 wm5=0
+[08:35:12] wm 4 started working at 23:23:10 | wm1=69 wm2=156 wm3=155 wm4=0 wm5=0
+[08:35:22] valve 4 close at 23:23:21 | wm1=71 wm2=164 wm3=164 wm4=8 wm5=0
+[08:35:22] wm 4 stopped working at 23:23:21 | wm1=71 wm2=164 wm3=164 wm4=8 wm5=0
+[08:35:31] valve 5 open at 23:23:30 | wm1=74 wm2=172 wm3=171 wm4=0 wm5=0
+[08:35:31] wm 5 started working at 23:23:30 | wm1=74 wm2=172 wm3=171 wm4=0 wm5=0
+[08:35:41] valve 5 close at 23:23:40 | wm1=77 wm2=180 wm3=180 wm4=0 wm5=8
+[08:35:41] wm 5 stopped working at 23:23:40 | wm1=77 wm2=180 wm3=180 wm4=0 wm5=8
+[08:35:43] valve 4 open at 23:23:42 | wm1=77 wm2=182 wm3=181 wm4=0 wm5=0
+[08:35:43] wm 4 started working at 23:23:42 | wm1=77 wm2=182 wm3=181 wm4=0 wm5=0
+[08:35:53] valve 4 close at 23:23:52 | wm1=80 wm2=190 wm3=189 wm4=9 wm5=0
+[08:35:53] wm 4 stopped working at 23:23:52 | wm1=80 wm2=190 wm3=189 wm4=9 wm5=0
+[08:36:12] valve 5 open at 23:24:11 | wm1=86 wm2=206 wm3=206 wm4=0 wm5=0
+[08:36:12] wm 5 started working at 23:24:11 | wm1=86 wm2=206 wm3=206 wm4=0 wm5=0
+[08:36:14] valve 4 open at 23:24:13 | wm1=86 wm2=208 wm3=207 wm4=0 wm5=2
+[08:36:14] wm 4 started working at 23:24:13 | wm1=86 wm2=208 wm3=207 wm4=0 wm5=2
+[08:36:22] valve 5 close at 23:24:21 | wm1=88 wm2=215 wm3=214 wm4=7 wm5=8
+[08:36:22] wm 5 stopped working at 23:24:21 | wm1=88 wm2=215 wm3=214 wm4=7 wm5=8
+[08:36:24] valve 4 close at 23:24:23 | wm1=89 wm2=216 wm3=215 wm4=8 wm5=0
+[08:36:24] wm 4 stopped working at 23:24:23 | wm1=89 wm2=216 wm3=215 wm4=8 wm5=0
+[08:36:45] valve 4 open at 23:24:44 | wm1=95 wm2=234 wm3=233 wm4=0 wm5=0
+[08:36:45] wm 4 started working at 23:24:44 | wm1=95 wm2=234 wm3=233 wm4=0 wm5=0
+[08:36:53] valve 5 open at 23:24:52 | wm1=97 wm2=241 wm3=240 wm4=7 wm5=0
+[08:36:54] wm 5 started working at 23:24:52 | wm1=97 wm2=241 wm3=240 wm4=7 wm5=0
+[08:36:55] valve 4 close at 23:24:54 | wm1=97 wm2=242 wm3=241 wm4=9 wm5=2
+[08:36:55] wm 4 stopped working at 23:24:54 | wm1=97 wm2=242 wm3=241 wm4=9 wm5=2
+[08:37:04] valve 5 close at 23:25:02 | wm1=100 wm2=249 wm3=248 wm4=0 wm5=9
+[08:37:04] wm 5 stopped working at 23:25:02 | wm1=100 wm2=249 wm3=248 wm4=0 wm5=9
+[08:37:16] valve 4 open at 23:25:15 | wm1=103 wm2=260 wm3=259 wm4=0 wm5=0
+[08:37:16] wm 4 started working at 23:25:15 | wm1=103 wm2=260 wm3=259 wm4=0 wm5=0
+[08:37:26] valve 4 close at 23:25:25 | wm1=106 wm2=268 wm3=267 wm4=8 wm5=0
+[08:37:26] wm 4 stopped working at 23:25:25 | wm1=106 wm2=268 wm3=267 wm4=8 wm5=0
+[08:37:35] valve 5 open at 23:25:34 | wm1=108 wm2=275 wm3=274 wm4=0 wm5=0
+[08:37:35] wm 5 started working at 23:25:34 | wm1=108 wm2=275 wm3=274 wm4=0 wm5=0
+[08:37:45] valve 5 close at 23:25:44 | wm1=111 wm2=283 wm3=283 wm4=0 wm5=8
+[08:37:45] wm 5 stopped working at 23:25:44 | wm1=111 wm2=283 wm3=283 wm4=0 wm5=8
+[08:37:47] valve 4 open at 23:25:46 | wm1=112 wm2=286 wm3=285 wm4=0 wm5=0
+[08:37:47] wm 4 started working at 23:25:46 | wm1=112 wm2=286 wm3=285 wm4=0 wm5=0
+[08:37:57] valve 4 close at 23:25:56 | wm1=115 wm2=294 wm3=293 wm4=8 wm5=0
+[08:37:57] wm 4 stopped working at 23:25:56 | wm1=115 wm2=294 wm3=293 wm4=8 wm5=0
+[08:38:16] valve 5 open at 23:26:15 | wm1=120 wm2=309 wm3=309 wm4=0 wm5=0
+[08:38:16] wm 5 started working at 23:26:15 | wm1=120 wm2=309 wm3=309 wm4=0 wm5=0
+[08:38:18] valve 4 open at 23:26:17 | wm1=121 wm2=312 wm3=311 wm4=0 wm5=2
+[08:38:19] wm 4 started working at 23:26:17 | wm1=121 wm2=312 wm3=311 wm4=0 wm5=2
+[08:38:26] valve 5 close at 23:26:25 | wm1=123 wm2=318 wm3=317 wm4=6 wm5=9
+[08:38:26] wm 5 stopped working at 23:26:25 | wm1=123 wm2=318 wm3=317 wm4=6 wm5=9
+[08:38:28] valve 4 close at 23:26:28 | wm1=123 wm2=320 wm3=319 wm4=9 wm5=0
+[08:38:29] wm 4 stopped working at 23:26:28 | wm1=123 wm2=320 wm3=319 wm4=9 wm5=0
+[08:38:50] valve 4 open at 23:26:49 | wm1=129 wm2=337 wm3=337 wm4=0 wm5=0
+[08:38:50] wm 4 started working at 23:26:49 | wm1=129 wm2=337 wm3=337 wm4=0 wm5=0
+[08:38:57] valve 5 open at 23:26:56 | wm1=131 wm2=344 wm3=343 wm4=6 wm5=0
+[08:38:57] wm 5 started working at 23:26:56 | wm1=131 wm2=344 wm3=343 wm4=6 wm5=0
+[08:39:00] valve 4 close at 23:26:59 | wm1=132 wm2=346 wm3=345 wm4=8 wm5=2
+[08:39:00] wm 4 stopped working at 23:26:59 | wm1=132 wm2=346 wm3=345 wm4=8 wm5=2
+[08:39:07] valve 5 close at 23:27:06 | wm1=134 wm2=352 wm3=352 wm4=0 wm5=8
+[08:39:07] wm 5 stopped working at 23:27:06 | wm1=134 wm2=352 wm3=352 wm4=0 wm5=8
+[08:39:21] valve 4 open at 23:27:20 | wm1=138 wm2=363 wm3=363 wm4=0 wm5=0
+[08:39:21] wm 4 started working at 23:27:20 | wm1=138 wm2=363 wm3=363 wm4=0 wm5=0
+[08:39:31] valve 4 close at 23:27:30 | wm1=141 wm2=372 wm3=371 wm4=8 wm5=0
+[08:39:31] wm 4 stopped working at 23:27:30 | wm1=141 wm2=372 wm3=371 wm4=8 wm5=0
+[08:39:38] valve 5 open at 23:27:37 | wm1=143 wm2=378 wm3=378 wm4=0 wm5=0
+[08:39:38] wm 5 started working at 23:27:37 | wm1=143 wm2=378 wm3=378 wm4=0 wm5=0
+[08:39:48] valve 5 close at 23:27:48 | wm1=146 wm2=387 wm3=386 wm4=0 wm5=8
+[08:39:48] wm 5 stopped working at 23:27:48 | wm1=146 wm2=387 wm3=386 wm4=0 wm5=8
+[08:39:52] valve 4 open at 23:27:51 | wm1=147 wm2=389 wm3=389 wm4=0 wm5=0
+[08:39:52] wm 4 started working at 23:27:51 | wm1=147 wm2=389 wm3=389 wm4=0 wm5=0
+[08:40:02] valve 4 close at 23:28:01 | wm1=149 wm2=398 wm3=397 wm4=9 wm5=0
+[08:40:02] wm 4 stopped working at 23:28:01 | wm1=149 wm2=398 wm3=397 wm4=9 wm5=0
+[08:40:19] valve 5 open at 23:28:19 | wm1=154 wm2=413 wm3=412 wm4=0 wm5=0
+[08:40:19] wm 5 started working at 23:28:19 | wm1=154 wm2=413 wm3=412 wm4=0 wm5=0
+[08:40:23] valve 4 open at 23:28:22 | wm1=155 wm2=415 wm3=415 wm4=0 wm5=3
+[08:40:23] wm 4 started working at 23:28:22 | wm1=155 wm2=415 wm3=415 wm4=0 wm5=3
+[08:40:29] valve 5 close at 23:28:29 | wm1=157 wm2=421 wm3=420 wm4=5 wm5=9
+[08:40:30] wm 5 stopped working at 23:28:29 | wm1=157 wm2=421 wm3=420 wm4=5 wm5=9
+[08:40:33] valve 4 close at 23:28:32 | wm1=158 wm2=424 wm3=423 wm4=8 wm5=0
+[08:40:33] wm 4 stopped working at 23:28:32 | wm1=158 wm2=424 wm3=423 wm4=8 wm5=0
+[08:40:54] valve 4 open at 23:28:53 | wm1=164 wm2=441 wm3=441 wm4=0 wm5=0
+[08:40:54] wm 4 started working at 23:28:53 | wm1=164 wm2=441 wm3=441 wm4=0 wm5=0
+[08:41:01] valve 5 open at 23:29:00 | wm1=166 wm2=447 wm3=446 wm4=6 wm5=0
+[08:41:01] wm 5 started working at 23:29:00 | wm1=166 wm2=447 wm3=446 wm4=6 wm5=0
+[08:41:04] valve 4 close at 23:29:03 | wm1=167 wm2=450 wm3=449 wm4=9 wm5=3
+[08:41:04] wm 4 stopped working at 23:29:03 | wm1=167 wm2=450 wm3=449 wm4=9 wm5=3
+[08:41:11] valve 5 close at 23:29:10 | wm1=169 wm2=455 wm3=455 wm4=0 wm5=8
+[08:41:11] wm 5 stopped working at 23:29:10 | wm1=169 wm2=455 wm3=455 wm4=0 wm5=8
+[08:41:25] valve 4 open at 23:29:25 | wm1=173 wm2=467 wm3=467 wm4=0 wm5=0
+[08:41:25] wm 4 started working at 23:29:25 | wm1=173 wm2=467 wm3=467 wm4=0 wm5=0
+[08:41:35] valve 4 close at 23:29:35 | wm1=175 wm2=476 wm3=475 wm4=8 wm5=0
+[08:41:35] wm 4 stopped working at 23:29:35 | wm1=175 wm2=476 wm3=475 wm4=8 wm5=0
+[08:41:42] valve 5 open at 23:29:41 | wm1=177 wm2=481 wm3=481 wm4=0 wm5=0
+[08:41:42] wm 5 started working at 23:29:41 | wm1=177 wm2=481 wm3=481 wm4=0 wm5=0
+[08:41:52] valve 5 close at 23:29:51 | wm1=180 wm2=490 wm3=489 wm4=0 wm5=9
+[08:41:52] wm 5 stopped working at 23:29:51 | wm1=180 wm2=490 wm3=489 wm4=0 wm5=9
+[08:41:56] valve 4 open at 23:29:56 | wm1=181 wm2=493 wm3=493 wm4=0 wm5=0
+[08:41:56] wm 4 started working at 23:29:56 | wm1=181 wm2=493 wm3=493 wm4=0 wm5=0
+[08:42:06] valve 4 close at 23:30:06 | wm1=184 wm2=502 wm3=501 wm4=8 wm5=0
+[08:42:06] wm 4 stopped working at 23:30:06 | wm1=184 wm2=502 wm3=501 wm4=8 wm5=0
+[08:42:23] valve 5 open at 23:30:23 | wm1=189 wm2=516 wm3=515 wm4=0 wm5=0
+[08:42:23] wm 5 started working at 23:30:23 | wm1=189 wm2=516 wm3=515 wm4=0 wm5=0
+[08:42:27] valve 4 open at 23:30:27 | wm1=190 wm2=519 wm3=519 wm4=0 wm5=3
+[08:42:27] wm 4 started working at 23:30:27 | wm1=190 wm2=519 wm3=519 wm4=0 wm5=3
+[08:42:33] valve 5 close at 23:30:33 | wm1=191 wm2=524 wm3=524 wm4=5 wm5=8
+[08:42:33] wm 5 stopped working at 23:30:33 | wm1=191 wm2=524 wm3=524 wm4=5 wm5=8
+[08:42:37] valve 4 close at 23:30:37 | wm1=193 wm2=528 wm3=527 wm4=9 wm5=0
+[08:42:37] wm 4 stopped working at 23:30:37 | wm1=193 wm2=528 wm3=527 wm4=9 wm5=0
+[08:42:58] valve 4 open at 23:30:58 | wm1=199 wm2=545 wm3=545 wm4=0 wm5=0
+[08:42:58] wm 4 started working at 23:30:58 | wm1=199 wm2=545 wm3=545 wm4=0 wm5=0
+[08:43:04] valve 5 open at 23:31:04 | wm1=200 wm2=550 wm3=550 wm4=5 wm5=0
+[08:43:04] wm 5 started working at 23:31:04 | wm1=200 wm2=550 wm3=550 wm4=5 wm5=0
+[08:43:08] valve 4 close at 23:31:08 | wm1=201 wm2=554 wm3=553 wm4=8 wm5=3
+[08:43:08] wm 4 stopped working at 23:31:08 | wm1=201 wm2=554 wm3=553 wm4=8 wm5=3
+[08:43:14] valve 5 close at 23:31:14 | wm1=203 wm2=558 wm3=558 wm4=0 wm5=8
+[08:43:14] wm 5 stopped working at 23:31:14 | wm1=203 wm2=558 wm3=558 wm4=0 wm5=8
+[08:43:29] valve 4 open at 23:31:29 | wm1=207 wm2=571 wm3=571 wm4=0 wm5=0
+[08:43:29] wm 4 started working at 23:31:29 | wm1=207 wm2=571 wm3=571 wm4=0 wm5=0
+[08:43:40] valve 4 close at 23:31:39 | wm1=210 wm2=580 wm3=579 wm4=9 wm5=0
+[08:43:40] wm 4 stopped working at 23:31:39 | wm1=210 wm2=580 wm3=579 wm4=9 wm5=0
+[08:43:45] valve 5 open at 23:31:45 | wm1=212 wm2=585 wm3=584 wm4=0 wm5=0
+[08:43:45] wm 5 started working at 23:31:45 | wm1=212 wm2=585 wm3=584 wm4=0 wm5=0
+[08:43:55] valve 5 close at 23:31:55 | wm1=214 wm2=593 wm3=592 wm4=0 wm5=9
+[08:43:55] wm 5 stopped working at 23:31:55 | wm1=214 wm2=593 wm3=592 wm4=0 wm5=9
+[08:44:01] valve 4 open at 23:32:00 | wm1=216 wm2=597 wm3=597 wm4=0 wm5=0
+[08:44:01] wm 4 started working at 23:32:00 | wm1=216 wm2=597 wm3=597 wm4=0 wm5=0
+[08:44:11] valve 4 close at 23:32:11 | wm1=219 wm2=606 wm3=605 wm4=8 wm5=0
+[08:44:11] wm 4 stopped working at 23:32:11 | wm1=219 wm2=606 wm3=605 wm4=8 wm5=0
+[08:44:26] valve 5 open at 23:32:26 | wm1=223 wm2=619 wm3=618 wm4=0 wm5=0
+[08:44:27] wm 5 started working at 23:32:26 | wm1=223 wm2=619 wm3=618 wm4=0 wm5=0
+[08:44:32] valve 4 open at 23:32:32 | wm1=225 wm2=623 wm3=623 wm4=0 wm5=4
+[08:44:32] wm 4 started working at 23:32:32 | wm1=225 wm2=623 wm3=623 wm4=0 wm5=4
+[08:44:37] valve 5 close at 23:32:36 | wm1=226 wm2=627 wm3=627 wm4=4 wm5=8
+[08:44:37] wm 5 stopped working at 23:32:36 | wm1=226 wm2=627 wm3=627 wm4=4 wm5=8
+[08:44:42] valve 4 close at 23:32:42 | wm1=227 wm2=632 wm3=631 wm4=8 wm5=0
+[08:44:42] wm 4 stopped working at 23:32:42 | wm1=227 wm2=632 wm3=631 wm4=8 wm5=0
+[08:45:03] valve 4 open at 23:33:03 | wm1=233 wm2=649 wm3=649 wm4=0 wm5=0
+[08:45:03] wm 4 started working at 23:33:03 | wm1=233 wm2=649 wm3=649 wm4=0 wm5=0
+[08:45:08] valve 5 open at 23:33:08 | wm1=235 wm2=653 wm3=653 wm4=4 wm5=0
+[08:45:08] wm 5 started working at 23:33:08 | wm1=235 wm2=653 wm3=653 wm4=4 wm5=0
+[08:45:13] valve 4 close at 23:33:13 | wm1=236 wm2=658 wm3=657 wm4=9 wm5=4
+[08:45:13] wm 4 stopped working at 23:33:13 | wm1=236 wm2=658 wm3=657 wm4=9 wm5=4
+[08:45:18] valve 5 close at 23:33:18 | wm1=237 wm2=662 wm3=661 wm4=0 wm5=8
+[08:45:18] wm 5 stopped working at 23:33:18 | wm1=237 wm2=662 wm3=661 wm4=0 wm5=8
+[08:45:34] valve 4 open at 23:33:34 | wm1=242 wm2=675 wm3=675 wm4=0 wm5=0
+[08:45:34] wm 4 started working at 23:33:34 | wm1=242 wm2=675 wm3=675 wm4=0 wm5=0
+[08:45:44] valve 4 close at 23:33:44 | wm1=245 wm2=684 wm3=683 wm4=8 wm5=0
+[08:45:44] wm 4 stopped working at 23:33:44 | wm1=245 wm2=684 wm3=683 wm4=8 wm5=0
+[08:45:50] valve 5 open at 23:33:50 | wm1=246 wm2=689 wm3=688 wm4=0 wm5=0
+[08:45:50] wm 5 started working at 23:33:50 | wm1=246 wm2=689 wm3=688 wm4=0 wm5=0
+[08:46:00] valve 5 close at 23:34:00 | wm1=249 wm2=697 wm3=696 wm4=0 wm5=9
+[08:46:00] wm 5 stopped working at 23:34:00 | wm1=249 wm2=697 wm3=696 wm4=0 wm5=9
+[08:46:05] valve 4 open at 23:34:05 | wm1=251 wm2=701 wm3=701 wm4=0 wm5=0
+[08:46:05] wm 4 started working at 23:34:05 | wm1=251 wm2=701 wm3=701 wm4=0 wm5=0
+[08:46:15] valve 4 close at 23:34:15 | wm1=253 wm2=710 wm3=709 wm4=9 wm5=0
+[08:46:15] wm 4 stopped working at 23:34:15 | wm1=253 wm2=710 wm3=709 wm4=9 wm5=0
+[08:46:31] valve 5 open at 23:34:31 | wm1=258 wm2=723 wm3=722 wm4=0 wm5=0
+[08:46:31] wm 5 started working at 23:34:31 | wm1=258 wm2=723 wm3=722 wm4=0 wm5=0
+[08:46:36] valve 4 open at 23:34:36 | wm1=259 wm2=727 wm3=727 wm4=0 wm5=4
+[08:46:36] wm 4 started working at 23:34:36 | wm1=259 wm2=727 wm3=727 wm4=0 wm5=4
+[08:46:41] valve 5 close at 23:34:41 | wm1=261 wm2=731 wm3=731 wm4=4 wm5=8
+[08:46:41] wm 5 stopped working at 23:34:41 | wm1=261 wm2=731 wm3=731 wm4=4 wm5=8
+[08:46:46] valve 4 close at 23:34:47 | wm1=262 wm2=736 wm3=735 wm4=8 wm5=0
+[08:46:46] wm 4 stopped working at 23:34:47 | wm1=262 wm2=736 wm3=735 wm4=8 wm5=0
+[08:47:07] valve 4 open at 23:35:08 | wm1=268 wm2=753 wm3=753 wm4=0 wm5=0
+[08:47:07] wm 4 started working at 23:35:08 | wm1=268 wm2=753 wm3=753 wm4=0 wm5=0
+[08:47:12] valve 5 open at 23:35:13 | wm1=269 wm2=757 wm3=757 wm4=4 wm5=0
+[08:47:12] wm 5 started working at 23:35:13 | wm1=269 wm2=757 wm3=757 wm4=4 wm5=0
+[08:47:17] valve 4 close at 23:35:18 | wm1=271 wm2=762 wm3=761 wm4=8 wm5=4
+[08:47:17] wm 4 stopped working at 23:35:18 | wm1=271 wm2=762 wm3=761 wm4=8 wm5=4
+[08:47:22] valve 5 close at 23:35:23 | wm1=272 wm2=766 wm3=765 wm4=0 wm5=9
+[08:47:22] wm 5 stopped working at 23:35:23 | wm1=272 wm2=766 wm3=765 wm4=0 wm5=9
+[08:47:38] valve 4 open at 23:35:39 | wm1=277 wm2=779 wm3=779 wm4=0 wm5=0
+[08:47:38] wm 4 started working at 23:35:39 | wm1=277 wm2=779 wm3=779 wm4=0 wm5=0
+[08:47:48] valve 4 close at 23:35:49 | wm1=279 wm2=788 wm3=787 wm4=9 wm5=0
+[08:47:48] wm 4 stopped working at 23:35:49 | wm1=279 wm2=788 wm3=787 wm4=9 wm5=0
+[08:47:53] valve 5 open at 23:35:54 | wm1=281 wm2=792 wm3=791 wm4=0 wm5=0
+[08:47:54] wm 5 started working at 23:35:54 | wm1=281 wm2=792 wm3=791 wm4=0 wm5=0
+[08:48:03] valve 5 close at 23:36:04 | wm1=284 wm2=800 wm3=800 wm4=0 wm5=8
+[08:48:03] wm 5 stopped working at 23:36:04 | wm1=284 wm2=800 wm3=800 wm4=0 wm5=8
+[08:48:10] valve 4 open at 23:36:10 | wm1=285 wm2=805 wm3=805 wm4=0 wm5=0
+[08:48:10] wm 4 started working at 23:36:10 | wm1=285 wm2=805 wm3=805 wm4=0 wm5=0
+[08:48:20] valve 4 close at 23:36:20 | wm1=288 wm2=814 wm3=813 wm4=8 wm5=0
+[08:48:20] wm 4 stopped working at 23:36:20 | wm1=288 wm2=814 wm3=813 wm4=8 wm5=0
+[08:48:35] valve 5 open at 23:36:35 | wm1=292 wm2=826 wm3=826 wm4=0 wm5=0
+[08:48:35] wm 5 started working at 23:36:35 | wm1=292 wm2=826 wm3=826 wm4=0 wm5=0
+[09:15:27] valve 4 open at 23:36:41 | wm1=294 wm2=831 wm3=831 wm4=0 wm5=5
+[09:15:27] wm 4 started working at 23:36:41 | wm1=294 wm2=831 wm3=831 wm4=0 wm5=5
+[09:15:27] valve 5 close at 23:36:45 | wm1=295 wm2=835 wm3=834 wm4=3 wm5=8
+[09:15:27] wm 5 stopped working at 23:36:45 | wm1=295 wm2=835 wm3=834 wm4=3 wm5=8
+[09:15:27] valve 4 close at 23:36:51 | wm1=297 wm2=840 wm3=839 wm4=9 wm5=0
+[09:15:27] wm 4 stopped working at 23:36:51 | wm1=297 wm2=840 wm3=839 wm4=9 wm5=0
+[09:15:27] valve 4 open at 23:37:12 | wm1=303 wm2=857 wm3=857 wm4=0 wm5=0
+[09:15:27] wm 4 started working at 23:37:12 | wm1=303 wm2=857 wm3=857 wm4=0 wm5=0
+[09:15:28] valve 5 open at 23:37:16 | wm1=304 wm2=861 wm3=860 wm4=3 wm5=0
+[09:15:28] wm 5 started working at 23:37:16 | wm1=304 wm2=861 wm3=860 wm4=3 wm5=0
+[09:15:28] valve 4 close at 23:37:22 | wm1=305 wm2=866 wm3=865 wm4=8 wm5=5
+[09:15:28] wm 4 stopped working at 23:37:22 | wm1=305 wm2=866 wm3=865 wm4=8 wm5=5
+[09:15:28] valve 5 close at 23:37:26 | wm1=306 wm2=869 wm3=868 wm4=0 wm5=9
+[09:15:28] wm 5 stopped working at 23:37:26 | wm1=306 wm2=869 wm3=868 wm4=0 wm5=9
+[09:15:28] valve 4 open at 23:37:43 | wm1=311 wm2=883 wm3=883 wm4=0 wm5=0
+[09:15:28] wm 4 started working at 23:37:43 | wm1=311 wm2=883 wm3=883 wm4=0 wm5=0
+[09:15:28] valve 4 close at 23:37:53 | wm1=314 wm2=892 wm3=891 wm4=8 wm5=0
+[09:15:28] wm 4 stopped working at 23:37:53 | wm1=314 wm2=892 wm3=891 wm4=8 wm5=0
+[09:15:28] valve 5 open at 23:37:59 | wm1=315 wm2=896 wm3=895 wm4=0 wm5=0
+[09:15:28] wm 5 started working at 23:37:59 | wm1=315 wm2=896 wm3=895 wm4=0 wm5=0
+[09:15:28] valve 5 close at 23:38:09 | wm1=318 wm2=904 wm3=904 wm4=0 wm5=8
+[09:15:28] wm 5 stopped working at 23:38:09 | wm1=318 wm2=904 wm3=904 wm4=0 wm5=8
+[09:15:28] valve 4 open at 23:38:15 | wm1=320 wm2=909 wm3=909 wm4=0 wm5=0
+[09:15:28] wm 4 started working at 23:38:15 | wm1=320 wm2=909 wm3=909 wm4=0 wm5=0
+[09:15:28] valve 4 close at 23:38:25 | wm1=323 wm2=918 wm3=917 wm4=9 wm5=0
+[09:15:28] wm 4 stopped working at 23:38:25 | wm1=323 wm2=918 wm3=917 wm4=9 wm5=0
+[09:15:28] valve 5 open at 23:38:41 | wm1=327 wm2=931 wm3=930 wm4=0 wm5=0
+[09:15:28] wm 5 started working at 23:38:41 | wm1=327 wm2=931 wm3=930 wm4=0 wm5=0
+[09:15:29] valve 4 open at 23:38:46 | wm1=328 wm2=935 wm3=935 wm4=0 wm5=4
+[09:15:29] wm 4 started working at 23:38:46 | wm1=329 wm2=935 wm3=935 wm4=0 wm5=4
+[09:15:29] valve 5 close at 23:38:51 | wm1=330 wm2=939 wm3=939 wm4=4 wm5=8
+[09:15:29] wm 5 stopped working at 23:38:51 | wm1=330 wm2=939 wm3=939 wm4=4 wm5=8
+[09:15:29] valve 4 close at 23:38:56 | wm1=331 wm2=944 wm3=943 wm4=8 wm5=0
+[09:15:29] wm 4 stopped working at 23:38:56 | wm1=331 wm2=944 wm3=943 wm4=8 wm5=0
+[09:15:29] valve 4 open at 23:39:17 | wm1=337 wm2=961 wm3=961 wm4=0 wm5=0
+[09:15:29] wm 4 started working at 23:39:17 | wm1=337 wm2=961 wm3=961 wm4=0 wm5=0
+[09:15:29] valve 5 open at 23:39:22 | wm1=339 wm2=965 wm3=965 wm4=4 wm5=0
+[09:15:29] wm 5 started working at 23:39:22 | wm1=339 wm2=965 wm3=965 wm4=4 wm5=0
+[09:15:29] valve 4 close at 23:39:27 | wm1=340 wm2=970 wm3=969 wm4=8 wm5=5
+[09:15:29] wm 4 stopped working at 23:39:27 | wm1=340 wm2=970 wm3=969 wm4=8 wm5=5
+[09:15:29] valve 5 close at 23:39:32 | wm1=341 wm2=974 wm3=973 wm4=0 wm5=9
+[09:15:29] wm 5 stopped working at 23:39:32 | wm1=341 wm2=974 wm3=973 wm4=0 wm5=9
+[09:15:29] valve 4 open at 23:39:48 | wm1=346 wm2=987 wm3=987 wm4=0 wm5=0
+[09:15:29] wm 4 started working at 23:39:48 | wm1=346 wm2=987 wm3=987 wm4=0 wm5=0
+[09:15:29] valve 4 close at 23:39:58 | wm1=349 wm2=995 wm3=995 wm4=9 wm5=0
+[09:15:29] wm 4 stopped working at 23:39:58 | wm1=349 wm2=995 wm3=995 wm4=9 wm5=0
+[09:15:29] valve 5 open at 23:40:03 | wm1=350 wm2=1000 wm3=999 wm4=0 wm5=0
+[09:15:29] wm 5 started working at 23:40:03 | wm1=350 wm2=1000 wm3=999 wm4=0 wm5=0
+[09:15:29] valve 3 close at 23:40:04 | wm1=350 wm2=1001 wm3=1000 wm4=0 wm5=1
+[09:15:29] wm 3 stopped working at 23:40:04 | wm1=350 wm2=1001 wm3=1000 wm4=0 wm5=1
+[09:15:29] valve 5 close at 23:40:13 | wm1=353 wm2=1008 wm3=0 wm4=0 wm5=8
+[09:15:30] wm 5 stopped working at 23:40:13 | wm1=353 wm2=1008 wm3=0 wm4=0 wm5=8
+[09:15:30] valve 4 open at 23:40:19 | wm1=354 wm2=1013 wm3=0 wm4=0 wm5=0
+[09:15:30] wm 4 started working at 23:40:19 | wm1=354 wm2=1013 wm3=0 wm4=0 wm5=0
+[09:15:30] valve 4 close at 23:40:29 | wm1=357 wm2=1021 wm3=0 wm4=8 wm5=0
+[09:15:30] wm 4 stopped working at 23:40:29 | wm1=357 wm2=1021 wm3=0 wm4=8 wm5=0
+[09:15:30] valve 5 open at 23:40:46 | wm1=362 wm2=1035 wm3=0 wm4=0 wm5=0
+[09:15:30] wm 5 started working at 23:40:46 | wm1=362 wm2=1035 wm3=0 wm4=0 wm5=0
+[09:15:30] valve 4 open at 23:40:51 | wm1=363 wm2=1039 wm3=0 wm4=0 wm5=4
+[09:15:30] wm 4 started working at 23:40:51 | wm1=363 wm2=1039 wm3=0 wm4=0 wm5=4
+[09:15:30] valve 5 close at 23:40:56 | wm1=365 wm2=1043 wm3=0 wm4=5 wm5=9
+[09:15:30] wm 5 stopped working at 23:40:56 | wm1=365 wm2=1043 wm3=0 wm4=5 wm5=9
+[09:15:30] valve 4 close at 23:41:01 | wm1=366 wm2=1047 wm3=0 wm4=9 wm5=0
+[09:15:30] wm 4 stopped working at 23:41:01 | wm1=366 wm2=1047 wm3=0 wm4=9 wm5=0
+[09:15:30] valve 4 open at 23:41:22 | wm1=372 wm2=1065 wm3=0 wm4=0 wm5=0
+[09:15:30] wm 4 started working at 23:41:22 | wm1=372 wm2=1065 wm3=0 wm4=0 wm5=0
+[09:15:30] valve 5 open at 23:41:27 | wm1=373 wm2=1069 wm3=0 wm4=4 wm5=0
+[09:15:30] wm 5 started working at 23:41:27 | wm1=373 wm2=1069 wm3=0 wm4=4 wm5=0
+[09:15:30] valve 4 close at 23:41:32 | wm1=375 wm2=1073 wm3=0 wm4=8 wm5=4
+[09:15:30] wm 4 stopped working at 23:41:32 | wm1=375 wm2=1073 wm3=0 wm4=8 wm5=4
+[09:15:30] valve 5 close at 23:41:37 | wm1=376 wm2=1078 wm3=0 wm4=0 wm5=8
+[09:15:30] wm 5 stopped working at 23:41:37 | wm1=376 wm2=1078 wm3=0 wm4=0 wm5=8
+[09:15:30] valve 4 open at 23:41:53 | wm1=380 wm2=1091 wm3=0 wm4=0 wm5=0
+[09:15:30] wm 4 started working at 23:41:53 | wm1=380 wm2=1091 wm3=0 wm4=0 wm5=0
+[09:15:30] valve 4 close at 23:42:03 | wm1=383 wm2=1099 wm3=0 wm4=8 wm5=0
+[09:15:30] wm 4 stopped working at 23:42:03 | wm1=383 wm2=1099 wm3=0 wm4=8 wm5=0
+[09:15:30] valve 5 open at 23:42:08 | wm1=385 wm2=1104 wm3=0 wm4=0 wm5=0
+[09:15:30] wm 5 started working at 23:42:08 | wm1=385 wm2=1104 wm3=0 wm4=0 wm5=0
+[09:15:30] valve 5 close at 23:42:18 | wm1=388 wm2=1112 wm3=0 wm4=0 wm5=8
+[09:15:30] wm 5 stopped working at 23:42:18 | wm1=388 wm2=1112 wm3=0 wm4=0 wm5=8
+[09:15:30] valve 4 open at 23:42:24 | wm1=389 wm2=1117 wm3=0 wm4=0 wm5=0
+[09:15:30] wm 4 started working at 23:42:24 | wm1=389 wm2=1117 wm3=0 wm4=0 wm5=0
+[09:15:30] valve 4 close at 23:42:34 | wm1=392 wm2=1125 wm3=0 wm4=9 wm5=0
+[09:15:30] wm 4 stopped working at 23:42:34 | wm1=392 wm2=1125 wm3=0 wm4=9 wm5=0
+[09:15:30] valve 5 open at 23:42:49 | wm1=396 wm2=1138 wm3=0 wm4=0 wm5=0
+[09:15:31] wm 5 started working at 23:42:49 | wm1=396 wm2=1138 wm3=0 wm4=0 wm5=0
+[09:15:31] valve 4 open at 23:42:55 | wm1=398 wm2=1143 wm3=0 wm4=0 wm5=5
+[09:15:31] wm 4 started working at 23:42:55 | wm1=398 wm2=1143 wm3=0 wm4=0 wm5=5
+[09:15:31] valve 5 close at 23:43:00 | wm1=399 wm2=1147 wm3=0 wm4=3 wm5=9
+[09:32:18] wm 5 stopped working at 23:43:00 | wm1=399 wm2=1147 wm3=0 wm4=3 wm5=9
+[09:32:18] valve 4 close at 23:43:05 | wm1=401 wm2=1151 wm3=0 wm4=8 wm5=0
+[09:32:18] wm 4 stopped working at 23:43:05 | wm1=401 wm2=1151 wm3=0 wm4=8 wm5=0
+[09:32:19] valve 4 open at 23:43:26 | wm1=406 wm2=1169 wm3=0 wm4=0 wm5=0
+[09:32:21] wm 4 started working at 23:43:26 | wm1=406 wm2=1169 wm3=0 wm4=0 wm5=0
+[09:32:21] valve 5 open at 23:43:31 | wm1=408 wm2=1173 wm3=0 wm4=4 wm5=0
+[09:32:21] wm 5 started working at 23:43:31 | wm1=408 wm2=1173 wm3=0 wm4=4 wm5=0
+[09:32:21] valve 4 close at 23:43:36 | wm1=409 wm2=1177 wm3=0 wm4=9 wm5=5
+[09:32:21] wm 4 stopped working at 23:43:36 | wm1=409 wm2=1177 wm3=0 wm4=9 wm5=5
+[09:32:22] valve 5 close at 23:43:41 | wm1=410 wm2=1181 wm3=0 wm4=0 wm5=8
+[09:32:22] wm 5 stopped working at 23:43:41 | wm1=410 wm2=1181 wm3=0 wm4=0 wm5=8
+[09:32:22] valve 4 open at 23:43:58 | wm1=415 wm2=1195 wm3=0 wm4=0 wm5=0
+[09:32:22] wm 4 started working at 23:43:58 | wm1=415 wm2=1195 wm3=0 wm4=0 wm5=0
+[09:32:22] valve 4 close at 23:44:08 | wm1=418 wm2=1203 wm3=0 wm4=8 wm5=0
+[09:32:22] wm 4 stopped working at 23:44:08 | wm1=418 wm2=1203 wm3=0 wm4=8 wm5=0
+[09:32:22] valve 5 open at 23:44:13 | wm1=419 wm2=1208 wm3=0 wm4=0 wm5=0
+[09:32:22] wm 5 started working at 23:44:13 | wm1=419 wm2=1208 wm3=0 wm4=0 wm5=0
+[09:32:23] valve 5 close at 23:44:23 | wm1=422 wm2=1216 wm3=0 wm4=0 wm5=9
+[09:32:23] wm 5 stopped working at 23:44:23 | wm1=422 wm2=1216 wm3=0 wm4=0 wm5=9
+[09:32:23] valve 4 open at 23:44:29 | wm1=424 wm2=1221 wm3=0 wm4=0 wm5=0
+[09:32:23] wm 4 started working at 23:44:29 | wm1=424 wm2=1221 wm3=0 wm4=0 wm5=0
+[09:32:23] valve 4 close at 23:44:39 | wm1=427 wm2=1229 wm3=0 wm4=8 wm5=0
+[09:32:23] wm 4 stopped working at 23:44:39 | wm1=427 wm2=1229 wm3=0 wm4=8 wm5=0
+[09:32:23] valve 5 open at 23:44:55 | wm1=431 wm2=1243 wm3=0 wm4=0 wm5=0
+[09:32:23] wm 5 started working at 23:44:55 | wm1=431 wm2=1243 wm3=0 wm4=0 wm5=0
+[09:32:24] valve 4 open at 23:45:00 | wm1=432 wm2=1247 wm3=0 wm4=0 wm5=3
+[09:32:24] wm 4 started working at 23:45:00 | wm1=432 wm2=1247 wm3=0 wm4=0 wm5=3
+[09:32:24] valve 5 close at 23:45:05 | wm1=434 wm2=1251 wm3=0 wm4=5 wm5=8
+[09:32:24] wm 5 stopped working at 23:45:05 | wm1=434 wm2=1251 wm3=0 wm4=5 wm5=8
+[09:32:24] valve 4 close at 23:45:10 | wm1=435 wm2=1255 wm3=0 wm4=9 wm5=0
+[09:32:24] wm 4 stopped working at 23:45:10 | wm1=435 wm2=1255 wm3=0 wm4=9 wm5=0
+[09:32:24] valve 2 close at 23:45:11 | wm1=436 wm2=1256 wm3=0 wm4=0 wm5=0
+[09:32:24] wm 2 stopped working at 23:45:11 | wm1=436 wm2=1256 wm3=0 wm4=0 wm5=0
+[09:32:24] valve 4 open at 23:45:31 | wm1=441 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:24] wm 4 started working at 23:45:31 | wm1=441 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:25] valve 5 open at 23:45:37 | wm1=443 wm2=0 wm3=0 wm4=4 wm5=0
+[09:32:25] wm 5 started working at 23:45:37 | wm1=443 wm2=0 wm3=0 wm4=5 wm5=0
+[09:32:25] valve 4 close at 23:45:41 | wm1=444 wm2=0 wm3=0 wm4=8 wm5=4
+[09:32:25] wm 4 stopped working at 23:45:41 | wm1=444 wm2=0 wm3=0 wm4=8 wm5=4
+[09:32:25] valve 5 close at 23:45:47 | wm1=445 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:25] wm 5 stopped working at 23:45:47 | wm1=445 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:25] valve 4 open at 23:46:02 | wm1=450 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:25] wm 4 started working at 23:46:02 | wm1=450 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:25] valve 4 close at 23:46:12 | wm1=453 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:25] wm 4 stopped working at 23:46:12 | wm1=453 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:25] valve 5 open at 23:46:18 | wm1=454 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:25] wm 5 started working at 23:46:18 | wm1=454 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:25] valve 5 close at 23:46:28 | wm1=457 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:25] wm 5 stopped working at 23:46:28 | wm1=457 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:25] valve 4 open at 23:46:33 | wm1=458 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:25] wm 4 started working at 23:46:33 | wm1=458 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:26] valve 4 close at 23:46:43 | wm1=461 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:26] wm 4 stopped working at 23:46:43 | wm1=461 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:26] valve 5 open at 23:46:59 | wm1=466 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:26] wm 5 started working at 23:46:59 | wm1=466 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:26] valve 4 open at 23:47:05 | wm1=467 wm2=0 wm3=0 wm4=0 wm5=4
+[09:32:26] wm 4 started working at 23:47:05 | wm1=467 wm2=0 wm3=0 wm4=0 wm5=4
+[09:32:26] valve 5 close at 23:47:09 | wm1=468 wm2=0 wm3=0 wm4=4 wm5=8
+[09:32:26] wm 5 stopped working at 23:47:09 | wm1=468 wm2=0 wm3=0 wm4=4 wm5=8
+[09:32:26] valve 4 close at 23:47:15 | wm1=470 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:26] wm 4 stopped working at 23:47:15 | wm1=470 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:26] valve 4 open at 23:47:36 | wm1=476 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:26] wm 4 started working at 23:47:36 | wm1=476 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:27] valve 5 open at 23:47:40 | wm1=477 wm2=0 wm3=0 wm4=4 wm5=0
+[09:32:27] wm 5 started working at 23:47:40 | wm1=477 wm2=0 wm3=0 wm4=4 wm5=0
+[09:32:27] valve 4 close at 23:47:46 | wm1=478 wm2=0 wm3=0 wm4=9 wm5=5
+[09:32:27] wm 4 stopped working at 23:47:46 | wm1=478 wm2=0 wm3=0 wm4=9 wm5=5
+[09:32:27] valve 5 close at 23:47:50 | wm1=480 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:27] wm 5 stopped working at 23:47:50 | wm1=480 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:27] valve 4 open at 23:48:07 | wm1=484 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:27] wm 4 started working at 23:48:07 | wm1=484 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:27] valve 4 close at 23:48:17 | wm1=487 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:27] wm 4 stopped working at 23:48:17 | wm1=487 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:27] valve 5 open at 23:48:22 | wm1=488 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:27] wm 5 started working at 23:48:22 | wm1=488 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:27] valve 5 close at 23:48:32 | wm1=491 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:27] wm 5 stopped working at 23:48:32 | wm1=491 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:27] valve 4 open at 23:48:38 | wm1=493 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:27] wm 4 started working at 23:48:38 | wm1=493 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:27] valve 4 close at 23:48:48 | wm1=496 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:27] wm 4 stopped working at 23:48:48 | wm1=496 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:27] valve 5 open at 23:49:04 | wm1=500 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:28] wm 5 started working at 23:49:04 | wm1=500 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:28] valve 4 open at 23:49:09 | wm1=502 wm2=0 wm3=0 wm4=0 wm5=4
+[09:32:28] wm 4 started working at 23:49:09 | wm1=502 wm2=0 wm3=0 wm4=0 wm5=4
+[09:32:28] valve 5 close at 23:49:14 | wm1=503 wm2=0 wm3=0 wm4=4 wm5=8
+[09:32:28] wm 5 stopped working at 23:49:14 | wm1=503 wm2=0 wm3=0 wm4=4 wm5=8
+[09:32:28] valve 4 close at 23:49:19 | wm1=504 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:28] wm 4 stopped working at 23:49:19 | wm1=504 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:28] valve 4 open at 23:49:40 | wm1=510 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:28] wm 4 started working at 23:49:40 | wm1=510 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:28] valve 5 open at 23:49:45 | wm1=512 wm2=0 wm3=0 wm4=4 wm5=0
+[09:32:28] wm 5 started working at 23:49:45 | wm1=512 wm2=0 wm3=0 wm4=4 wm5=0
+[09:32:28] valve 4 close at 23:49:50 | wm1=513 wm2=0 wm3=0 wm4=8 wm5=5
+[09:32:28] wm 4 stopped working at 23:49:50 | wm1=513 wm2=0 wm3=0 wm4=8 wm5=5
+[09:32:28] valve 5 close at 23:49:55 | wm1=514 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:28] wm 5 stopped working at 23:49:55 | wm1=514 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:28] valve 4 open at 23:50:12 | wm1=519 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:28] wm 4 started working at 23:50:12 | wm1=519 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:28] valve 4 close at 23:50:22 | wm1=522 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:28] wm 4 stopped working at 23:50:22 | wm1=522 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:29] valve 5 open at 23:50:26 | wm1=523 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:29] wm 5 started working at 23:50:26 | wm1=523 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:29] valve 5 close at 23:50:37 | wm1=526 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:29] wm 5 stopped working at 23:50:37 | wm1=526 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:29] valve 4 open at 23:50:43 | wm1=528 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:29] wm 4 started working at 23:50:43 | wm1=528 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:29] valve 4 close at 23:50:53 | wm1=530 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:29] wm 4 stopped working at 23:50:53 | wm1=530 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:29] valve 5 open at 23:51:09 | wm1=535 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:29] wm 5 started working at 23:51:09 | wm1=535 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:29] valve 4 open at 23:51:14 | wm1=536 wm2=0 wm3=0 wm4=0 wm5=4
+[09:32:29] wm 4 started working at 23:51:14 | wm1=536 wm2=0 wm3=0 wm4=0 wm5=4
+[09:32:29] vavalve 5 open at 24:03:39 | wm1=743 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:29] wm 5 started working at 24:03:39 | wm1=743 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:29] valve 4 open at 24:03:42 | wm1=744 wm2=0 wm3=0 wm4=0 wm5=3
+[09:32:29] wm 4 started working at 24:03:42 | wm1=744 wm2=0 wm3=0 wm4=0 wm5=3
+[09:32:29] valve 5 close at 24:03:49 | wm1=746 wm2=0 wm3=0 wm4=6 wm5=8
+[09:32:29] wm 5 stopped working at 24:03:49 | wm1=746 wm2=0 wm3=0 wm4=6 wm5=8
+[09:32:29] valve 4 close at 24:03:52 | wm1=747 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:29] wm 4 stopped working at 24:03:52 | wm1=747 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:29] valve 4 open at 24:04:13 | wm1=753 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:30] wm 4 started working at 24:04:13 | wm1=753 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:30] valve 5 open at 24:04:21 | wm1=755 wm2=0 wm3=0 wm4=6 wm5=0
+[09:32:30] wm 5 started working at 24:04:21 | wm1=755 wm2=0 wm3=0 wm4=6 wm5=0
+[09:32:30] valve 4 close at 24:04:23 | wm1=756 wm2=0 wm3=0 wm4=8 wm5=1
+[09:32:30] wm 4 stopped working at 24:04:23 | wm1=756 wm2=0 wm3=0 wm4=8 wm5=1
+[09:32:30] valve 5 close at 24:04:31 | wm1=758 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:30] wm 5 stopped working at 24:04:31 | wm1=758 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:30] valve 4 open at 24:04:44 | wm1=761 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:30] wm 4 started working at 24:04:44 | wm1=761 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:30] valve 4 close at 24:04:54 | wm1=764 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:30] wm 4 stopped working at 24:04:54 | wm1=764 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:30] valve 5 open at 24:05:03 | wm1=767 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:30] wm 5 started working at 24:05:03 | wm1=767 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:30] valve 5 close at 24:05:13 | wm1=769 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:30] wm 5 stopped working at 24:05:13 | wm1=769 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:30] valve 4 open at 24:05:15 | wm1=770 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:30] wm 4 started working at 24:05:15 | wm1=770 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:30] valve 4 close at 24:05:26 | wm1=773 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:30] wm 4 stopped working at 24:05:26 | wm1=773 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:31] valve 5 open at 24:05:46 | wm1=778 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:31] wm 5 started working at 24:05:46 | wm1=778 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:31] valve 4 open at 24:05:47 | wm1=779 wm2=0 wm3=0 wm4=0 wm5=1
+[09:32:31] wm 4 started working at 24:05:47 | wm1=779 wm2=0 wm3=0 wm4=0 wm5=1
+[09:32:31] valve 5 close at 24:05:56 | wm1=781 wm2=0 wm3=0 wm4=7 wm5=9
+[09:32:31] wm 5 stopped working at 24:05:56 | wm1=781 wm2=0 wm3=0 wm4=7 wm5=9
+[09:32:31] valve 4 close at 24:05:57 | wm1=782 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:31] wm 4 stopped working at 24:05:57 | wm1=782 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:31] valve 4 open at 24:06:18 | wm1=787 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:31] wm 4 started working at 24:06:18 | wm1=787 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:31] valve 5 open at 24:06:28 | wm1=790 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:31] wm 5 started working at 24:06:28 | wm1=790 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:31] valve 4 close at 24:06:28 | wm1=790 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:31] wm 4 stopped working at 24:06:28 | wm1=790 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:32] valve 5 close at 24:06:38 | wm1=793 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:32] wm 5 stopped working at 24:06:38 | wm1=793 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:32] valve 4 open at 24:06:49 | wm1=796 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:32] wm 4 started working at 24:06:49 | wm1=796 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:32] valve 4 close at 24:06:59 | wm1=799 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:32] wm 4 stopped working at 24:06:59 | wm1=799 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:32] valve 5 open at 24:07:09 | wm1=802 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:32] wm 5 started working at 24:07:09 | wm1=802 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:32] valve 5 close at 24:07:19 | wm1=804 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:32] wm 5 stopped working at 24:07:19 | wm1=804 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:32] valve 4 open at 24:07:20 | wm1=805 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:32] wm 4 started working at 24:07:20 | wm1=805 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:32] valve 4 close at 24:07:30 | wm1=808 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:33] wm 4 stopped working at 24:07:30 | wm1=808 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:33] valve 4 open at 24:07:51 | wm1=813 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:33] wm 4 started working at 24:07:51 | wm1=813 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:33] valve 5 open at 24:07:52 | wm1=814 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:33] wm 5 started working at 24:07:52 | wm1=814 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:33] valve 4 close at 24:08:01 | wm1=816 wm2=0 wm3=0 wm4=8 wm5=8
+[09:32:33] wm 4 stopped working at 24:08:01 | wm1=816 wm2=0 wm3=0 wm4=8 wm5=8
+[09:32:33] valve 5 close at 24:08:02 | wm1=816 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:33] wm 5 stopped working at 24:08:02 | wm1=816 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:33] valve 4 open at 24:08:23 | wm1=822 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:33] wm 4 started working at 24:08:23 | wm1=822 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:34] valve 4 close at 24:08:33 | wm1=825 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:34] wm 4 stopped working at 24:08:33 | wm1=825 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:34] valve 5 open at 24:08:34 | wm1=825 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:34] wm 5 started working at 24:08:34 | wm1=825 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:34] valve 5 close at 24:08:44 | wm1=828 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:34] wm 5 stopped working at 24:08:44 | wm1=828 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:34] valve 4 open at 24:08:54 | wm1=831 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:34] wm 4 started working at 24:08:54 | wm1=831 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:34] valve 4 close at 24:09:04 | wm1=833 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:34] wm 4 stopped working at 24:09:04 | wm1=833 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:34] valve 5 open at 24:09:16 | wm1=837 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:34] wm 5 started working at 24:09:16 | wm1=837 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:34] valve 4 open at 24:09:25 | wm1=839 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:34] wm 4 started working at 24:09:25 | wm1=839 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:34] valve 5 close at 24:09:26 | wm1=840 wm2=0 wm3=0 wm4=1 wm5=9
+[09:32:34] wm 5 stopped working at 24:09:26 | wm1=840 wm2=0 wm3=0 wm4=1 wm5=9
+[09:32:34] valve 4 close at 24:09:35 | wm1=842 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:34] wm 4 stopped working at 24:09:35 | wm1=842 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:35] valve 4 open at 24:09:56 | wm1=848 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:35] wm 4 started working at 24:09:56 | wm1=848 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:35] valve 5 open at 24:09:58 | wm1=849 wm2=0 wm3=0 wm4=2 wm5=0
+[09:32:35] wm 5 started working at 24:09:58 | wm1=849 wm2=0 wm3=0 wm4=2 wm5=0
+[09:32:35] valve 4 close at 24:10:06 | wm1=851 wm2=0 wm3=0 wm4=9 wm5=6
+[09:32:35] wm 4 stopped working at 24:10:06 | wm1=851 wm2=0 wm3=0 wm4=9 wm5=6
+[09:32:35] valve 5 close at 24:10:08 | wm1=851 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:35] wm 5 stopped working at 24:10:08 | wm1=851 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:35] valve 4 open at 24:10:27 | wm1=857 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:35] wm 4 started working at 24:10:27 | wm1=857 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:35] valve 4 close at 24:10:37 | wm1=859 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:35] wm 4 stopped working at 24:10:37 | wm1=859 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:35] valve 5 open at 24:10:40 | wm1=860 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:36] wm 5 started working at 24:10:40 | wm1=860 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:36] valve 5 close at 24:10:50 | wm1=863 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:36] wm 5 stopped working at 24:10:50 | wm1=863 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:36] valve 4 open at 24:10:58 | wm1=865 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:36] wm 4 started working at 24:10:58 | wm1=865 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:36] valve 4 close at 24:11:08 | wm1=868 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:36] wm 4 stopped working at 24:11:08 | wm1=868 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:36] valve 5 open at 24:11:22 | wm1=872 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:37] wm 5 started working at 24:11:22 | wm1=872 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:37] valve 4 open at 24:11:30 | wm1=874 wm2=0 wm3=0 wm4=0 wm5=7
+[09:32:37] wm 4 started working at 24:11:30 | wm1=874 wm2=0 wm3=0 wm4=0 wm5=7
+[09:32:37] valve 5 close at 24:11:32 | wm1=875 wm2=0 wm3=0 wm4=2 wm5=9
+[09:32:37] wm 5 stopped working at 24:11:32 | wm1=875 wm2=0 wm3=0 wm4=2 wm5=9
+[09:32:37] valve 4 close at 24:11:40 | wm1=877 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:37] wm 4 stopped working at 24:11:40 | wm1=877 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:37] valve 4 open at 24:12:01 | wm1=883 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:37] wm 4 started working at 24:12:01 | wm1=883 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:37] valve 5 open at 24:12:04 | wm1=884 wm2=0 wm3=0 wm4=3 wm5=0
+[09:32:38] wm 5 started working at 24:12:04 | wm1=884 wm2=0 wm3=0 wm4=3 wm5=0
+[09:32:38] valve 4 close at 24:12:11 | wm1=885 wm2=0 wm3=0 wm4=8 wm5=5
+[09:32:38] wm 4 stopped working at 24:12:11 | wm1=885 wm2=0 wm3=0 wm4=8 wm5=5
+[09:32:38] valve 5 close at 24:12:14 | wm1=886 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:38] wm 5 stopped working at 24:12:14 | wm1=886 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:38] valve 4 open at 24:12:32 | wm1=891 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:38] wm 4 started working at 24:12:32 | wm1=891 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:39] valve 4 close at 24:12:42 | wm1=894 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:39] wm 4 stopped working at 24:12:42 | wm1=894 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:39] valve 5 open at 24:12:47 | wm1=896 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:39] wm 5 started working at 24:12:47 | wm1=896 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:39] valve 5 close at 24:12:57 | wm1=898 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:39] wm 5 stopped working at 24:12:57 | wm1=898 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:39] valve 4 open at 24:13:03 | wm1=900 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:39] wm 4 started working at 24:13:03 | wm1=900 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:39] valve 4 close at 24:13:13 | wm1=903 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:39] wm 4 stopped working at 24:13:13 | wm1=903 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:39] valve 5 open at 24:13:31 | wm1=908 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:40] wm 5 started working at 24:13:31 | wm1=908 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:40] valve 4 open at 24:13:34 | wm1=909 wm2=0 wm3=0 wm4=0 wm5=3
+[09:32:40] wm 4 started working at 24:13:34 | wm1=909 wm2=0 wm3=0 wm4=0 wm5=3
+[09:32:40] valve 5 close at 24:13:41 | wm1=910 wm2=0 wm3=0 wm4=6 wm5=8
+[09:32:40] wm 5 stopped working at 24:13:41 | wm1=910 wm2=0 wm3=0 wm4=6 wm5=8
+[09:32:40] valve 4 close at 24:13:44 | wm1=911 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:40] wm 4 stopped working at 24:13:44 | wm1=911 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:40] valve 4 open at 24:14:05 | wm1=917 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:40] wm 4 started working at 24:14:05 | wm1=917 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:40] valve 5 open at 24:14:12 | wm1=919 wm2=0 wm3=0 wm4=5 wm5=0
+[09:32:40] wm 5 started working at 24:14:12 | wm1=919 wm2=0 wm3=0 wm4=5 wm5=0
+[09:32:40] valve 4 close at 24:14:15 | wm1=920 wm2=0 wm3=0 wm4=8 wm5=3
+[09:32:40] wm 4 stopped working at 24:14:15 | wm1=920 wm2=0 wm3=0 wm4=8 wm5=3
+[09:32:40] valve 5 close at 24:14:22 | wm1=922 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:40] wm 5 stopped working at 24:14:22 | wm1=922 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:40] valve 4 open at 24:14:37 | wm1=926 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:40] wm 4 started working at 24:14:37 | wm1=926 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:41] valve 4 close at 24:14:47 | wm1=929 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:41] wm 4 stopped working at 24:14:47 | wm1=929 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:41] valve 5 open at 24:14:53 | wm1=931 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:41] wm 5 started working at 24:14:53 | wm1=931 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:41] valve 5 close at 24:15:03 | wm1=933 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:41] wm 5 stopped working at 24:15:03 | wm1=933 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:41] valve 4 open at 24:15:08 | wm1=935 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:41] wm 4 started working at 24:15:08 | wm1=935 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:41] valve 4 close at 24:15:18 | wm1=937 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:41] wm 4 stopped working at 24:15:18 | wm1=937 wm2=0 wm3=0 wm4=9 wm5=0
+[09:32:41] valve 5 open at 24:15:34 | wm1=942 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:41] wm 5 started working at 24:15:34 | wm1=942 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:41] valve 4 open at 24:15:39 | wm1=943 wm2=0 wm3=0 wm4=0 wm5=3
+[09:32:42] wm 4 started working at 24:15:39 | wm1=943 wm2=0 wm3=0 wm4=0 wm5=3
+[09:32:42] valve 5 close at 24:15:45 | wm1=945 wm2=0 wm3=0 wm4=5 wm5=8
+[09:32:42] wm 5 stopped working at 24:15:45 | wm1=945 wm2=0 wm3=0 wm4=5 wm5=8
+[09:32:42] valve 4 close at 24:15:49 | wm1=946 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:42] wm 4 stopped working at 24:15:49 | wm1=946 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:42] valve 4 open at 24:16:10 | wm1=952 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:42] wm 4 started working at 24:16:10 | wm1=952 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:42] valve 5 open at 24:16:17 | wm1=954 wm2=0 wm3=0 wm4=6 wm5=0
+[09:32:42] wm 5 started working at 24:16:17 | wm1=954 wm2=0 wm3=0 wm4=6 wm5=0
+[09:32:42] valve 4 close at 24:16:20 | wm1=955 wm2=0 wm3=0 wm4=9 wm5=3
+[09:32:42] wm 4 stopped working at 24:16:20 | wm1=955 wm2=0 wm3=0 wm4=9 wm5=3
+[09:32:42] valve 5 close at 24:16:27 | wm1=957 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:42] wm 5 stopped working at 24:16:27 | wm1=957 wm2=0 wm3=0 wm4=0 wm5=9
+[09:32:42] valve 4 open at 24:16:41 | wm1=961 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:42] wm 4 started working at 24:16:41 | wm1=961 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:42] valve 4 close at 24:16:51 | wm1=963 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:42] wm 4 stopped working at 24:16:51 | wm1=963 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:42] valve 5 open at 24:16:59 | wm1=966 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:42] wm 5 started working at 24:16:59 | wm1=966 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:42] valve 5 close at 24:17:09 | wm1=968 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:42] wm 5 stopped working at 24:17:09 | wm1=968 wm2=0 wm3=0 wm4=0 wm5=8
+[09:32:42] valve 4 open at 24:17:12 | wm1=969 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:43] wm 4 started working at 24:17:12 | wm1=969 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:43] valve 4 close at 24:17:22 | wm1=972 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:43] wm 4 stopped working at 24:17:22 | wm1=972 wm2=0 wm3=0 wm4=8 wm5=0
+[09:32:43] valve 5 open at 24:17:41 | wm1=977 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:43] wm 5 started working at 24:17:41 | wm1=977 wm2=0 wm3=0 wm4=0 wm5=0
+[09:32:43] valve 4 open at 24:17:44 | wm1=978 wm2=0 wm3=0 wm4=0 wm5=2
+[09:33:12] wm 4 started working valve 2 open at 24:21:19 | wm1=1038 wm2=0 wm3=0 wm4=0 wm5=0
+[09:33:12] wm 2 started working at 24:21:19 | wm1=1038 wm2=0 wm3=0 wm4=0 wm5=0
+[09:33:22] valve 2 close at 24:21:29 | wm1=1040 wm2=9 wm3=0 wm4=0 wm5=0
+[09:33:22] wm 2 stopped working at 24:21:29 | wm1=1040 wm2=9 wm3=0 wm4=0 wm5=0
+[09:34:21] valve 2 open at 24:22:28 | wm1=1057 wm2=0 wm3=0 wm4=0 wm5=0
+[09:34:21] wm 2 started working at 24:22:28 | wm1=1057 wm2=0 wm3=0 wm4=0 wm5=0
+[09:34:31] valve 2 close at 24:22:38 | wm1=1060 wm2=8 wm3=0 wm4=0 wm5=0
+[09:34:31] wm 2 stopped working at 24:22:38 | wm1=1060 wm2=8 wm3=0 wm4=0 wm5=0
+[09:35:30] valve 2 open at 24:23:37 | wm1=1076 wm2=0 wm3=0 wm4=0 wm5=0
+[09:35:30] wm 2 started working at 24:23:37 | wm1=1076 wm2=0 wm3=0 wm4=0 wm5=0
+[09:35:40] valve 2 close at 24:23:47 | wm1=1079 wm2=8 wm3=0 wm4=0 wm5=0
+[09:35:40] wm 2 stopped working at 24:23:47 | wm1=1079 wm2=8 wm3=0 wm4=0 wm5=0
+[09:36:39] valve 2 open at 24:24:46 | wm1=1095 wm2=0 wm3=0 wm4=0 wm5=0
+[09:36:39] wm 2 started working at 24:24:46 | wm1=1095 wm2=0 wm3=0 wm4=0 wm5=0
+[09:36:49] valve 2 close at 24:24:57 | wm1=1098 wm2=9 wm3=0 wm4=0 wm5=0
+[09:36:49] wm 2 stopped working at 24:24:57 | wm1=1098 wm2=9 wm3=0 wm4=0 wm5=0
+[09:37:48] valve 2 open at 24:25:56 | wm1=1115 wm2=0 wm3=0 wm4=0 wm5=0
+[09:37:48] wm 2 started working at 24:25:56 | wm1=1115 wm2=0 wm3=0 wm4=0 wm5=0
+[09:37:58] valve 2 close at 24:26:06 | wm1=1117 wm2=8 wm3=0 wm4=0 wm5=0
+[09:37:59] wm 2 stopped working at 24:26:06 | wm1=1117 wm2=8 wm3=0 wm4=0 wm5=0
+[09:38:57] valve 2 open at 24:27:05 | wm1=1134 wm2=0 wm3=0 wm4=0 wm5=0
+[09:38:57] wm 2 started working at 24:27:05 | wm1=1134 wm2=0 wm3=0 wm4=0 wm5=0
+[09:39:07] valve 2 close at 24:27:15 | wm1=1137 wm2=8 wm3=0 wm4=0 wm5=0
+[09:39:07] wm 2 stopped working at 24:27:15 | wm1=1137 wm2=8 wm3=0 wm4=0 wm5=0
+[09:40:06] valve 2 open at 24:28:14 | wm1=1153 wm2=0 wm3=0 wm4=0 wm5=0
+[09:40:06] wm 2 started working at 24:28:14 | wm1=1153 wm2=0 wm3=0 wm4=0 wm5=0
+[09:40:16] valve 2 close at 24:28:24 | wm1=1156 wm2=9 wm3=0 wm4=0 wm5=0
+[09:40:16] wm 2 stopped working at 24:28:24 | wm1=1156 wm2=9 wm3=0 wm4=0 wm5=0
+[09:41:15] valve 2 open at 24:29:23 | wm1=1172 wm2=0 wm3=0 wm4=0 wm5=0
+[09:41:15] wm 2 started working at 24:29:23 | wm1=1172 wm2=0 wm3=0 wm4=0 wm5=0
+[09:41:25] valve 2 close at 24:29:33 | wm1=1175 wm2=8 wm3=0 wm4=0 wm5=0
+[09:41:25] wm 2 stopped working at 24:29:33 | wm1=1175 wm2=8 wm3=0 wm4=0 wm5=0
+[09:42:24] valve 2 open at 24:30:33 | wm1=1192 wm2=0 wm3=0 wm4=0 wm5=0
+[09:42:24] wm 2 started working at 24:30:33 | wm1=1192 wm2=0 wm3=0 wm4=0 wm5=0
+[09:42:34] valve 2 close at 24:30:43 | wm1=1194 wm2=8 wm3=0 wm4=0 wm5=0
+[09:42:34] wm 2 stopped working at 24:30:43 | wm1=1194 wm2=8 wm3=0 wm4=0 wm5=0
+[09:43:33] valve 2 open at 24:31:42 | wm1=1211 wm2=0 wm3=0 wm4=0 wm5=0
+[09:43:33] wm 2 started working at 24:31:42 | wm1=1211 wm2=0 wm3=0 wm4=0 wm5=0
+[09:43:43] valve 2 close at 24:31:52 | wm1=1214 wm2=9 wm3=0 wm4=0 wm5=0
+[09:43:43] wm 2 stopped working at 24:31:52 | wm1=1214 wm2=9 wm3=0 wm4=0 wm5=0
+[09:44:42] valve 2 open at 24:32:51 | wm1=1230 wm2=0 wm3=0 wm4=0 wm5=0
+[09:44:43] wm 2 started working at 24:32:51 | wm1=1230 wm2=0 wm3=0 wm4=0 wm5=0
+[09:44:53] valve 2 close at 24:33:01 | wm1=1233 wm2=8 wm3=0 wm4=0 wm5=0
+[09:44:53] wm 2 stopped working at 24:33:01 | wm1=1233 wm2=8 wm3=0 wm4=0 wm5=0
+[09:45:52] valve 2 open at 24:34:00 | wm1=1249 wm2=0 wm3=0 wm4=0 wm5=0
+[09:45:52] wm 2 started working at 24:34:00 | wm1=1249 wm2=0 wm3=0 wm4=0 wm5=0
+[09:46:02] valve 2 close at 24:34:10 | wm1=1252 wm2=8 wm3=0 wm4=0 wm5=0
+[09:46:02] wm 2 stopped working at 24:34:10 | wm1=1252 wm2=8 wm3=0 wm4=0 wm5=0
+[09:47:01] valve 2 open at 24:35:10 | wm1=1268 wm2=0 wm3=0 wm4=0 wm5=0
+[09:47:01] wm 2 started working at 24:35:10 | wm1=1268 wm2=0 wm3=0 wm4=0 wm5=0
+[09:47:11] valve 2 close at 24:35:20 | wm1=1271 wm2=9 wm3=0 wm4=0 wm5=0
+[09:47:11] wm 2 stopped working at 24:35:20 | wm1=1271 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:05] valve 2 open at 24:36:19 | wm1=1288 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:06] wm 2 started working at 24:36:19 | wm1=1288 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:08] valve 2 close at 24:36:29 | wm1=1290 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:08] wm 2 stopped working at 24:36:29 | wm1=1290 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:08] valve 2 open at 24:37:28 | wm1=1307 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:09] wm 2 started working at 24:37:28 | wm1=1307 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:09] valve 2 close at 24:37:38 | wm1=1310 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:09] wm 2 stopped working at 24:37:38 | wm1=1310 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:09] valve 2 open at 24:38:37 | wm1=1326 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:09] wm 2 started working at 24:38:37 | wm1=1326 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:09] valve 2 close at 24:38:48 | wm1=1329 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:09] wm 2 stopped working at 24:38:48 | wm1=1329 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:09] valve 2 open at 24:39:47 | wm1=1345 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:09] wm 2 started working at 24:39:47 | wm1=1345 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:10] valve 2 close at 24:39:57 | wm1=1348 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:10] wm 2 stopped working at 24:39:57 | wm1=1348 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:10] valve 2 open at 24:40:56 | wm1=1365 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:10] wm 2 started working at 24:40:56 | wm1=1365 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:10] valve 2 close at 24:41:06 | wm1=1367 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:10] wm 2 stopped working at 24:41:06 | wm1=1367 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:10] valve 2 open at 24:42:05 | wm1=1384 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:10] wm 2 started working at 24:42:05 | wm1=1384 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:11] valve 2 close at 24:42:15 | wm1=1387 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:11] wm 2 stopped working at 24:42:15 | wm1=1387 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:11] valve 2 open at 24:43:14 | wm1=1403 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:11] wm 2 started working at 24:43:14 | wm1=1403 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:11] valve 2 close at 24:43:25 | wm1=1406 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:11] wm 2 stopped working at 24:43:25 | wm1=1406 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:11] valve 2 open at 24:44:24 | wm1=1422 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:11] wm 2 started working at 24:44:24 | wm1=1422 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:12] valve 2 close at 24:44:34 | wm1=1425 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:12] wm 2 stopped working at 24:44:34 | wm1=1425 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:12] valve 2 open at 24:45:33 | wm1=1442 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:12] wm 2 started working at 24:45:33 | wm1=1442 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:12] valve 2 close at 24:45:43 | wm1=1444 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:12] wm 2 stopped working at 24:45:43 | wm1=1444 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:13] valve 2 open at 24:46:42 | wm1=1461 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:13] wm 2 started working at 24:46:42 | wm1=1461 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:13] valve 2 close at 24:46:52 | wm1=1464 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:13] wm 2 stopped working at 24:46:52 | wm1=1464 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:13] valve 2 open at 24:47:51 | wm1=1480 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:13] wm 2 started working at 24:47:51 | wm1=1480 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:13] valve 2 close at 24:48:01 | wm1=1483 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:13] wm 2 stopped working at 24:48:01 | wm1=1483 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:13] valve 2 open at 24:49:01 | wm1=1499 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:13] wm 2 started working at 24:49:01 | wm1=1499 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:14] valve 2 close at 24:49:11 | wm1=1502 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:14] wm 2 stopped working at 24:49:11 | wm1=1502 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:14] valve 2 open at 24:50:10 | wm1=1519 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:14] wm 2 started working at 24:50:10 | wm1=1519 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:14] valve 2 close at 24:50:20 | wm1=1521 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:14] wm 2 stopped working at 24:50:20 | wm1=1521 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:14] valve 2 open at 24:51:19 | wm1=1538 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:14] wm 2 started working at 24:51:19 | wm1=1538 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:14] valve 2 close at 24:51:29 | wm1=1541 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:14] wm 2 stopped working at 24:51:29 | wm1=1541 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:14] valve 2 open at 24:52:28 | wm1=1557 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:15] wm 2 started working at 24:52:28 | wm1=1557 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:15] valve 2 close at 24:52:38 | wm1=1560 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:15] wm 2 stopped working at 24:52:38 | wm1=1560 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:15] valve 2 open at 24:53:38 | wm1=1576 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:15] wm 2 started working at 24:53:38 | wm1=1576 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:15] valve 2 close at 24:53:48 | wm1=1579 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:15] wm 2 stopped working at 24:53:48 | wm1=1579 wm2=9 wm3=0 wm4=0 wm5=0
+[10:06:35] valve 2 open at 24:54:47 | wm1=1595 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:35] wm 2 started working at 24:54:47 | wm1=1595 wm2=0 wm3=0 wm4=0 wm5=0
+[10:06:45] valve 2 close at 24:54:57 | wm1=1598 wm2=8 wm3=0 wm4=0 wm5=0
+[10:06:45] wm 2 stopped working at 24:54:57 | wm1=1598 wm2=8 wm3=0 wm4=0 wm5=0
+[10:07:44] valve 2 open at 24:55:56 | wm1=1615 wm2=0 wm3=0 wm4=0 wm5=0
+[10:07:44] wm 2 started working at 24:55:56 | wm1=1615 wm2=0 wm3=0 wm4=0 wm5=0
+[10:07:54] valve 2 close at 24:56:06 | wm1=1617 wm2=8 wm3=0 wm4=0 wm5=0
+[10:07:54] wm 2 stopped working at 24:56:06 | wm1=1617 wm2=8 wm3=0 wm4=0 wm5=0
+[10:08:53] valve 2 open at 24:57:05 | wm1=1634 wm2=0 wm3=0 wm4=0 wm5=0
+[10:08:53] wm 2 started working at 24:57:05 | wm1=1634 wm2=0 wm3=0 wm4=0 wm5=0
+[10:09:03] valve 2 close at 24:57:15 | wm1=1637 wm2=9 wm3=0 wm4=0 wm5=0
+[10:09:03] wm 2 stopped working at 24:57:15 | wm1=1637 wm2=9 wm3=0 wm4=0 wm5=0
+[10:10:02] valve 2 open at 24:58:15 | wm1=1653 wm2=0 wm3=0 wm4=0 wm5=0
+[10:10:02] wm 2 started working at 24:58:15 | wm1=1653 wm2=0 wm3=0 wm4=0 wm5=0
+[10:10:12] valve 2 close at 24:58:25 | wm1=1656 wm2=8 wm3=0 wm4=0 wm5=0
+[10:10:12] wm 2 stopped working at 24:58:25 | wm1=1656 wm2=8 wm3=0 wm4=0 wm5=0
+[10:11:11] valve 2 open at 24:59:24 | wm1=1672 wm2=0 wm3=0 wm4=0 wm5=0
+[10:11:11] wm 2 started working at 24:59:24 | wm1=1672 wm2=0 wm3=0 wm4=0 wm5=0
+[10:11:21] valve 2 close at 24:59:34 | wm1=1675 wm2=8 wm3=0 wm4=0 wm5=0
+[10:11:21] wm 2 stopped working at 24:59:34 | wm1=1675 wm2=8 wm3=0 wm4=0 wm5=0
+[10:12:20] valve 2 open at 25:00:33 | wm1=1692 wm2=0 wm3=0 wm4=0 wm5=0
+[10:12:20] wm 2 started working at 25:00:33 | wm1=1692 wm2=0 wm3=0 wm4=0 wm5=0
+[10:12:30] valve 2 close at 25:00:43 | wm1=1694 wm2=9 wm3=0 wm4=0 wm5=0
+[10:12:30] wm 2 stopped working at 25:00:43 | wm1=1694 wm2=9 wm3=0 wm4=0 wm5=0
+[10:13:29] valve 2 open at 25:01:42 | wm1=1711 wm2=0 wm3=0 wm4=0 wm5=0
+[10:13:30] wm 2 started working at 25:01:42 | wm1=1711 wm2=0 wm3=0 wm4=0 wm5=0
+[10:13:39] valve 2 close at 25:01:52 | wm1=1714 wm2=8 wm3=0 wm4=0 wm5=0
+[10:13:40] wm 2 stopped working at 25:01:52 | wm1=1714 wm2=8 wm3=0 wm4=0 wm5=0
+[10:14:39] valve 2 open at 25:02:51 | wm1=1730 wm2=0 wm3=0 wm4=0 wm5=0
+[10:14:39] wm 2 started working at 25:02:51 | wm1=1730 wm2=0 wm3=0 wm4=0 wm5=0
+[10:14:49] valve 2 close at 25:03:01 | wm1=1733 wm2=8 wm3=0 wm4=0 wm5=0
+[10:14:49] wm 2 stopped working at 25:03:01 | wm1=1733 wm2=8 wm3=0 wm4=0 wm5=0
+[10:15:48] valve 2 open at 25:04:01 | wm1=1749 wm2=0 wm3=0 wm4=0 wm5=0
+[10:15:48] wm 2 started working at 25:04:01 | wm1=1749 wm2=0 wm3=0 wm4=0 wm5=0
+[10:15:58] valve 2 close at 25:04:11 | wm1=1752 wm2=9 wm3=0 wm4=0 wm5=0
+[10:15:58] wm 2 stopped working at 25:04:11 | wm1=1752 wm2=9 wm3=0 wm4=0 wm5=0
+[10:16:57] valve 2 open at 25:05:10 | wm1=1769 wm2=0 wm3=0 wm4=0 wm5=0
+[10:16:57] wm 2 started working at 25:05:10 | wm1=1769 wm2=0 wm3=0 wm4=0 wm5=0
+[10:17:07] valve 2 close at 25:05:20 | wm1=1771 wm2=8 wm3=0 wm4=0 wm5=0
+[10:17:07] wm 2 stopped working at 25:05:20 | wm1=1771 wm2=8 wm3=0 wm4=0 wm5=0
+[10:18:06] valve 2 open at 25:06:19 | wm1=1788 wm2=0 wm3=0 wm4=0 wm5=0
+[10:18:06] wm 2 started working at 25:06:19 | wm1=1788 wm2=0 wm3=0 wm4=0 wm5=0
+[10:18:16] valve 2 close at 25:06:29 | wm1=1791 wm2=8 wm3=0 wm4=0 wm5=0
+[10:18:16] wm 2 stopped working at 25:06:29 | wm1=1791 wm2=8 wm3=0 wm4=0 wm5=0
+[10:19:15] valve 2 open at 25:07:28 | wm1=1807 wm2=0 wm3=0 wm4=0 wm5=0
+[10:19:15] wm 2 started working at 25:07:28 | wm1=1807 wm2=0 wm3=0 wm4=0 wm5=0
+[10:19:25] valve 2 close at 25:07:38 | wm1=1810 wm2=9 wm3=0 wm4=0 wm5=0
+[10:19:25] wm 2 stopped working at 25:07:38 | wm1=1810 wm2=9 wm3=0 wm4=0 wm5=0
+[10:20:24] valve 2 open at 25:08:38 | wm1=1826 wm2=0 wm3=0 wm4=0 wm5=0
+[10:20:24] wm 2 started working at 25:08:38 | wm1=1826 wm2=0 wm3=0 wm4=0 wm5=0
+[10:20:34] valve 2 close at 25:08:48 | wm1=1829 wm2=8 wm3=0 wm4=0 wm5=0
+[10:20:34] wm 2 stopped working at 25:08:48 | wm1=1829 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:37] valve 2 open at 25:09:47 | wm1=1845 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:37] wm 2 started working at 25:09:47 | wm1=1845 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:37] valve 2 close at 25:09:57 | wm1=1848 wm2=9 wm3=0 wm4=0 wm5=0
+[10:29:37] wm 2 stopped working at 25:09:57 | wm1=1848 wm2=9 wm3=0 wm4=0 wm5=0
+[10:29:37] valve 2 open at 25:10:56 | wm1=1865 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:37] wm 2 started working at 25:10:56 | wm1=1865 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:37] valve 2 close at 25:11:06 | wm1=1867 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:38] wm 2 stopped working at 25:11:06 | wm1=1867 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:38] valve 2 open at 25:12:05 | wm1=1884 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:38] wm 2 started working at 25:12:05 | wm1=1884 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:38] valve 2 close at 25:12:15 | wm1=1887 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:38] wm 2 stopped working at 25:12:15 | wm1=1887 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:38] valve 2 open at 25:13:14 | wm1=1903 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:38] wm 2 started working at 25:13:14 | wm1=1903 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:38] valve 2 close at 25:13:24 | wm1=1906 wm2=9 wm3=0 wm4=0 wm5=0
+[10:29:38] wm 2 stopped working at 25:13:24 | wm1=1906 wm2=9 wm3=0 wm4=0 wm5=0
+[10:29:38] valve 2 open at 25:14:24 | wm1=1922 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:38] wm 2 started working at 25:14:24 | wm1=1922 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:38] valve 2 close at 25:14:34 | wm1=1925 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:38] wm 2 stopped working at 25:14:34 | wm1=1925 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:39] valve 2 open at 25:15:33 | wm1=1942 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:39] wm 2 started working at 25:15:33 | wm1=1942 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:39] valve 2 close at 25:15:43 | wm1=1944 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:39] wm 2 stopped working at 25:15:43 | wm1=1944 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:39] valve 2 open at 25:16:42 | wm1=1961 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:39] wm 2 started working at 25:16:42 | wm1=1961 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:39] valve 2 close at 25:16:52 | wm1=1964 wm2=9 wm3=0 wm4=0 wm5=0
+[10:29:39] wm 2 stopped working at 25:16:52 | wm1=1964 wm2=9 wm3=0 wm4=0 wm5=0
+[10:29:39] valve 2 open at 25:17:51 | wm1=1980 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:39] wm 2 started working at 25:17:51 | wm1=1980 wm2=0 wm3=0 wm4=0 wm5=0
+[10:29:46] valve 2 close at 25:18:01 | wm1=1983 wm2=8 wm3=0 wm4=0 wm5=0
+[10:29:47] wm 2 stopped working at 25:18:01 | wm1=1983 wm2=8 wm3=0 wm4=0 wm5=0
+[10:30:46] valve 2 open at 25:19:01 | wm1=1999 wm2=0 wm3=0 wm4=0 wm5=0
+[10:30:46] wm 2 started working at 25:19:01 | wm1=1999 wm2=0 wm3=0 wm4=0 wm5=0
+[10:30:55] valve 2 close at 25:19:11 | wm1=2002 wm2=8 wm3=0 wm4=0 wm5=0
+[10:30:56] wm 2 stopped working at 25:19:11 | wm1=2002 wm2=8 wm3=0 wm4=0 wm5=0
+[10:31:55] valve 2 open at 25:20:10 | wm1=2019 wm2=0 wm3=0 wm4=0 wm5=0
+[10:31:55] wm 2 started working at 25:20:10 | wm1=2019 wm2=0 wm3=0 wm4=0 wm5=0
+[10:32:05] valve 2 close at 25:20:20 | wm1=2021 wm2=9 wm3=0 wm4=0 wm5=0
+[10:32:05] wm 2 stopped working at 25:20:20 | wm1=2021 wm2=9 wm3=0 wm4=0 wm5=0
+[10:33:04] valve 2 open at 25:21:19 | wm1=2038 wm2=0 wm3=0 wm4=0 wm5=0
+[10:33:04] wm 2 started working at 25:21:19 | wm1=2038 wm2=0 wm3=0 wm4=0 wm5=0
+[10:33:14] valve 2 close at 25:21:29 | wm1=2041 wm2=8 wm3=0 wm4=0 wm5=0
+[10:33:14] wm 2 stopped working at 25:21:29 | wm1=2041 wm2=8 wm3=0 wm4=0 wm5=0
+[10:34:13] valve 2 open at 25:22:28 | wm1=2057 wm2=0 wm3=0 wm4=0 wm5=0
+[10:34:13] wm 2 started working at 25:22:28 | wm1=2057 wm2=0 wm3=0 wm4=0 wm5=0
+[10:34:23] valve 2 close at 25:22:38 | wm1=2060 wm2=8 wm3=0 wm4=0 wm5=0
+[10:34:23] wm 2 stopped working at 25:22:38 | wm1=2060 wm2=8 wm3=0 wm4=0 wm5=0
+[10:35:22] valve 2 open at 25:23:38 | wm1=2076 wm2=0 wm3=0 wm4=0 wm5=0
+[10:35:22] wm 2 started working at 25:23:38 | wm1=2076 wm2=0 wm3=0 wm4=0 wm5=0
+[10:35:32] valve 2 close at 25:23:48 | wm1=2079 wm2=9 wm3=0 wm4=0 wm5=0
+[10:35:32] wm 2 stopped working at 25:23:48 | wm1=2079 wm2=9 wm3=0 wm4=0 wm5=0
+[10:36:31] valve 2 open at 25:24:47 | wm1=2095 wm2=0 wm3=0 wm4=0 wm5=0
+[10:36:31] wm 2 started working at 25:24:47 | wm1=2095 wm2=0 wm3=0 wm4=0 wm5=0
+[10:36:41] valve 2 close at 25:24:57 | wm1=2098 wm2=8 wm3=0 wm4=0 wm5=0
+[10:36:41] wm 2 stopped working at 25:24:57 | wm1=2098 wm2=8 wm3=0 wm4=0 wm5=0
+[10:37:40] valve 2 open at 25:25:56 | wm1=2115 wm2=0 wm3=0 wm4=0 wm5=0
+[10:37:40] wm 2 started working at 25:25:56 | wm1=2115 wm2=0 wm3=0 wm4=0 wm5=0
+[10:37:50] valve 2 close at 25:26:06 | wm1=2117 wm2=8 wm3=0 wm4=0 wm5=0
+[10:37:50] wm 2 stopped working at 25:26:06 | wm1=2117 wm2=8 wm3=0 wm4=0 wm5=0
+[10:38:49] valve 2 open at 25:27:05 | wm1=2134 wm2=0 wm3=0 wm4=0 wm5=0
+[10:38:49] wm 2 started working at 25:27:05 | wm1=2134 wm2=0 wm3=0 wm4=0 wm5=0
+[10:38:59] valve 2 close at 25:27:15 | wm1=2137 wm2=9 wm3=0 wm4=0 wm5=0
+[10:38:59] wm 2 stopped working at 25:27:15 | wm1=2137 wm2=9 wm3=0 wm4=0 wm5=0
+[10:39:58] valve 2 open at 25:28:15 | wm1=2153 wm2=0 wm3=0 wm4=0 wm5=0
+[10:39:58] wm 2 started working at 25:28:15 | wm1=2153 wm2=0 wm3=0 wm4=0 wm5=0
+[10:40:08] valve 2 close at 25:28:25 | wm1=2156 wm2=8 wm3=0 wm4=0 wm5=0
+[10:40:08] wm 2 stopped working at 25:28:25 | wm1=2156 wm2=8 wm3=0 wm4=0 wm5=0
+[10:41:07] valve 2 open at 25:29:24 | wm1=2172 wm2=0 wm3=0 wm4=0 wm5=0
+[10:41:07] wm 2 started working at 25:29:24 | wm1=2172 wm2=0 wm3=0 wm4=0 wm5=0
+[10:41:17] valve 2 close at 25:29:34 | wm1=2175 wm2=9 wm3=0 wm4=0 wm5=0
+[10:41:17] wm 2 stopped working at 25:29:34 | wm1=2175 wm2=9 wm3=0 wm4=0 wm5=0
+[10:42:16] valve 2 open at 25:30:33 | wm1=2192 wm2=0 wm3=0 wm4=0 wm5=0
+[10:42:16] wm 2 started working at 25:30:33 | wm1=2192 wm2=0 wm3=0 wm4=0 wm5=0
+[10:42:26] valve 2 close at 25:30:43 | wm1=2194 wm2=8 wm3=0 wm4=0 wm5=0
+[10:42:26] wm 2 stopped working at 25:30:43 | wm1=2194 wm2=8 wm3=0 wm4=0 wm5=0
+[10:43:25] valve 2 open at 25:31:42 | wm1=2211 wm2=0 wm3=0 wm4=0 wm5=0
+[10:43:25] wm 2 started working at 25:31:42 | wm1=2211 wm2=0 wm3=0 wm4=0 wm5=0
+[10:43:35] valve 2 close at 25:31:52 | wm1=2214 wm2=8 wm3=0 wm4=0 wm5=0
+[10:43:35] wm 2 stopped working at 25:31:52 | wm1=2214 wm2=8 wm3=0 wm4=0 wm5=0
+[10:44:34] valve 2 open at 25:32:52 | wm1=2230 wm2=0 wm3=0 wm4=0 wm5=0
+[10:44:34] wm 2 started working at 25:32:52 | wm1=2230 wm2=0 wm3=0 wm4=0 wm5=0
+[10:44:44] valve 2 close at 25:33:02 | wm1=2233 wm2=9 wm3=0 wm4=0 wm5=0
+[10:44:44] wm 2 stopped working at 25:33:02 | wm1=2233 wm2=9 wm3=0 wm4=0 wm5=0
+[10:45:43] valve 2 open at 25:34:01 | wm1=2249 wm2=0 wm3=0 wm4=0 wm5=0
+[10:45:44] wm 2 started working at 25:34:01 | wm1=2249 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:00] valve 2 close at 25:34:11 | wm1=2252 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:00] wm 2 stopped working at 25:34:11 | wm1=2252 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:00] valve 2 open at 25:35:10 | wm1=2269 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:00] wm 2 started working at 25:35:10 | wm1=2269 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:00] valve 2 close at 25:35:20 | wm1=2271 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:00] wm 2 stopped working at 25:35:20 | wm1=2271 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:00] valve 2 open at 25:36:19 | wm1=2288 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:00] wm 2 started working at 25:36:19 | wm1=2288 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:01] valve 2 close at 25:36:29 | wm1=2291 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:01] wm 2 stopped working at 25:36:29 | wm1=2291 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:01] valve 2 open at 25:37:29 | wm1=2307 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:01] wm 2 started working at 25:37:29 | wm1=2307 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:01] valve 2 close at 25:37:39 | wm1=2310 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:01] wm 2 stopped working at 25:37:39 | wm1=2310 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:02] valve 2 open at 25:38:38 | wm1=2326 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:02] wm 2 started working at 25:38:38 | wm1=2326 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:02] valve 2 close at 25:38:48 | wm1=2329 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:02] wm 2 stopped working at 25:38:48 | wm1=2329 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:03] valve 2 open at 25:39:47 | wm1=2345 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:03] wm 2 started working at 25:39:47 | wm1=2345 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:03] valve 2 close at 25:39:57 | wm1=2348 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:03] wm 2 stopped working at 25:39:57 | wm1=2348 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:03] valve 2 open at 25:40:56 | wm1=2365 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:03] wm 2 started working at 25:40:56 | wm1=2365 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:03] valve 2 close at 25:41:06 | wm1=2368 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:03] wm 2 stopped working at 25:41:06 | wm1=2368 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:03] valve 2 open at 25:42:06 | wm1=2384 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:06] wm 2 started working at 25:42:06 | wm1=2384 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:06] valve 2 close at 25:42:16 | wm1=2387 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:06] wm 2 stopped working at 25:42:16 | wm1=2387 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:07] valve 2 open at 25:43:15 | wm1=2403 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:07] wm 2 started working at 25:43:15 | wm1=2403 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:07] valve 2 close at 25:43:25 | wm1=2406 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:07] wm 2 stopped working at 25:43:25 | wm1=2406 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:07] valve 2 open at 25:44:24 | wm1=2422 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:07] wm 2 started working at 25:44:24 | wm1=2422 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:07] valve 2 close at 25:44:34 | wm1=2425 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:07] wm 2 stopped working at 25:44:34 | wm1=2425 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:07] valve 2 open at 25:45:33 | wm1=2442 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:07] wm 2 started working at 25:45:33 | wm1=2442 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:08] valve 2 close at 25:45:43 | wm1=2444 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:08] wm 2 stopped working at 25:45:43 | wm1=2444 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:08] valve 2 open at 25:46:42 | wm1=2461 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:08] wm 2 started working at 25:46:42 | wm1=2461 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:08] valve 2 close at 25:46:52 | wm1=2464 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:08] wm 2 stopped working at 25:46:52 | wm1=2464 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:08] valve 2 open at 25:47:52 | wm1=2480 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:08] wm 2 started working at 25:47:52 | wm1=2480 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:08] valve 2 close at 25:48:02 | wm1=2483 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:08] wm 2 stopped working at 25:48:02 | wm1=2483 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:09] valve 2 open at 25:49:01 | wm1=2499 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:09] wm 2 started working at 25:49:01 | wm1=2499 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:09] valve 2 close at 25:49:11 | wm1=2502 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:09] wm 2 stopped working at 25:49:11 | wm1=2502 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:09] valve 2 open at 25:50:10 | wm1=2519 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:09] wm 2 started working at 25:50:10 | wm1=2519 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:09] valve 2 close at 25:50:20 | wm1=2521 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:09] wm 2 stopped working at 25:50:20 | wm1=2521 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 open at 25:51:19 | wm1=2538 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 started working at 25:51:19 | wm1=2538 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 close at 25:51:29 | wm1=2541 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 stopped working at 25:51:29 | wm1=2541 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 open at 25:52:29 | wm1=2557 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 started working at 25:52:29 | wm1=2557 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 close at 25:52:39 | wm1=2560 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 stopped working at 25:52:39 | wm1=2560 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 open at 25:53:38 | wm1=2576 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 started working at 25:53:38 | wm1=2576 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 close at 25:53:48 | wm1=2579 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 stopped working at 25:53:48 | wm1=2579 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 open at 25:54:47 | wm1=2596 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 started working at 25:54:47 | wm1=2596 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 close at 25:54:57 | wm1=2598 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 stopped working at 25:54:57 | wm1=2598 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:10] valve 2 open at 25:55:56 | wm1=2615 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:10] wm 2 started working at 25:55:56 | wm1=2615 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:11] valve 2 close at 25:56:06 | wm1=2618 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:11] wm 2 stopped working at 25:56:06 | wm1=2618 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:11] valve 2 open at 25:57:06 | wm1=2634 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:11] wm 2 started working at 25:57:06 | wm1=2634 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:11] valve 2 close at 25:57:16 | wm1=2637 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:11] wm 2 stopped working at 25:57:16 | wm1=2637 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:11] valve 2 open at 25:58:15 | wm1=2653 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:11] wm 2 started working at 25:58:15 | wm1=2653 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:11] valve 2 close at 25:58:25 | wm1=2656 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:11] wm 2 stopped working at 25:58:25 | wm1=2656 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:11] valve 2 open at 25:59:24 | wm1=2673 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:11] wm 2 started working at 25:59:24 | wm1=2673 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:11] valve 2 close at 25:59:34 | wm1=2675 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:12] wm 2 stopped working at 25:59:34 | wm1=2675 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:12] valve 2 open at 26:00:33 | wm1=2692 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:12] wm 2 started working at 26:00:33 | wm1=2692 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:12] valve 2 close at 26:00:44 | wm1=2695 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:12] wm 2 stopped working at 26:00:44 | wm1=2695 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:12] valve 2 open at 26:01:43 | wm1=2711 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:12] wm 2 started working at 26:01:43 | wm1=2711 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:12] valve 2 close at 26:01:53 | wm1=2714 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:12] wm 2 stopped working at 26:01:53 | wm1=2714 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:12] valve 2 open at 26:02:52 | wm1=2730 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:12] wm 2 started working at 26:02:52 | wm1=2730 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:12] valve 2 close at 26:03:02 | wm1=2733 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:12] wm 2 stopped working at 26:03:02 | wm1=2733 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:12] valve 2 open at 26:04:01 | wm1=2749 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:13] wm 2 started working at 26:04:01 | wm1=2749 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:13] valve 2 close at 26:04:11 | wm1=2752 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:13] wm 2 stopped working at 26:04:11 | wm1=2752 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:13] valve 2 open at 26:05:10 | wm1=2769 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:13] wm 2 started working at 26:05:10 | wm1=2769 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:13] valve 2 close at 26:05:21 | wm1=2771 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:13] wm 2 stopped working at 26:05:21 | wm1=2771 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:13] valve 2 open at 26:06:20 | wm1=2788 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:13] wm 2 started working at 26:06:20 | wm1=2788 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:13] valve 2 close at 26:06:30 | wm1=2791 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:13] wm 2 stopped working at 26:06:30 | wm1=2791 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:13] valve 2 open at 26:07:29 | wm1=2807 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:13] wm 2 started working at 26:07:29 | wm1=2807 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:13] valve 2 close at 26:07:39 | wm1=2810 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:13] wm 2 stopped working at 26:07:39 | wm1=2810 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:14] valve 2 open at 26:08:38 | wm1=2826 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:14] wm 2 started working at 26:08:38 | wm1=2826 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:14] valve 2 close at 26:08:48 | wm1=2829 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:14] wm 2 stopped working at 26:08:48 | wm1=2829 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:14] valve 2 open at 26:09:47 | wm1=2846 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:14] wm 2 started working at 26:09:47 | wm1=2846 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:14] valve 2 close at 26:09:58 | wm1=2848 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:14] wm 2 stopped working at 26:09:58 | wm1=2848 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:14] valve 2 open at 26:10:57 | wm1=2865 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:14] wm 2 started working at 26:10:57 | wm1=2865 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:14] valve 2 close at 26:11:07 | wm1=2868 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:14] wm 2 stopped working at 26:11:07 | wm1=2868 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:15] valve 2 open at 26:12:06 | wm1=2884 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:15] wm 2 started working at 26:12:06 | wm1=2884 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:15] valve 2 close at 26:12:16 | wm1=2887 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:15] wm 2 stopped working at 26:12:16 | wm1=2887 wm2=9 wm3=0 wm4=0 wm5=0
+[11:27:15] valve 2 open at 26:13:15 | wm1=2903 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:16] wm 2 started working at 26:13:15 | wm1=2903 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:16] valve 2 close at 26:13:25 | wm1=2906 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:16] wm 2 stopped working at 26:13:25 | wm1=2906 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:16] valve 2 open at 26:14:24 | wm1=2923 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:16] wm 2 started working at 26:14:24 | wm1=2923 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:17] valve 2 close at 26:14:35 | wm1=2925 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:17] wm 2 stopped working at 26:14:35 | wm1=2925 wm2=8 wm3=0 wm4=0 wm5=0
+[11:27:17] valve 2 open at 26:15:34 | wm1=2942 wm2=0 wm3=0 wm4=0 wm5=0
+[11:27:17] wm 2 started working at 26:15:34 | wm1=2942 wm2=0 wm3=0 wm4=0 wm5=0
+[11:28:48] valve 2 close at 26:15:44 | wm1=2945 wm2=9 wm3=0 wm4=0 wm5=0
+[11:28:48] wm 2 stopped working at 26:15:44 | wm1=2945 wm2=9 wm3=0 wm4=0 wm5=0
+[11:28:48] valve 2 open at 26:16:43 | wm1=2961 wm2=0 wm3=0 wm4=0 wm5=0
+[11:28:48] wm 2 started working at 26:16:43 | wm1=2961 wm2=0 wm3=0 wm4=0 wm5=0
+[11:28:49] valve 2 close at 26:16:53 | wm1=2964 wm2=8 wm3=0 wm4=0 wm5=0
+[11:28:49] wm 2 stopped working at 26:16:53 | wm1=2964 wm2=8 wm3=0 wm4=0 wm5=0
+[12:29:06] 
+Error reading: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+
