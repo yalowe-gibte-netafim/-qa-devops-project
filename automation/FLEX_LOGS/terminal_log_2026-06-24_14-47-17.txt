@@ -1,0 +1,37 @@
+--- Log Started: Wed Jun 24 14:47:17 2026 ---
+[14:47:23] Connected to COM10
+[14:47:24] > trigger wm 1 1000
+
+[14:47:25] trigger wm 1 1000
+[14:47:25] wm 1 triggered
+[14:47:25] > trigger wm 2 1000
+
+[14:47:25] trigger wm 2 1000
+[14:47:25] wm 2 triggered
+[14:47:25] > trigger wm 3 1000
+
+[14:47:25] trigger wm 3 1000
+[14:47:25] wm 3 triggered
+[14:47:29] > start wm 2 1000
+
+[14:47:29] start wm 2 1000
+[14:47:29] wm 2 started
+[14:47:31] > stop wm 2
+
+[14:47:31] stop wm 2
+[14:47:31] wm 2 stopped
+[14:47:31] > stop wm 1
+
+[14:47:31] stop wm 1
+[14:47:31] wm 1 stopped
+[14:47:32] > trigger wm 1 36000
+
+[14:47:32] trigger wm 1 36000
+[14:47:32] wm 1 triggered
+[14:47:33] > trigger wm 2 1000
+
+[14:47:33] trigger wm 2 1000
+[14:47:33] wm 2 triggered
+[14:47:47] valve 1 open at 01:19:47 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[14:47:47] wm 1 started working at 01:19:47 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0
+[14:47:48] valve 7 open at 01:19:48 | wm1=0 wm2=1 wm3=0 wm4=0 wm5=0

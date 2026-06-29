@@ -1,0 +1,6 @@
+--- Log Started: Sun Jun 28 13:57:30 2026 ---
+[13:57:54] Connected to COM14
+[13:57:55] > start wm 1 1000
+
+[13:57:57] > stop wm 1
+

@@ -26,9 +26,9 @@ from automation.config.settings import (
     BAUD_RATES, LINE_ENDINGS, DEFAULT_BAUD_INDEX, DEFAULT_LINE_END_INDEX,
     PINOUT_DATA, WM_COUNT, WM_COLORS, WM_OFFSETS,
 )
-from automation.models.models import SmartSimulationInput
+from automation.models.models import IrrigationProgramInput, DosingProgramInput
 from automation.pages.base_page import BasePage
-from automation.services.smart_simulation_service import calculate_smart_simulation
+from automation.services.flow_calculation_service import FlowCalculationService
 from automation.utils.logger import UILogger
 
 if TYPE_CHECKING:
@@ -135,73 +135,110 @@ class MainControllerPage(BasePage):
     # ── Smart simulation mode ────────────────────────────────────────────────
 
     def _build_smart_simulation_frame(self, parent: ttk.Frame) -> None:
-        frame = ttk.LabelFrame(parent, text="Smart Simulation Mode")
-        frame.pack(fill=tk.X, padx=5, pady=5)
+        outer = ttk.LabelFrame(parent, text="Smart Simulation Mode")
+        outer.pack(fill=tk.X, padx=5, pady=5)
 
-        self.sim_meter_type_var = tk.StringVar(value="WM")
-        self.sim_flow_value_var = tk.StringVar(value="")
-        self.sim_flow_unit_var = tk.StringVar(value="L/h")
-        self.sim_area_var = tk.StringVar(value="0")
-        self.sim_lpulse_var = tk.StringVar(value="")
-        self.sim_pulse_time_ms_var = tk.StringVar(value="")
-        self.sim_target_volume_var = tk.StringVar(value="")
-        self.sim_runtime_min_var = tk.StringVar(value="")
+        # ── Meter Configuration ────────────────────────────────────────────────
+        meter_frame = ttk.LabelFrame(outer, text="Meter Configuration")
+        meter_frame.pack(fill=tk.X, padx=4, pady=4)
 
-        ttk.Label(frame, text="Meter Type:").grid(row=0, column=0, sticky="w", padx=4, pady=2)
-        meter_combo = ttk.Combobox(frame, width=8, state="readonly", values=("WM", "DM"), textvariable=self.sim_meter_type_var)
-        meter_combo.grid(row=0, column=1, sticky="w", padx=4, pady=2)
+        self.sim_wm_lpulse_var  = tk.StringVar(value="")
+        self.sim_dm_lpulse_var  = tk.StringVar(value="")
+        self.sim_correction_var = tk.StringVar(value="1.0")
 
-        ttk.Label(frame, text="Flow value:").grid(row=0, column=2, sticky="w", padx=4, pady=2)
-        ttk.Entry(frame, width=10, textvariable=self.sim_flow_value_var).grid(row=0, column=3, sticky="w", padx=4, pady=2)
+        ttk.Label(meter_frame, text="WM Liters/Pulse:").grid(row=0, column=0, sticky="w", padx=4, pady=3)
+        ttk.Entry(meter_frame, width=10, textvariable=self.sim_wm_lpulse_var).grid(row=0, column=1, padx=4, pady=3)
 
-        ttk.Label(frame, text="Flow unit:").grid(row=0, column=4, sticky="w", padx=4, pady=2)
-        flow_unit_combo = ttk.Combobox(
-            frame,
-            width=8,
-            state="readonly",
-            values=("L/h", "m3/h", "mm/h"),
-            textvariable=self.sim_flow_unit_var,
+        ttk.Label(meter_frame, text="DM Liters/Pulse:").grid(row=0, column=2, sticky="w", padx=4, pady=3)
+        ttk.Entry(meter_frame, width=10, textvariable=self.sim_dm_lpulse_var).grid(row=0, column=3, padx=4, pady=3)
+
+        ttk.Label(meter_frame, text="Correction Factor:").grid(row=0, column=4, sticky="w", padx=4, pady=3)
+        ttk.Entry(meter_frame, width=8, textvariable=self.sim_correction_var).grid(row=0, column=5, padx=4, pady=3)
+
+        # ── Irrigation ─────────────────────────────────────────────────────────
+        irr_frame = ttk.LabelFrame(outer, text="Irrigation \u2014 Valve Flow Rate (m\u00b3/h)")
+        irr_frame.pack(fill=tk.X, padx=4, pady=3)
+
+        self.sim_valve_flow_var = tk.StringVar(value="")
+        self.sim_num_valves_var = tk.StringVar(value="1")
+        self.sim_area_var       = tk.StringVar(value="")
+        self.sim_irr_mode_var   = tk.StringVar(value="duration")
+        self.sim_irr_value_var  = tk.StringVar(value="")
+
+        ttk.Label(irr_frame, text="Valve Flow Rate (m\u00b3/h):").grid(row=0, column=0, sticky="w", padx=4, pady=2)
+        ttk.Entry(irr_frame, width=10, textvariable=self.sim_valve_flow_var).grid(row=0, column=1, padx=4, pady=2)
+
+        ttk.Label(irr_frame, text="Num Valves:").grid(row=0, column=2, sticky="w", padx=4, pady=2)
+        ttk.Entry(irr_frame, width=5, textvariable=self.sim_num_valves_var).grid(row=0, column=3, padx=4, pady=2)
+
+        ttk.Label(irr_frame, text="Area (ha):").grid(row=0, column=4, sticky="w", padx=4, pady=2)
+        self.sim_area_entry = ttk.Entry(irr_frame, width=10, textvariable=self.sim_area_var, state="disabled")
+        self.sim_area_entry.grid(row=0, column=5, padx=4, pady=2)
+
+        ttk.Label(irr_frame, text="Program Mode:").grid(row=1, column=0, sticky="w", padx=4, pady=2)
+        irr_mode_combo = ttk.Combobox(
+            irr_frame, width=10, state="readonly",
+            values=("duration", "mm", "m3"),
+            textvariable=self.sim_irr_mode_var,
         )
-        flow_unit_combo.grid(row=0, column=5, sticky="w", padx=4, pady=2)
+        irr_mode_combo.grid(row=1, column=1, padx=4, pady=2)
 
-        ttk.Label(frame, text="Area (m2):").grid(row=1, column=0, sticky="w", padx=4, pady=2)
-        self.sim_area_entry = ttk.Entry(frame, width=10, textvariable=self.sim_area_var)
-        self.sim_area_entry.grid(row=1, column=1, sticky="w", padx=4, pady=2)
+        self._irr_value_label = ttk.Label(irr_frame, text="Duration (min):")
+        self._irr_value_label.grid(row=1, column=2, sticky="w", padx=4, pady=2)
+        ttk.Entry(irr_frame, width=10, textvariable=self.sim_irr_value_var).grid(row=1, column=3, padx=4, pady=2)
 
-        ttk.Label(frame, text="Liters per pulse:").grid(row=1, column=2, sticky="w", padx=4, pady=2)
-        ttk.Entry(frame, width=10, textvariable=self.sim_lpulse_var).grid(row=1, column=3, sticky="w", padx=4, pady=2)
+        self.irr_status_label = ttk.Label(irr_frame, text="STATUS: N/A", foreground="#666666", font=("Segoe UI", 9, "bold"))
+        self.irr_status_label.grid(row=2, column=0, columnspan=6, sticky="w", padx=4, pady=(2, 2))
 
-        ttk.Label(frame, text="Pulse time (ms):").grid(row=1, column=4, sticky="w", padx=4, pady=2)
-        ttk.Entry(frame, width=10, textvariable=self.sim_pulse_time_ms_var).grid(row=1, column=5, sticky="w", padx=4, pady=2)
+        self.irr_output = tk.Text(irr_frame, height=10, width=100, state="disabled", bg="#fafafa")
+        self.irr_output.grid(row=3, column=0, columnspan=6, sticky="ew", padx=4, pady=2)
+        irr_frame.grid_columnconfigure(5, weight=1)
 
-        ttk.Label(frame, text="Target volume (L):").grid(row=2, column=0, sticky="w", padx=4, pady=2)
-        ttk.Entry(frame, width=10, textvariable=self.sim_target_volume_var).grid(row=2, column=1, sticky="w", padx=4, pady=2)
+        # ── Dosing ─────────────────────────────────────────────────────────────
+        dos_frame = ttk.LabelFrame(outer, text="Dosing \u2014 Channel Flow Rate (L/h)")
+        dos_frame.pack(fill=tk.X, padx=4, pady=3)
 
-        ttk.Label(frame, text="Runtime (minutes):").grid(row=2, column=2, sticky="w", padx=4, pady=2)
-        ttk.Entry(frame, width=10, textvariable=self.sim_runtime_min_var).grid(row=2, column=3, sticky="w", padx=4, pady=2)
+        self.sim_ch_flow_var    = tk.StringVar(value="")
+        self.sim_dose_ratio_var = tk.StringVar(value="")
+        self.sim_dos_mode_var   = tk.StringVar(value="duration")
+        self.sim_dos_value_var  = tk.StringVar(value="")
 
-        self.sim_status_label = ttk.Label(frame, text="STATUS: N/A", foreground="#666666", font=("Segoe UI", 9, "bold"))
-        self.sim_status_label.grid(row=3, column=0, columnspan=6, sticky="w", padx=4, pady=(2, 4))
+        ttk.Label(dos_frame, text="Channel Flow Rate (L/h):").grid(row=0, column=0, sticky="w", padx=4, pady=2)
+        ttk.Entry(dos_frame, width=10, textvariable=self.sim_ch_flow_var).grid(row=0, column=1, padx=4, pady=2)
 
-        self.sim_output = tk.Text(frame, height=15, width=86, state="disabled", bg="#fafafa")
-        self.sim_output.grid(row=4, column=0, columnspan=6, sticky="ew", padx=4, pady=2)
+        ttk.Label(dos_frame, text="Dose Ratio (L/m\u00b3):").grid(row=0, column=2, sticky="w", padx=4, pady=2)
+        ttk.Entry(dos_frame, width=10, textvariable=self.sim_dose_ratio_var).grid(row=0, column=3, padx=4, pady=2)
 
-        frame.grid_columnconfigure(5, weight=1)
+        ttk.Label(dos_frame, text="Program Mode:").grid(row=1, column=0, sticky="w", padx=4, pady=2)
+        dos_mode_combo = ttk.Combobox(
+            dos_frame, width=10, state="readonly",
+            values=("duration", "liters"),
+            textvariable=self.sim_dos_mode_var,
+        )
+        dos_mode_combo.grid(row=1, column=1, padx=4, pady=2)
 
+        self._dos_value_label = ttk.Label(dos_frame, text="Duration (min):")
+        self._dos_value_label.grid(row=1, column=2, sticky="w", padx=4, pady=2)
+        ttk.Entry(dos_frame, width=10, textvariable=self.sim_dos_value_var).grid(row=1, column=3, padx=4, pady=2)
+
+        self.dos_status_label = ttk.Label(dos_frame, text="STATUS: N/A", foreground="#666666", font=("Segoe UI", 9, "bold"))
+        self.dos_status_label.grid(row=2, column=0, columnspan=4, sticky="w", padx=4, pady=(2, 2))
+
+        self.dos_output = tk.Text(dos_frame, height=8, width=100, state="disabled", bg="#fafafa")
+        self.dos_output.grid(row=3, column=0, columnspan=4, sticky="ew", padx=4, pady=2)
+        dos_frame.grid_columnconfigure(3, weight=1)
+
+        # ── Bind all changes ───────────────────────────────────────────────────
         for var in (
-            self.sim_meter_type_var,
-            self.sim_flow_value_var,
-            self.sim_flow_unit_var,
-            self.sim_area_var,
-            self.sim_lpulse_var,
-            self.sim_pulse_time_ms_var,
-            self.sim_target_volume_var,
-            self.sim_runtime_min_var,
+            self.sim_wm_lpulse_var, self.sim_dm_lpulse_var, self.sim_correction_var,
+            self.sim_valve_flow_var, self.sim_num_valves_var, self.sim_area_var,
+            self.sim_irr_value_var,
+            self.sim_ch_flow_var, self.sim_dose_ratio_var, self.sim_dos_value_var,
         ):
             var.trace_add("write", lambda *_: self._on_simulation_input_changed())
 
-        meter_combo.bind("<<ComboboxSelected>>", lambda *_: self._on_simulation_input_changed())
-        flow_unit_combo.bind("<<ComboboxSelected>>", lambda *_: self._on_simulation_input_changed())
+        irr_mode_combo.bind("<<ComboboxSelected>>", lambda *_: self._on_simulation_input_changed())
+        dos_mode_combo.bind("<<ComboboxSelected>>", lambda *_: self._on_simulation_input_changed())
 
         self._on_simulation_input_changed()
 
@@ -230,98 +267,120 @@ class MainControllerPage(BasePage):
         return f"{value:.{digits}f}"
 
     def _on_simulation_input_changed(self) -> None:
-        flow_unit = self.sim_flow_unit_var.get().strip()
-        if flow_unit == "mm/h":
-            self.sim_area_entry.config(state="normal")
-        else:
-            self.sim_area_entry.config(state="disabled")
+        irr_mode = self.sim_irr_mode_var.get()
+        dos_mode = self.sim_dos_mode_var.get()
 
-        validation_errors: list[str] = []
+        # Area (ha) only needed for mm mode
+        self.sim_area_entry.config(state="normal" if irr_mode == "mm" else "disabled")
 
-        flow_value, flow_parse_err = self._to_float_or_default(self.sim_flow_value_var.get(), 0.0)
-        if flow_parse_err == "":
-            validation_errors.append("Flow value must be a valid number.")
-
-        area_m2, area_parse_err = self._to_float_or_default(self.sim_area_var.get(), 0.0)
-        if area_parse_err == "":
-            validation_errors.append("Area (m2) must be a valid number.")
-
-        liters_per_pulse, lpulse_parse_err = self._to_float_or_default(self.sim_lpulse_var.get(), 0.0)
-        if lpulse_parse_err == "":
-            validation_errors.append("Liters per pulse must be a valid number.")
-
-        pulse_time_ms, pulse_err = self._to_optional_float(self.sim_pulse_time_ms_var.get(), "Pulse time (ms)")
-        target_volume, target_err = self._to_optional_float(self.sim_target_volume_var.get(), "Target volume (L)")
-        runtime_min, runtime_err = self._to_optional_float(self.sim_runtime_min_var.get(), "Runtime (minutes)")
-        for err in (pulse_err, target_err, runtime_err):
-            if err:
-                validation_errors.append(err)
-
-        payload = SmartSimulationInput(
-            meter_type=self.sim_meter_type_var.get().strip() or "WM",
-            flow_value=flow_value,
-            flow_unit=flow_unit or "L/h",
-            area_m2=area_m2,
-            liters_per_pulse=liters_per_pulse,
-            pulse_time_ms=pulse_time_ms,
-            target_volume_l=target_volume,
-            runtime_min=runtime_min,
+        # Dynamic value-field labels
+        _irr_labels = {"duration": "Duration (min):", "mm": "Depth (mm):", "m3": "Volume (m\u00b3):"}
+        self._irr_value_label.config(text=_irr_labels.get(irr_mode, "Value:"))
+        self._dos_value_label.config(
+            text="Duration (min):" if dos_mode == "duration" else "Quantity (L):"
         )
 
-        result = calculate_smart_simulation(payload)
-        result.errors = validation_errors + result.errors
+        # ── Parse inputs ──────────────────────────────────────────────────────
+        wm_lpp,       _ = self._to_float_or_default(self.sim_wm_lpulse_var.get(),  0.0)
+        dm_lpp,       _ = self._to_float_or_default(self.sim_dm_lpulse_var.get(),  0.0)
+        correction,   _ = self._to_float_or_default(self.sim_correction_var.get(), 1.0)
+        valve_flow,   _ = self._to_float_or_default(self.sim_valve_flow_var.get(), 0.0)
+        num_valves_f, _ = self._to_float_or_default(self.sim_num_valves_var.get(), 1.0)
+        area_ha,      _ = self._to_float_or_default(self.sim_area_var.get(),       0.0)
+        irr_value,    _ = self._to_float_or_default(self.sim_irr_value_var.get(),  0.0)
+        ch_flow,      _ = self._to_float_or_default(self.sim_ch_flow_var.get(),    0.0)
+        dose_ratio,   _ = self._to_float_or_default(self.sim_dose_ratio_var.get(), 0.0)
+        dos_value,    _ = self._to_float_or_default(self.sim_dos_value_var.get(),  0.0)
 
-        lines: list[str] = []
+        num_valves = max(1, int(num_valves_f))
+        correction = max(0.001, correction)
 
-        if result.errors:
-            lines.append("VALIDATION")
-            lines.append("-----------------------------")
-            for err in result.errors:
-                lines.append(f"- {err}")
-            lines.append("")
-
-        lines.append("RESULTS")
-        lines.append("-----------------------------")
-        lines.append(f"Meter Type: {payload.meter_type}")
-        lines.append(f"Flow (L/h): {self._fmt_num(result.flow_lph, 3)}")
-        lines.append(
-            f"Pulse Time: {self._fmt_num(result.pulse_time_ms, 2)} ms "
-            f"({self._fmt_num(result.pulse_time_sec, 3)} sec)"
-        )
-        lines.append(f"Pulses per Minute: {self._fmt_num(result.pulses_per_min, 3)}")
-        if payload.target_volume_l is not None:
-            lines.append(f"Pulses Required: {self._fmt_num(result.required_pulses, 3)}")
-
-        lines.append("")
-        lines.append("TARGET ANALYSIS")
-        lines.append("-----------------------------")
-        lines.append(f"Target Volume: {self._fmt_num(payload.target_volume_l, 3)}")
-        lines.append(f"Runtime: {self._fmt_num(payload.runtime_min, 3)}")
-        lines.append(f"Recommended Flow: {self._fmt_num(result.required_flow_lph, 3)}")
-        lines.append(
-            f"Recommended Pulse Time: {self._fmt_num(result.recommended_pulse_time_ms, 2)} ms"
+        # ── Irrigation calculation ────────────────────────────────────────────
+        irr = FlowCalculationService.calculate_irrigation(
+            IrrigationProgramInput(
+                valve_flow_m3ph=valve_flow,
+                wm_liters_per_pulse=wm_lpp,
+                program_mode=irr_mode or "duration",
+                program_value=irr_value,
+                num_valves=num_valves,
+                area_ha=area_ha,
+                correction_factor=correction,
+            )
         )
 
-        lines.append("")
-        lines.append("STATUS")
-        lines.append("-----------------------------")
-        lines.append(result.status)
+        irr_lines: list[str] = []
+        if irr.errors:
+            irr_lines.append("\u26a0  " + "  |  ".join(irr.errors))
+            irr_lines.append("")
 
-        lines.append("")
-        lines.append("Cycle Recommendation")
-        lines.append("-----------------------------")
-        lines.append(f"Stable: {self._fmt_num(result.stable_cycle_ms, 2)} ms")
-        lines.append(f"Fast: {self._fmt_num(result.fast_cycle_ms, 2)} ms")
+        irr_lines.append(
+            f"Per-valve Flow   : {self._fmt_num(irr.valve_flow_lph, 2)} L/h  "
+            f"({self._fmt_num(valve_flow, 3)} m\u00b3/h)"
+        )
+        irr_lines.append(
+            f"Total Flow       : {self._fmt_num(irr.total_flow_lph, 2)} L/h  "
+            f"({num_valves} valve{'s' if num_valves != 1 else ''})"
+        )
+        irr_lines.append(f"Volume           : {self._fmt_num(irr.volume_m3, 3)} m\u00b3")
+        irr_lines.append(
+            f"Runtime          : {self._fmt_num(irr.runtime_hours, 3)} h  "
+            f"({self._fmt_num(irr.runtime_minutes, 2)} min  /  "
+            f"{self._fmt_num(irr.runtime_seconds, 0)} s)"
+        )
+        irr_lines.append("")
+        irr_lines.append(
+            f"WM Pulse         : {self._fmt_num(irr.wm_pulse_time_ms, 2)} ms  "
+            f"({self._fmt_num(irr.wm_pulse_time_sec, 4)} s)"
+        )
+        irr_lines.append(
+            f"Corrected Pulse  : {self._fmt_num(irr.corrected_pulse_time_sec, 4)} s  "
+            f"(\u00d7{correction:.3f})"
+        )
+        irr_lines.append(f"Pulses / Hour    : {self._fmt_num(irr.pulses_per_hour, 2)}")
+        irr_lines.append(f"Pulses / Minute  : {self._fmt_num(irr.pulses_per_minute, 3)}")
 
-        self.sim_status_label.config(
-            text=f"STATUS: {result.status}",
-            foreground=result.status_color,
+        self.irr_status_label.config(text=f"STATUS: {irr.status}", foreground=irr.status_color)
+        self.irr_output.config(state="normal")
+        self.irr_output.delete("1.0", tk.END)
+        self.irr_output.insert(tk.END, "\n".join(irr_lines))
+        self.irr_output.config(state="disabled")
+
+        # ── Dosing calculation ────────────────────────────────────────────────
+        dos = FlowCalculationService.calculate_dosing(
+            DosingProgramInput(
+                channel_flow_lph=ch_flow,
+                dm_liters_per_pulse=dm_lpp,
+                program_mode=dos_mode or "duration",
+                program_value=dos_value,
+                dose_ratio_l_per_m3=dose_ratio,
+            )
         )
 
-        self.sim_output.config(state="normal")
-        self.sim_output.delete("1.0", tk.END)
-        self.sim_output.insert(tk.END, "\n".join(lines))
-        self.sim_output.config(state="disabled")
+        dos_lines: list[str] = []
+        if dos.errors:
+            dos_lines.append("\u26a0  " + "  |  ".join(dos.errors))
+            dos_lines.append("")
+
+        dos_lines.append(f"Channel Flow     : {self._fmt_num(ch_flow, 2)} L/h")
+        dos_lines.append(f"Volume           : {self._fmt_num(dos.total_volume_l, 3)} L")
+        dos_lines.append(
+            f"Runtime          : {self._fmt_num(dos.runtime_hours, 3)} h  "
+            f"({self._fmt_num(dos.runtime_minutes, 2)} min)"
+        )
+        dos_lines.append("")
+        dos_lines.append(
+            f"DM Pulse         : {self._fmt_num(dos.dm_pulse_time_ms, 2)} ms  "
+            f"({self._fmt_num(dos.dm_pulse_time_sec, 4)} s)"
+        )
+        dos_lines.append(f"Pulses / Hour    : {self._fmt_num(dos.pulses_per_hour, 2)}")
+        dos_lines.append(f"Pulses / Minute  : {self._fmt_num(dos.pulses_per_minute, 3)}")
+        dos_lines.append(f"Dose Volume      : {self._fmt_num(dos.dose_liters, 3)} L")
+
+        self.dos_status_label.config(text=f"STATUS: {dos.status}", foreground=dos.status_color)
+        self.dos_output.config(state="normal")
+        self.dos_output.delete("1.0", tk.END)
+        self.dos_output.insert(tk.END, "\n".join(dos_lines))
+        self.dos_output.config(state="disabled")
 
     # ── Pinout mapping ────────────────────────────────────────────────────────
 

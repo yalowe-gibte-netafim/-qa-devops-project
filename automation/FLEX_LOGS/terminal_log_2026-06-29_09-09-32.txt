@@ -1,0 +1,72 @@
+--- Log Started: Mon Jun 29 09:09:32 2026 ---
+[09:10:50] Connected to COM10
+[09:11:04] valve 1 close at 00:12:52 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:11:05] valve 7 close at 00:12:53 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:12:04] valve 10 open at 00:13:52 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:12:09] valve 10 close at 00:13:57 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:12:14] valve 11 open at 00:14:02 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:12:19] valve 11 close at 00:14:07 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:12:35] valve 12 open at 00:14:23 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:12:40] valve 12 close at 00:14:29 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:12:46] valve 13 open at 00:14:35 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:12:52] valve 13 close at 00:14:40 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:16:42] valve 9 open at 00:18:31 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:16:47] valve 9 close at 00:18:36 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:17:27] valve 1 open at 00:19:16 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:17:32] valve 1 close at 00:19:21 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:17:37] valve 2 open at 00:19:26 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:17:42] valve 2 close at 00:19:31 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:17:58] valve 3 open at 00:19:47 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:03] valve 3 close at 00:19:52 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:15] valve 4 open at 00:20:04 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:21] valve 4 close at 00:20:10 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:27] valve 5 open at 00:20:16 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:32] valve 5 close at 00:20:21 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:37] valve 6 open at 00:20:26 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:42] valve 6 close at 00:20:31 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:47] valve 7 open at 00:20:36 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:52] valve 7 close at 00:20:41 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:18:57] valve 8 open at 00:20:46 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:19:02] valve 8 close at 00:20:51 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:19:27] valve 8 open at 00:21:17 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:19:32] valve 8 close at 00:21:22 | wm1=0 wm2=0 wm3=0 wm4=0 wm5=0
+[09:20:03] > trigger wm 1 1000
+
+[09:20:03] trigger wm 1 1000
+[09:20:03] wm 1 triggered
+[09:20:03] > trigger wm 2 1000
+
+[09:20:03] trigger wm 2 1000
+[09:20:03] wm 2 triggered
+[09:20:04] > trigger wm 3 1000
+
+[09:20:04] trigger wm 3 1000
+[09:20:04] wm 3 triggered
+[09:20:04] > trigger wm 4 1000
+
+[09:20:04] trigger wm 4 1000
+[09:20:04] wm 4 triggered
+[09:20:05] > trigger wm 5 1000
+
+[09:20:05] trigger wm 5 1000
+[09:20:05] wm 5 triggered
+[09:20:28] > trigger wm 1 3600
+
+[09:20:28] trigger wm 1 3600
+[09:20:28] wm 1 triggered
+[09:20:28] > trigger wm 2 1200
+
+[09:20:28] trigger wm 2 1200
+[09:20:28] wm 2 triggered
+[09:20:29] > trigger wm 3 1200
+
+[09:20:29] trigger wm 3 1200
+[09:20:29] wm 3 triggered
+[09:20:29] > trigger wm 4 1200
+
+[09:20:29] trigger wm 4 1200
+[09:20:29] wm 4 triggered
+[09:20:29] > trigger wm 5 1200
+
+[09:20:29] trigger wm 5 1200
+[09:20:30] wm 5 triggered

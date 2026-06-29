@@ -54,10 +54,14 @@ class FlexTesterApp:
         self.root.title(APP_TITLE)
         self.root.geometry(APP_GEOMETRY)
 
-        # ── Filesystem ─────────────────────────────────────────────────────
-        self._logs_dir = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), LOGS_DIR_NAME
-        )
+       # ── Filesystem ─────────────────────────────────────────────────────
+        if getattr(sys, 'frozen', False):
+            # Running as a PyInstaller exe — put logs next to the .exe file
+            base_dir = os.path.dirname(sys.executable)
+        else:
+            # Running as a normal Python script
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+        self._logs_dir = os.path.join(base_dir, LOGS_DIR_NAME)
         os.makedirs(self._logs_dir, exist_ok=True)
 
         timestamp_str = time.strftime("%Y-%m-%d_%H-%M-%S")
